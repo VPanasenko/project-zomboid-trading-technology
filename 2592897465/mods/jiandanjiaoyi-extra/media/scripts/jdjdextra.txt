@@ -600,93 +600,93 @@ module Base
 		ModelWeaponPart 		= Silencer.HMSilencer Silencer.AssaultRifle02Silencer,
 		StopPower 		= 2,
 	}
-	recipe 卖出 战利品
+	recipe Sell trophy
 	{
 		tradecore/Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
 		keep tradestation,
 		Result 		: Money=11,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 技能书
+	recipe Sell skill book
 	{
 		BookMechanic5/BookMetalWelding5/BookCarpentry5/BookCooking5/BookElectrician5/BookFarming5/BookFirstAid5/BookFishing5/BookForaging5/BookTailoring5/BookTrapping5/BookMechanic4/BookMetalWelding4/BookCarpentry4/BookCooking4/BookElectrician4/BookFarming4/BookFirstAid4/BookFishing4/BookForaging4/BookTailoring4/BookTrapping4,
 		keep tradestation,
 		Result 		: Money=30,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 杂货
+	recipe Sell groceries
 	{
 		Twigs/TreeBranch/Worm/BaitFish/Cologne,
 		keep tradestation,
 		Result 		: Money=4,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 大铁锤
+	recipe Buy sledge hammer
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: Sledgehammer,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 水桶
+	recipe Buy bucket with water
 	{
 		Money=350,
 		keep tradestation,
 		Result 		: BucketWaterFull,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 铁锤
+	recipe Buy hammer
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: Hammer,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 拖把
+	recipe Buy mop
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: Mop,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 漂白剂
+	recipe Buy bleach
 	{
 		Money=60,
 		keep tradestation,
 		Result 		: Bleach,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_shihuangzhezhinan
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 拾荒指南,
+		DisplayName 		= Scavenging guide,
 		Icon 		= Book8,
 		Tooltip 		= Tooltip_shihuangzhezhinan,
 	}
-	recipe 购买 拾荒指南
+	recipe Buy Scavenging guide
 	{
 		tt_moneybag=4,
 		keep tradestation,
 		Result 		: tt_shihuangzhezhinan,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item ShotgunSawnoff
@@ -834,58 +834,58 @@ module Base
 		haveChamber 		= FALSE,
 		StopPower 		= 40,
 	}
-	recipe 购买 民用消音器
+	recipe Buy home-made silencer
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: Silencer.HMSilencer,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 高级消音器
+	recipe Buy advanced silencer
 	{
 		tt_moneybag=3,
 		keep tradestation,
 		Result 		: Silencer.Silencer,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_jiaoyiduijiangji
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 交易对讲机,
+		DisplayName 		= Walkie-Talkie Civilian,
 		Icon 		= WalkieTalkieCivilian,
 	}
-	recipe 设置空投地点（僵尸）
+	recipe Set the airdrop location (zombies)
 	{
 		tt_jiaoyiduijiangji,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 20,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.shezhikongtoudidian,
 	}
-	recipe 投放僵尸
+	recipe Drop zombies
 	{
 		tt_jiaoyiduijiangji,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 60,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.toufangjianshi,
 		OnTest 		: Recipe.OnTest.toufangjianshi,
 	}
-	recipe 购买一捆僵尸
+	recipe Buy a bundle of zombies
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item Revolver
@@ -1206,18 +1206,18 @@ module Base
 	{
 		Weight 		= -5,
 		Type 		= Normal,
-		DisplayName 		= 氢气球,
+		DisplayName 		= Helium balloon,
 		Icon 		= qingqiqiu,
 		Tooltip 		= Tooltip_qingqiqiu,
 	}
-	recipe 购买 氢气球（最多买5个）
+	recipe Buy hydrogen balloon (max buy = 5)
 	{
 		Money=200,
 		keep tradestation,
 		tt_feiqihuaxian=10,
 		Result 		: tt_qingqiqiu,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.qingqiqiucishu,
 		OnTest 		    : Recipe.OnTest.qingqiqiucishu,
@@ -1304,7 +1304,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_shotgunplus,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 }
