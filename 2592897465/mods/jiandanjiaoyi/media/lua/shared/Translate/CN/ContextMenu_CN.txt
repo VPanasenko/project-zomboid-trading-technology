@@ -1,0 +1,3 @@
+ContextMenu_CN = {
+    ContextMenu_chulishiti = "处理尸体",
+}

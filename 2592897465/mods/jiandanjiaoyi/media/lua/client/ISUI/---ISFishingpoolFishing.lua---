@@ -1,0 +1,72 @@
+function ISFishingUI:checkPlayerPosition()
+    local playerObj = self.player;
+    local plyrX = math.floor(playerObj:getX());
+    local plyrY = math.floor(playerObj:getY());
+    if plyrX == self.checkPlayerX and plyrY == self.checkPlayerY then
+        return
+    end
+    noise('checkPlayerPosition')
+    self.checkPlayerX = plyrX;
+    self.checkPlayerY = plyrY;
+    self.canFishDistance = false;
+    local dist = 4;
+    if self.usingSpear then
+        dist = 1;
+    end
+    if playerObj:getZ() > 1 then
+        return;
+    end
+
+    -- This zone is nil where the player has never caught anything.
+    local zoneClicked = ISFishingAction.getFishingZoneFixed(self.clickedSquareX, self.clickedSquareY, self.clickedSquareZ);
+
+    self.squareWithSameZone = self.squareWithSameZone or {}
+    self.squareWithOtherZone = self.squareWithOtherZone or {}
+    self.squareWithoutZone = self.squareWithoutZone or {}
+    table.wipe(self.squareWithSameZone)
+    table.wipe(self.squareWithOtherZone)
+    table.wipe(self.squareWithoutZone)
+
+    local z = playerObj:getZ()
+    for x=plyrX - dist, plyrX + dist do
+        for y=plyrY - dist, plyrY + dist do
+            local sq = getSquare(x, y, z);
+            if sq and sq:getFloor() and sq:getFloor():getSprite() then
+                if sq:getFloor():getSprite():getProperties():Is(IsoFlagType.water) then
+                    local zone = ISFishingAction.getFishingZoneFixed(x, y, z)
+                    if zone ~= nil and zone == zoneClicked then
+                        table.insert(self.squareWithSameZone, sq)
+                    elseif zone ~= nil then
+                        table.insert(self.squareWithOtherZone, sq)
+                    else
+                        table.insert(self.squareWithoutZone, sq)
+                    end
+                end
+            end
+        end
+    end
+
+    local bestSquare = nil
+
+    if #self.squareWithSameZone > 0 then
+        bestSquare = self:pickBestSquare(self.squareWithSameZone)
+    elseif #self.squareWithOtherZone > 0 then
+        bestSquare = self:pickBestSquare(self.squareWithOtherZone)
+    elseif #self.squareWithoutZone > 0 then
+        bestSquare = self:pickBestSquare(self.squareWithoutZone)
+    end
+
+    if bestSquare then
+        self.canFishDistance = true
+        if bestSquare:getFloor() ~= self.clickedSquare then
+            noise(string.format('clickedSquare %d,%d,%d', bestSquare:getX(), bestSquare:getY(), bestSquare:getZ()))
+            self.clickedSquare = bestSquare:getFloor()
+            self.clickedSquareX = bestSquare:getX()
+            self.clickedSquareY = bestSquare:getY()
+            self.clickedSquareZ = bestSquare:getZ()
+        end
+        self:updateZoneProgress()
+    else
+        -- self.zoneProgress = 0
+    end
+end

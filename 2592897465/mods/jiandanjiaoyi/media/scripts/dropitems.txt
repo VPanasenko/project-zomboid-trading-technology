@@ -1,0 +1,78 @@
+module dropitems
+{
+    imports
+	{
+		Base,
+	}
+    item Dropcontroller
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Zombie Loot Controller,
+		Icon 		= shihuangdashi,
+		Tooltip = Tooltip_shihuangdashi,
+	}
+    recipe Buy Zombie Loot Controller
+	{
+		Money = 100,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnTest 		: Recipe.OnTest.buyLootController,
+		Category 		: 交易-战斗,
+	}
+    recipe Enable Loot Prompt
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.Enabledropprompt,
+        OnTest 		: Recipe.OnTest.Enabledropprompt,
+	}
+    recipe Disable Loot Prompt
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.Disabledropprompt,
+        OnTest 		: Recipe.OnTest.Disabledropprompt,
+	}
+    recipe Enable Loot
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.EnableLoot,
+        OnTest 		: Recipe.OnTest.EnableLoot,
+	}
+    recipe Disable Loot
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.DisableLoot,
+        OnTest 		: Recipe.OnTest.DisableLoot,
+	}
+	recipe Enable Auto Loot
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.EnableAutoLoot,
+        OnTest 		: Recipe.OnTest.EnableAutoLoot,
+	}
+	recipe Disable Auto Loot
+	{
+		Dropcontroller,
+		Result 		: Dropcontroller,
+		Time 		: 20,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.DisableAutoLoot,
+        OnTest 		: Recipe.OnTest.DisableAutoLoot,
+	}
+}

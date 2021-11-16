@@ -1,0 +1,32 @@
+IGUI_CN = {
+	-- 金色喵球制作
+	IGUI_xiuligongjvxiuli = "Use repair tools",
+    IGUI_xiuligongjvxiulisay = "Repair successful",
+    IGUI_huode = "Get",
+    IGUI_chaopiao = "*money",
+    IGUI_CraftCategory_交易-盲盒 = "Lottery Box",
+    IGUI_CraftCategory_交易 = "Buy",
+    IGUI_CraftCategory_交易-战斗 = "Trade-Fighting",
+    IGUI_CraftCategory_交易-基础 = "Trade-Base",
+    IGUI_CraftCategory_交易-收购 = "Sell",
+    IGUI_zuzhuangshibai = "fail",
+    IGUI_zuzhuangchenggong = "success",
+    IGUI_lanseyaoji = "My body recovered but felt very tired",
+    IGUI_lvseyaoji = "Feel more powerful!",
+    IGUI_jiushiwan = "Boredom -20%",
+    IGUI_dubodubo = "get 2000$",
+    IGUI_duboshibai = "one more time"，
+    IGUI_hongseyaoji = "Become numb",
+    IGUI_Gserum = "I dont feel good"
+    IGUI_VehicleNamesuperSportsCar = "super sportscar(never broken)",
+    IGUI_nongsuoniguding = "It's comfortable now",
+    IGUI_bianhao = "Solar number:",
+    IGUI_yunxingzhong = "Currently running:",
+    IGUI_taishu = " ",
+    IGUI_yiyichu = "Removed number:",
+    IGUI_detaiyangneng = "solargenerator",
+    IGUI_chushengdian = "When you die, maybe someone else will find here:",
+    IGUI_dagongrengongzi = "Today's salary has been paid",
+    IGUI_yanglaobaoxian = "Today's salary has been paid",
+    IGUI_yanglaobaoxian2 = "Endowment insurance has been purchased, and then some money will be paid every day",
+}

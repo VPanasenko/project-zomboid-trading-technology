@@ -1,0 +1,38 @@
+module Base
+{
+	model ChineseMachete
+	{
+		mesh = Weapons/1handed/ChineseMachete,
+		texture = Weapons/1handed/ChineseMachete,
+	}
+	model ChineseWarSword
+	{
+		mesh = Weapons/2handed/ChineseWarSword,
+		texture = Weapons/2handed/ChineseWarSword,
+	}
+	model LongSword
+	{
+		mesh = Weapons/2handed/LongSword,
+		texture = Weapons/2handed/LongSword,
+	}
+	model LongSpear
+	{
+		mesh = Weapons/2handed/LongSpear,
+		texture = Weapons/2handed/LongSpear,
+	}
+	model LongSpearHead
+	{
+		mesh = Weapons/1handed/LongSpearHead,
+		texture = Weapons/1handed/LongSpearHead,
+	}
+	model LongSpearHead2
+	{
+		mesh = Weapons/1handed/LongSpearHead2,
+		texture = Weapons/1handed/LongSpearHead2,
+	}
+	model LongSpear2
+	{
+		mesh = Weapons/2handed/LongSpear2,
+		texture = Weapons/2handed/LongSpear2,
+	}
+}

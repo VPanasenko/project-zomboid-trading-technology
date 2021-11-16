@@ -1,0 +1,33 @@
+﻿IGUI_CN = {
+	-- 金色喵球制作
+	IGUI_xiuligongjvxiuli = "使用修车工具",
+    IGUI_xiuligongjvxiulisay = "修理成功",
+    IGUI_huode = "获得",
+    IGUI_chaopiao = "*钞票",
+    IGUI_CraftCategory_交易-盲盒 = "交易-盲盒",
+    IGUI_CraftCategory_交易 = "交易",
+    IGUI_CraftCategory_交易-弹药 = "交易-弹药",
+    IGUI_CraftCategory_交易-基础 = "交易-基础",
+    IGUI_CraftCategory_交易-收购 = "交易-收购",
+    IGUI_CraftCategory_交易-战斗 = "交易-战斗"，
+    IGUI_zuzhuangshibai = "组装失败",
+    IGUI_zuzhuangchenggong = "组装成功",
+    IGUI_lanseyaoji = "身体恢复了，但是感到很疲惫",
+    IGUI_lvseyaoji = "感觉更有力量了！",
+    IGUI_jiushiwan = "无聊度-20%",
+    IGUI_dubodubo = "恭喜，获得2000刀",
+    IGUI_duboshibai = "再来一次吧"，
+    IGUI_hongseyaoji = "对现实感到麻木了",
+    IGUI_Gserum = "感觉不太好"
+    IGUI_VehicleNamesuperSportsCar = "超级跑车（不毁）",
+    IGUI_nongsuoniguding = "这下舒服了。",
+    IGUI_bianhao = "太阳能编号：",
+    IGUI_yunxingzhong = "当前运行中：",
+    IGUI_taishu = "台",
+    IGUI_yiyichu = "已移除编号为：",
+    IGUI_detaiyangneng = " 的太阳能" ,
+    IGUI_chushengdian = "当你死去，也许其他人会找到这儿：",
+    IGUI_dagongrengongzi = "今日工资已发放",
+    IGUI_yanglaobaoxian = "今日养老保险已发放",
+    IGUI_yanglaobaoxian2 = "养老保险已购买,之后每天会发放一些钱",
+}

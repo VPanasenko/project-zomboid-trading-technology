@@ -1,0 +1,12 @@
+UI_CN = {
+    UI_trait_kuaidiyuan = "快递员",
+    UI_trait_kuaidiyuandsc = "开局有一个交易电台和钱袋子",
+    UI_trait_shihuangdashi = "拾荒大师",
+    UI_trait_shihuangdashidsc = "把捡破烂技能练到极致的人。可以从僵尸身上搜出更多东西。开局拥有三本拾荒指南书。",
+    UI_trait_tuhao = "富二代",
+    UI_trait_tuhaodsc = "“出门就带了点零花钱”。开局拥有大量的钱。",
+    UI_trait_dagongren = "打工人",
+    UI_trait_dagongrendsc = "每天会获得工资",
+    UI_trait_mori = "末日",
+    UI_trait_moridsc = "真正的世界末日。会随机生成很多变态的僵尸",
+}

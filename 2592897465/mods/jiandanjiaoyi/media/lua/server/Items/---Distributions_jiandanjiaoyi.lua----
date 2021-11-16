@@ -1,0 +1,271 @@
+--[[ Distributions = Distributions or {};
+
+local distributionTable = 
+{
+	all = 
+	{
+		bin = 
+		{
+			items = 
+			{
+			},
+		},
+		campfire = 
+		{
+			items = 
+			{
+			},
+		},
+		cashregister = 
+		{
+			items = 
+			{
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+				"Base.Money",100,
+			},
+		},
+		clothingdryer = 
+		{
+			items = 
+			{
+			},
+		},
+		clothingwasher = 
+		{
+			items = 
+			{
+			},
+		},
+		corn = 
+		{
+			items = 
+			{
+			},
+		},
+		counter = 
+		{
+			items = 
+			{
+			},
+		},
+		crate = 
+		{
+			items = 
+			{
+			},
+		},
+		dishescabinet = 
+		{
+			items = 
+			{
+			},
+		},
+		filingcabinet = 
+		{
+			items = 
+			{
+			},
+		},
+		freezer = 
+		{
+			items = 
+			{
+			},
+		},
+		fridge = 
+		{
+			items = 
+			{
+			},
+		},
+		fruitbusha = 
+		{
+			items = 
+			{
+			},
+		},
+		fruitbushb = 
+		{
+			items = 
+			{
+			},
+		},
+		fruitbushc = 
+		{
+			items = 
+			{
+			},
+		},
+		fruitbushd = 
+		{
+			items = 
+			{
+			},
+		},
+		fruitbushe = 
+		{
+			items = 
+			{
+			},
+		},
+		inventoryfemale = 
+		{
+			items = 
+			{
+				"Base.Antibiotics",0.1,
+				"Base.Apple",0.1,
+				"Base.Bandage",0.1,
+				"Base.BerryGeneric4",0.3,
+				"Base.BerryGeneric5",0.3,
+				"Base.BerryPoisonIvy",0.3,
+				"Base.Chocolate",0.2,
+				"Base.Crisps",0.2,
+				"Base.Disinfectant",0.1,
+				"Base.Egg",0.1,
+				"Base.tradecore",30,
+				"farming.BroccoliBagSeed",0.1,
+				"farming.CabbageBagSeed",0.1,
+				"farming.CarrotBagSeed",0.1,
+				"farming.PotatoBagSeed",0.1,
+				"farming.RedRadishBagSeed",0.1,
+				"farming.StrewberrieBagSeed",0.1,
+				"farming.TomatoBagSeed",0.1,
+			},
+		},
+		inventorymale = 
+		{
+			items = 
+			{
+				"Base.Crowbar",0.1,
+				"Base.DuctTape",0.2,
+				"Base.DumbBell",0.2,
+				"Base.Golfclub",0.2,
+				"Base.GardenSaw",0.1,
+				"Base.GuitarElectricRed",0.1,
+				"Base.Hammer",0.1,
+				"Base.HandAxe",0.1,
+				"Base.HandFork",0.1,
+				"Base.HandScythe",0.1,
+				"Base.MeatCleaver",0.1,
+				"Base.PetrolCan",0.1,
+				"Base.Saw",0.1,
+				"Base.Tweezers",0.1,
+				"Base.WeldingRods",0.1,
+				"Base.WoodenMallet",0.1,
+				"Base.Woodglue",0.1,
+				"Base.Wrench",0.1,
+				"Base.tradecore",30,
+			},
+		},
+		logs = 
+		{
+			items = 
+			{
+			},
+		},
+		medicine = 
+		{
+			items = 
+			{
+			},
+		},
+		metal_shelves = 
+		{
+			items = 
+			{
+			},
+		},
+		microwave = 
+		{
+			items = 
+			{
+			},
+		},
+		officedrawers = 
+		{
+			items = 
+			{
+			},
+		},
+		postbox = 
+		{
+			items = 
+			{
+			},
+		},
+		sidetable = 
+		{
+			items = 
+			{
+			},
+		},
+		stove = 
+		{
+			items = 
+			{
+			},
+		},
+		vendingpop = 
+		{
+			items = 
+			{
+			},
+		},
+		vendingsnack = 
+		{
+			items = 
+			{
+			},
+		},
+		Outfit_Generic99 = 
+		{
+			items = 
+			{
+			},
+		},
+	},
+}
+
+table.insert(Distributions, distributionTable); ]]
+
+
+
+
+SuburbsDistributions = SuburbsDistributions or {}
+require "Items/SuburbsDistributions"
+require "Items/ItemPicker"
+
+local function insertTablea(t1, t2)
+	local n = #t1
+	for i=1,#t2 do 
+		t1[n+i] = t2[i]
+	end
+end
+local zombie_itemsa = {
+	"Base.tradecore", 30,
+}
+insertTablea(SuburbsDistributions["all"]["inventorymale"].items, zombie_itemsa);
+insertTablea(SuburbsDistributions["all"]["inventoryfemale"].items, zombie_itemsa);

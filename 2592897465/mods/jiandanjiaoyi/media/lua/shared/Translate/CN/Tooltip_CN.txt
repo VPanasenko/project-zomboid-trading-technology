@@ -1,0 +1,19 @@
+Tooltip_CN= {
+    Tooltip_hongseyaoji = "获得麻木不仁特性",
+    Tooltip_lvseyaoji = "提高你的力量和体格",
+    Tooltip_lanseyaoji = "治愈你的一切，但是有一点点代价",
+    Tooltip_moneybag = "一次装500，一共能装1万元。钱袋子1单位=钱袋子+500元。",
+    Tooltip_pashoujuewu = "放到身上时，杀死僵尸自动获取钞票",
+    Tooltip_xiuchegongjv = "可以修理车的任意部件",
+    Tooltip_tt_g_serum = "随机移除一个负面特性或获得一个正面特性"
+    Tooltip_shihuangzhezhinan = "放到身上时，杀死僵尸后自动获取值钱的东西",
+    Tooltip_nongsuoniguding = "减轻你的压力，暂时的",
+    Tooltip_leidakongzhiqi="开启后可以侦测到僵尸和建筑物",
+    Tooltip_ziseyaoji="提高你的负重能力，不能无限次使用",
+    Tooltip_shihuangdashi = "右键它可以调整拾荒大师的技能效果",
+    Tooltip_yishu = "可以设置重生点，只能生效一次且只对下一次复活有效",
+    Tooltip_zombiebutter = "这东西让人有点反胃。。",
+    Tooltip_ershouche = "可能是个废车",
+    Tooltip_jiangshichangzi = "塞的满满的，谁知道脏逼吃了什么好东西。",
+}
+
