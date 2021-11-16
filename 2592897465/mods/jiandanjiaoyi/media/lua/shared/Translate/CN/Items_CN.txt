@@ -31,7 +31,6 @@
     DisplayName_Shotgunplusplus = "神级霰弹枪",
     DisplayName_solar_generator_pack = "太阳能发电机（未组装）",
     DisplayName_solar_generator = "太阳能发电机",
-    DisplayName_Shotgunplusplus = "神级霰弹枪",
     DisplayName_zombie_oil = "脂肪块",
     DisplayName_diamond_pickaxe = "钻石镐",
     DisplayName_diamond_sword = "钻石剑",
@@ -51,7 +50,6 @@
     DisplayName_大金属箱子 = "大金属箱子",
     DisplayName_大容量腰包 = "大容量腰包",
     DisplayName_氢气球 = "氢气球",
-
 
     DisplayName_浓缩尼古丁 = "浓缩尼古丁",
     DisplayName_紫色药剂 = "紫色药剂",
@@ -99,6 +97,4 @@
     DisplayName_汽车未组装(废车) = "汽车未组装(废车)",
     DisplayName_汽车未组装(全新原版车) = "汽车未组装(全新原版车)",
     DisplayName_汽车未组装(超级跑车) = "汽车未组装(超级跑车)",
-
-
 }

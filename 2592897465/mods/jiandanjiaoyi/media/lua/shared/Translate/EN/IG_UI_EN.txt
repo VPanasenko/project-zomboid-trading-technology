@@ -1,4 +1,4 @@
-IGUI_CN = {
+IGUI_EN = {
 	-- 金色喵球制作
 	IGUI_xiuligongjvxiuli = "Use repair tools",
     IGUI_xiuligongjvxiulisay = "Repair successful",
@@ -9,6 +9,7 @@ IGUI_CN = {
     IGUI_CraftCategory_交易-战斗 = "Trade-Fighting",
     IGUI_CraftCategory_交易-基础 = "Trade-Base",
     IGUI_CraftCategory_交易-收购 = "Sell",
+    IGUI_CraftCategory_交易-弹药 = "Trade-Ammunition",
     IGUI_zuzhuangshibai = "fail",
     IGUI_zuzhuangchenggong = "success",
     IGUI_lanseyaoji = "My body recovered but felt very tired",

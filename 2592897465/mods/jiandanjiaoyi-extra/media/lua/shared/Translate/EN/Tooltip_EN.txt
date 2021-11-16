@@ -3,8 +3,9 @@
 --***********************************************************
 
 
-Tooltip_CN = {
+Tooltip_EN = {
     -- Item tooltip
 	Tooltip_Silencer = "Reduces sound radius but Slightly lowers range",
 	Tooltip_HMSilencer = "Reduces sound radius but lowers range",
+	Tooltip_qingqiqiu = "Give you an upward force",
 }

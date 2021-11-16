@@ -16,4 +16,3 @@ Tooltip_CN= {
     Tooltip_ershouche = "可能是个废车",
     Tooltip_jiangshichangzi = "塞的满满的，谁知道脏逼吃了什么好东西。",
 }
-
