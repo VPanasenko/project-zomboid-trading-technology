@@ -80,13 +80,13 @@ module Base
 		mesh = boneknifespear,
 		texture = boneknifespear,
 	}
-	recipe 购买 原木
+	recipe Buy logs
 	{
 		Money=20,
 		keep tradestation,
 		Result 		: Log,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -101,7 +101,7 @@ module Base
 		Weight 		= 1,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_36,
-		DisplayName 		= Water1,
+		DisplayName 		= Water cube,
 	}
 	item tt_water2
 	{
@@ -119,13 +119,13 @@ module Base
 		WorldObjectSprite 		= jiandanjiaoyi_01_44,
 		DisplayName 		= Pool edge,
 	}
-	recipe Buy Swimming Pool
+	recipe Buy swimming Pool
 	{
 		tt_moneybag = 6,
 		keep tradestation,
 		Result 		: tt_water2 = 4,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.youyongchi,
 	}
@@ -140,24 +140,24 @@ module Base
 		WorldObjectSprite 		= jiandanjiaoyi_01_37,
 		DisplayName 		= Well,
 	}
-	recipe Buy Well
+	recipe Buy well
 	{
 		tt_moneybag = 4,
 		keep tradestation,
 		Result 		: tt_well,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	
 
-	recipe Buy Floor
+	recipe Buy floor
 	{
 		Money = 250,
 		keep tradestation,
 		Result 		: tt_floor1,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: true,
 		OnCreate 		: Recipe.OnCreate.FloorFloor,
@@ -302,7 +302,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_2,
-		DisplayName 		= 合金立方体,
+		DisplayName 		= Alloy cube,
 	}
 	item tt_touminghejinlifangti
 	{
@@ -310,7 +310,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_5,
-		DisplayName 		= 透明立方体,
+		DisplayName 		= Transparent cube,
 	}
 	item tt_yuanmukuai
 	{
@@ -318,7 +318,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_11,
-		DisplayName 		= 原木方块,
+		DisplayName 		= Log cube,
 	}
 	item tt_caofangkuai
 	{
@@ -326,7 +326,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_8,
-		DisplayName 		= 草方块,
+		DisplayName 		= Grass cube,
 	}
 	item tt_xiangshuyezi
 	{
@@ -334,7 +334,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_16,
-		DisplayName 		= 橡树叶子,
+		DisplayName 		= Oak leaves,
 	}
 	item tt_shazi
 	{
@@ -342,7 +342,7 @@ module Base
 		Weight 		= 3,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_19,
-		DisplayName 		= 沙子,
+		DisplayName 		= Sand,
 	}
 	item Mov_chinaflag
 	{
@@ -350,14 +350,14 @@ module Base
 		Weight 		= 1,
 		Type 		= Moveable,
 		WorldObjectSprite 		= jiandanjiaoyi_01_0,
-		DisplayName 		= 中国国旗,
+		DisplayName 		= Chinese flag,
 	}
 	item bigbigfridge
 	{
 		Type 		= Moveable,
 		Icon 		= dabingxiang,
 		Weight 		= 10,
-		DisplayName 		= 大冰箱,
+		DisplayName 		= Large refrigerator,
 		WorldObjectSprite 		= jiandanjiaoyi_01_32,
 	}
 	item bigmentalcrate
@@ -365,7 +365,7 @@ module Base
 		Type 		= Moveable,
 		Icon 		= jinshudaxiangzi,
 		Weight 		= 0.5,
-		DisplayName 		= 大金属箱子,
+		DisplayName 		= Big metal crate,
 		WorldObjectSprite 		= jiandanjiaoyi_01_27,
 	}
 	item tradestation
@@ -373,7 +373,7 @@ module Base
 		Icon 		= jiaoyidiantai,
 		Weight 		= 30,
 		Type 		= Normal,
-		DisplayName 		= 交易电台,
+		DisplayName 		= Trade station,
 	}
 
 	item tt_yishu
@@ -386,133 +386,133 @@ module Base
     }
 
 
-	recipe 卖出 原木
+	recipe Sell logs
 	{
 		Log=1,
 		keep tradestation,
 		Result 		: Money=9,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 面包
+	recipe Buy bread
 	{
 		Money=160,
 		keep tradestation,
 		Result 		: Bread,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 武士刀
+	recipe Buy katana
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: Katana,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 消防斧
+	recipe Buy axe
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: Axe,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 培根
+	recipe Buy bacon
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: Bacon,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 棒球棒
+	recipe Buy baseball bat
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: BaseballBat,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 卷心菜种子
+	recipe Buy cabbage seeds
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: CabbageBagSeed,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 薯片
+	recipe Buy crisps
 	{
 		Money=120,
 		keep tradestation,
 		Result 		: Crisps,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 撬棍
+	recipe Buy crowbar
 	{
 		Money=250,
 		keep tradestation,
 		Result 		: Crowbar,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 空汽油桶
+	recipe Buy empty petrol can
 	{
 		Money=100,
 		keep tradestation,
 		Result 		: EmptyPetrolCan,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 电视
+	recipe Buy TV (Antique)
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: TvAntique,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 西瓜
+	recipe Buy watermelon
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: Watermelon,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 书
+	recipe Sell book
 	{
 		Book,
 		keep tradestation,
 		Result 		: Money=8,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 农产品
+	recipe Sell agricultural products
 	{
 		Cabbage/Tomato/Carrots/Broccoli/Potato/RedRadish,
 		keep tradestation,
 		Result 		: Money=3,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 交易电台
+	recipe Make trading station
 	{
 		keep Hammer/ClubHammer/BallPeenHammer,
 		keep LugWrench,
@@ -522,32 +522,32 @@ module Base
 		tradecore=5,
 		Result 		: tradestation,
 		Time 		: 100,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item tradecore
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 传呼机,
+		DisplayName 		= Pager,
 		Icon 		= chuanhuji,
 	}
-	recipe 购买 猎刀
+	recipe Buy hunting knife
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: HuntingKnife,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe dissect zombie
+	recipe Butcher zombie
 	{
 		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
 		CorpseFemale/CorpseMale,
 		Result 		: st_zombiemeat,
 		Time 		: 100,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		OnCreate 		: Recipe.OnCreate.zombiecorpse,
 		CanBeDoneFromFloor 		: true,
 		RemoveResultItem 		: true,
@@ -556,7 +556,7 @@ module Base
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 僵尸骨头,
+		DisplayName 		= Zombie's bone,
 		Icon 		= DogChew,
 		WorldStaticModel 		= zombiebone,
 	}
@@ -569,7 +569,7 @@ module Base
 		UnhappyChange 		= +30,
 		DaysTotallyRotten 		= 0,
 		DaysFresh 		= 0,
-		DisplayName 		= 僵尸肉,
+		DisplayName 		= Zombie's meat,
 		Icon 		= MeatPattyRotten,
 		Carbohydrates 		= 0,
 		Proteins 		= 0,
@@ -578,13 +578,13 @@ module Base
 		Packaged 		= TRUE,
 		CantBeFrozen 		= TRUE,
 	}
-	recipe 制作 骨刀
+	recipe Make bone knife
 	{
 		keep Axe/WoodAxe/HandAxe,
 		zombiebone,
 		Result 		: zombieknife,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item zombieknife
@@ -608,7 +608,7 @@ module Base
 		IsAimedHandWeapon 		= TRUE,
 		DoorDamage 		= 1,
 		SwingAnim 		= Stab,
-		DisplayName 		= 骨刀,
+		DisplayName 		= Bone knife,
 		MinRange 		= 0.61,
 		CloseKillMove 		= Jaw_Stab,
 		SwingTime 		= 2,
@@ -634,24 +634,24 @@ module Base
 		AttachmentType 		= Knife,
 		Tags 		= CutPlant,
 	}
-	recipe 卖出 僵尸
+	recipe Sell zombie parts
 	{
 		st_zombiemeat/zombieskin/zombiebone,
 		keep tradestation,
 		Result 		: Money=1,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item zombieskin
 	{
 		Weight 		= 0.2,
 		Type 		= Normal,
-		DisplayName 		= 僵尸皮,
+		DisplayName 		= Zombie's skin,
 		Icon 		= zombieskin,
 		WorldStaticModel 		= zombieskin,
 	}
-	recipe 制作 绷带
+	recipe Make a bandage
 	{
 		keep Scissors,
 		zombieskin,
@@ -659,7 +659,7 @@ module Base
 		Disinfectant,
 		Result 		: Bandage=5,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item zombieoilfac
@@ -667,10 +667,10 @@ module Base
 		Icon 		= lianyouqi,
 		Weight 		= 25,
 		Type 		= Container,
-		DisplayName 		= 炼油器,
+		DisplayName 		= Oil refiner,
 		Capacity 		= 50,
 	}
-	recipe 制作 炼油器
+	recipe Make corpse refinery (for oil)
 	{
 		keep Hammer/ClubHammer/BallPeenHammer,
 		keep Saw/GardenSaw,
@@ -684,17 +684,17 @@ module Base
 		EmptyPetrolCan,
 		Result 		: zombieoilfac,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 炼 尸油
+	recipe Refine corpse oil
 	{
 		Charcoal/Plank,
 		keep zombieoilfac,
 		CorpseFemale/CorpseMale,
 		Result 		: tt_shiyoukuai,
 		Time 		: 100,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.zombieoil,
 	}
@@ -704,13 +704,13 @@ module Base
 		Type 		= Drainable,
 		UseWhileEquipped 		= FALSE,
 		UseDelta 		= 0.125,
-		DisplayName 		= 尸油桶,
+		DisplayName 		= Corpse oil barrel,
 		Icon 		= Petrol,
 		ReplaceOnDeplete 		= EmptyPetrolCan,
 		ReplaceInSecondHand 		= Bag_GasCan_LHand holdingbagleft,
 		ReplaceInPrimaryHand 		= Bag_GasCan_RHand holdingbagright,
 	}
-	recipe 炼 生物汽油
+	recipe Refine biogasoline
 	{
 		EmptyPetrolCan,
 		keep zombieoilfac,
@@ -718,7 +718,7 @@ module Base
 		tt_shiyoukuai=7,
 		Result 		: PetrolCan,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.zombieoil2,
 	}
@@ -728,7 +728,7 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Food,
 		UnhappyChange 		= +5,
-		DisplayName 		= 精炼脂肪,
+		DisplayName 		= Zombie's butter,
 		Icon 		= jinglianzhifang,
 		FoodType 		= NoExplicit,
 		Carbohydrates 		= 0,
@@ -745,7 +745,7 @@ module Base
 	{
 		Weight 		= 25,
 		Type 		= Normal,
-		DisplayName 		= 汽车未组装(废车),
+		DisplayName 		= Unassembled car (scrap car),
 		Icon 		= hezhuangqiche,
 		Tooltip = Tooltip_ershouche,
 	}
@@ -753,24 +753,24 @@ module Base
 	{
 		Weight 		= 25,
 		Type 		= Normal,
-		DisplayName 		= 汽车未组装(全新原版车),
+		DisplayName 		= Unassembled car (new original car),
 		Icon 		= hezhuangqiche,
 	}
 	item hezhuangqiche3
 	{
 		Weight 		= 25,
 		Type 		= Normal,
-		DisplayName 		= 汽车未组装(超级跑车),
+		DisplayName 		= Unassembled car (supercar),
 		Icon 		= hezhuangqiche,
 	}
-	recipe 组装 汽车（室外）
+	recipe Assembly car (outdoor)
 	{
 		keep Wrench,
 		hezhuangqiche/hezhuangqiche2/hezhuangqiche3,
 		TirePump,
 		Time 		: 150,
 		Result 		: TirePump,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		OnCreate 		: Recipe.OnCreate.hezhuangqichea,
 		CanBeDoneFromFloor 		: TRUE,
 	}
@@ -780,7 +780,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy new original car
@@ -789,7 +789,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche2,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy super sportscar
@@ -798,14 +798,14 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche3,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item zombietissue
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 尸体组织,
+		DisplayName 		= Zombie's tissue,
 		Icon 		= jiangshizuzhi,
 		WorldStaticModel 		= zombietissue,
 	}
@@ -813,7 +813,7 @@ module Base
 	{
 		Weight 		= 0.2,
 		Type 		= Normal,
-		DisplayName 		= 僵尸肠子,
+		DisplayName 		= Zombie intestines,
 		Icon 		= jiangshichangzi,
 		WorldStaticModel 		= zombiesstomach,
 		Tooltip = Tooltip_jiangshichangzi,
@@ -821,7 +821,7 @@ module Base
 	item zombiebag1
 	{
 		Type 		= Container,
-		DisplayName 		= 尸皮包轻装版,
+		DisplayName 		= Carcass bag S,
 		ClothingItem 		= Bag_ALICEpack_Army,
 		CanBeEquipped 		= Back,
 		WeightReduction 		= 100,
@@ -841,7 +841,7 @@ module Base
 	item zombiebag2
 	{
 		Type 		= Container,
-		DisplayName 		= 尸皮包重装版,
+		DisplayName 		= Carcass bag L,
 		ClothingItem 		= Bag_ALICEpack_Army,
 		CanBeEquipped 		= Back,
 		WeightReduction 		= 92,
@@ -858,24 +858,24 @@ module Base
 		ReplaceInSecondHand 		= Bag_ALICEpack_Army_LHand holdingbagleft,
 		ReplaceInPrimaryHand 		= Bag_ALICEpack_Army_RHand holdingbagright,
 	}
-	recipe 盲盒 生存物资
+	recipe Lottery Box Survival Supplies
 	{
 		Money=190,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheshengcunwuzi,
 		RemoveResultItem 		: true,
 	}
-	recipe 盲盒 方块装饰物
+	recipe Lottery Cube decoration
 	{
 		Money=100,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghefangkuai,
 		RemoveResultItem 		: true,
@@ -884,32 +884,32 @@ module Base
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 盲盒,
+		DisplayName 		= Lottery box,
 		Icon 		= zhihezi,
 	}
-	recipe 盲盒 饮料
+	recipe Lottery Drinks
 	{
 		Money=140,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejiu,
 		RemoveResultItem 		: true,
 	}
-	recipe 盲盒 军火
+	recipe Lottery Arms
 	{
 		Money=250,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejunhuo,
 		RemoveResultItem 		: true,
 	}
-	recipe 制作 尸皮背包
+	recipe Make carcass bag L
 	{
 		keep Scissors,
 		keep Needle,
@@ -921,10 +921,10 @@ module Base
 		Bag_Schoolbag=2,
 		Result 		: zombiebag2,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 制作 尸皮包轻装版
+	recipe Make carcass bag S
 	{
 		keep Scissors,
 		keep Needle,
@@ -936,16 +936,16 @@ module Base
 		Bag_Schoolbag=1,
 		Result 		: zombiebag1,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 盲盒 稀有物资
+	recipe Lottery Rare materials
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghexiyouwuzi,
 		RemoveResultItem 		: true,
@@ -957,7 +957,7 @@ module Base
 		HungerChange 		= 0,
 		RequireInHandOrInventory 		= Lighter/Matches,
 		Type 		= Food,
-		DisplayName 		= 华子,
+		DisplayName 		= Huazi,
 		StressChange 		= -15,
 		BoredomChange 		= -15,
 		UnhappyChange 		= -15,
@@ -974,7 +974,7 @@ module Base
 		Weight 		= 0.7,
 		Type 		= Food,
 		ThirstChange 		= -30,
-		DisplayName 		= 茅台,
+		DisplayName 		= Maotai,
 		Alcoholic 		= TRUE,
 		UnhappyChange 		= -30,
 		ReplaceOnUse 		= maotaiEmpty,
@@ -996,37 +996,37 @@ module Base
 	{
 		Weight 		= 0.5,
 		Type 		= Normal,
-		DisplayName 		= 万能修车工具,
+		DisplayName 		= Universal repair tool,
 		Icon 		= xiuchegongjv,
 		Tooltip 		= Tooltip_xiuchegongjv,
 	}
-	recipe 购买 万能修车工具
+	recipe Buy universal repair tool
 	{
 		Money=250,
 		keep tradestation,
 		Result 		: xiuchegongjv,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 调味料礼盒
+	recipe Buy seasoning gift box
 	{
 		Money = 300,
 		keep tradestation,
 		Result 		:zhihezi ,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.tiaoweiliao,
 		RemoveResultItem 		: true,
 	}
-	recipe 购买 下午茶礼盒
+	recipe Buy afternoon tea gift box
 	{
 		tt_moneybag = 1,
 		keep tradestation,
 		Result 		:zhihezi,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.chataozhuang,
 		RemoveResultItem 		: true,
@@ -1042,17 +1042,17 @@ module Base
 	{
 		Weight 		= 0.2,
 		Type 		= Normal,
-		DisplayName 		= 茅台空瓶,
+		DisplayName 		= Moutai empty bottle,
 		Icon 		= maotai,
 		StaticModel 		= maotaiEmpty,
 	}
-	recipe 盲盒 建筑材料
+	recipe Lottery Building materials
 	{
 		keep tradestation,
 		Money=130,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejianzhucailiao,
 		RemoveResultItem 		: true,
@@ -1062,9 +1062,9 @@ module Base
 		Icon 		= ronghuaqi,
 		Weight 		= 30,
 		Type 		= Normal,
-		DisplayName 		= 熔化炉,
+		DisplayName 		= Melting furnace,
 	}
-	recipe 制作 熔化炉
+	recipe Make melting furnace
 	{
 		keep Shovel/Shovel2/SnowShovel,
 		keep HandShovel,
@@ -1075,19 +1075,19 @@ module Base
 		Wire=4,
 		Result 		: tt_ronghuaqi,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 回收 粗金属
+	recipe Recycle for coarse metals
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
 		Result 		: tt_feiqijinshukuai,
 		Time 		: 1,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 炼 粗金属
+	recipe Refine coarse metals
 	{
 		Water=5,
 		Charcoal/Plank,
@@ -1095,7 +1095,7 @@ module Base
 		tt_feiqijinshukuai = 10,
 		Result 		: tt_feiqiguijinshu = 3,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.liancujinshu,
@@ -1105,7 +1105,7 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Normal,
 		UseWhileEquipped 		= FALSE,
-		DisplayName 		= 贵金属,
+		DisplayName 		= Coarse metal,
 		Icon 		= feiqiguijinshu,
 	}
 	item tt_feiqihuaxian
@@ -1113,10 +1113,10 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Normal,
 		UseWhileEquipped 		= FALSE,
-		DisplayName 		= 废弃化纤,
+		DisplayName 		= Waste chemical fiber,
 		Icon 		= shitizuzhi,
 	}
-	recipe 炼 废弃化纤
+	recipe Refine waste chemical fiber
 	{
 		Water=5,
 		Charcoal/Plank,
@@ -1124,10 +1124,10 @@ module Base
 		[Recipe.GetItemTypes.CraftSheetRope],
 		Result 		: tt_feiqihuaxian,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 垃圾袋
+	recipe Make garbage bag
 	{
 		keep Scissors,
 		keep Needle,
@@ -1136,19 +1136,19 @@ module Base
 		Charcoal/Plank,
 		Result 		: Base.Garbagebag,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 交换 木炭
+	recipe Exchange charcoal
 	{
 		tt_feiqihuaxian=16,
 		keep tradestation,
 		Result 		: Charcoal,
 		Time 		: 10,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 麻绳
+	recipe Make twine
 	{
 		keep Scissors,
 		tt_feiqihuaxian=3,
@@ -1156,144 +1156,144 @@ module Base
 		Charcoal/Plank,
 		Result 		: Twine,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 卖出 抗生素
+	recipe Sell antibiotics
 	{
 		Antibiotics,
 		keep tradestation,
 		Result 		: Money=160,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 冰锄
+	recipe Sell ice pick
 	{
 		IcePick,
 		keep tradestation,
 		Result 		: Money=150,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 脏比辣妹
+	recipe Sell hottiez
 	{
 		HottieZ,
 		keep tradestation,
 		Result 		: Money=150,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 游戏机
+	recipe Sell videogame
 	{
 		VideoGame,
 		keep tradestation,
 		Result 		: Money=100,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 电台
+	recipe Sell radio
 	{
 		HamRadio1/HamRadio2/HamRadioMakeShift,
 		keep tradestation,
 		Result 		: Money=200,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 卖出 药用植物
+	recipe Sell medical plants
 	{
 		WildGarlic/CommonMallow/Comfrey/BlackSage,
 		keep tradestation,
 		Result 		: Money=12,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe 卖出 金属
+	recipe Sell metal
 	{
 		SmallSheetMetal/SheetMetal/MetalBar/MetalPipe/RearCarDoor1/RearCarDoor2/RearCarDoor3/FrontCarDoor1/FrontCarDoor2/FrontCarDoor3,
 		keep tradestation,
 		Result 		: Money=10,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
 
-	recipe 卖出 鱼
+	recipe Sell fish
 	{
 		Catfish/Bass/Perch/Crappie/Panfish,
 		keep tradestation,
 		Result 		: Money=15,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 啥也不干就是玩
+	recipe Do nothing but play
 	{
 		Baseball,
 		Time 		: 100,
 		Result 		: Baseball,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		OnCreate 		: Recipe.OnCreate.jiushiwan,
 	}
 	item tt_lanseyaoji
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 蓝色药剂,
+		DisplayName 		= Blue potion,
 		Icon 		= lanseyaoji,
 		WorldStaticModel 		= tt_lanseyaoji,
 		Tooltip 		= Tooltip_lanseyaoji,
 	}
-	recipe 蓝色药剂
+	recipe Blue potion
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: tt_lanseyaoji,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 紫色药剂
+	recipe Purple potion
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: tt_ziseyaoji,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 注射 蓝色药剂
+	recipe Inject blue potion
 	{
 		tt_lanseyaoji,
 		Result 		: tt_lanseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.lanseyaoji,
 	}
-	recipe 制作一桶混凝土
+	recipe Make a bucket of concrete
 	{
 		destroy BucketEmpty,
 		Water=5,
 		ConcretePowder,
 		Result 		: BucketConcreteFull,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 	}
 	item tt_tongkuai
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
 		UseWhileEquipped 		= FALSE,
-		DisplayName 		= 铜块,
+		DisplayName 		= Copper block,
 		Icon 		= tongkuai,
 	}
 	item tt_qiankuai
@@ -1301,7 +1301,7 @@ module Base
 		Weight 		= 0.3,
 		Type 		= Normal,
 		UseWhileEquipped 		= FALSE,
-		DisplayName 		= 铅块,
+		DisplayName 		= Lead block,
 		Icon 		= qiankuai,
 	}
 	item tt_xikuai
@@ -1309,16 +1309,16 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Normal,
 		UseWhileEquipped 		= FALSE,
-		DisplayName 		= 锡块,
+		DisplayName 		= Tin block,
 		Icon 		= qiankuai,
 	}
-	recipe 卖出 贵金属
+	recipe Sell precious metals
 	{
 		tt_feiqiguijinshu,
 		keep tradestation,
 		Result 		: Money=42,
 		Time 		: 1,
-		Category 		: 交易-收购,
+		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hejindao
@@ -1344,7 +1344,7 @@ module Base
 		SwingAnim 		= Bat,
 		CriticalChance 		= 35,
 		CritDmgMultiplier 		= 6,
-		DisplayName 		= 合金刀,
+		DisplayName 		= Alloy knife,
 		MinRange 		= 0.6,
 		SwingTime 		= 0.6,
 		HitAngleMod 		= -30,
@@ -1368,47 +1368,47 @@ module Base
 	{
 		Weight 		= 20,
 		Type 		= Normal,
-		DisplayName 		= 石砧,
+		DisplayName 		= Stone anvil,
 		Icon 		= shizhan,
 		WorldStaticModel 		= tt_shizhan,
 	}
-	recipe 购买 混凝土
+	recipe Buy concrete
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: ConcretePowder,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 精炼脂肪
+	recipe Buy zombie's butter
 	{
 		Money=360,
 		keep tradestation,
 		Result 		: zombiebutter,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 鱼竿
+	recipe Buy fishing rod
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: FishingRod,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 石砧
+	recipe Buy stone anvil
 	{
 		Money=100,
 		keep tradestation,
 		Result 		: tt_shizhan,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 合金刀
+	recipe Make alloy knife
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=5,
@@ -1423,24 +1423,24 @@ module Base
 		Category 		: Welding,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 盲盒 技能书
+	recipe Lottery Skill book
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejinengzazhi,
 		RemoveResultItem 		: true,
 	}
-	recipe 盲盒 食物
+	recipe Lottery Food
 	{
 		Money=300,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheshiwu,
 		RemoveResultItem 		: true,
@@ -1449,48 +1449,48 @@ module Base
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 绿色药剂,
+		DisplayName 		= Green potion,
 		Icon 		= lvseyaoji,
 		WorldStaticModel 		= tt_lvseyaoji,
 		Tooltip 		= Tooltip_lvseyaoji,
 	}
-	recipe 注射 绿色药剂
+	recipe Inject green potion
 	{
 		tt_lvseyaoji,
 		Result 		: tt_lvseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.lvseyaoji,
 	}
-	recipe 绿色药剂
+	recipe Green potion
 	{
 		tt_moneybag=3,
 		keep tradestation,
 		Result 		: tt_lvseyaoji,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 盲盒 衣服
+	recipe Lottery Clothing
 	{
 		Money=160,
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheyifu,
 		RemoveResultItem 		: true,
 	}
-	recipe 赌博
+	recipe Gamble
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: Money,
 		Time 		: 40,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.dubodubo,
 		RemoveResultItem 		: true,
@@ -1501,31 +1501,31 @@ module Base
 		Type 		= Drainable,
 		UseWhileEquipped 		= FALSE,
 		UseDelta 		= 0.05,
-		DisplayName 		= 钱袋子,
+		DisplayName 		= Money bag,
 		Icon 		= zhuangqiandebao,
 		WeightEmpty 		= 0.1,
 		DisappearOnUse 		= FALSE,
 		Tooltip 		= Tooltip_moneybag,
 	}
-	recipe 放入500元
+	recipe Put in 500$
 	{
 		Money=500,
 		destroy tt_moneybag,
 		Result 		: tt_moneybag,
 		Time 		: 1,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.fangruwubaiyuan,
 	}
-	recipe 取出500元
+	recipe Take out 500$
 	{
 		tt_moneybag=1,
 		Result 		: Money=500,
 		Time 		: 40,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 石砧
+	recipe Make stone anvil
 	{
 		keep HandShovel,
 		BallPeenHammer/Hammer/ClubHammer,
@@ -1533,27 +1533,27 @@ module Base
 		Stone=5,
 		Result 		: tt_shizhan,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 购买 钱袋子
+	recipe Buy money bag
 	{
 		Money=100,
 		keep tradestation,
 		Result 		: tt_moneybag;0,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.goumaiqiandaizi,
 	}
-	recipe 购买 养老保险
+	recipe Buy pension
 	{
 		tt_moneybag = 14,
 		keep tradestation,
 		Result 		: tradestation,
 		RemoveResultItem 		: true,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.yanglaobaoxian,
 		OnTest 		: Recipe.OnTest.yanglaobaoxian,
@@ -1562,44 +1562,44 @@ module Base
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= 扒手的自我修养,
+		DisplayName 		= Thief's Book auto get money,
 		Icon 		= Book9,
 		Tooltip 		= Tooltip_pashoujuewu,
 	}
-	recipe 扒手的自我修养
+	recipe Buy Thief's Book auto get money
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: tt_pashoujuewu,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hongseyaoji
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 红色药剂,
+		DisplayName 		= Red potion,
 		Icon 		= hongseyaoji,
 		Tooltip 		= Tooltip_hongseyaoji,
 	}
-	recipe 注射 红色药剂
+	recipe Inject red potion
 	{
 		tt_hongseyaoji,
 		Result 		: tt_hongseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.hongseyaoji,
 	}
-	recipe 红色药剂
+	recipe Red potion
 	{
 		tt_moneybag=4,
 		keep tradestation,
 		Result 		: tt_hongseyaoji,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_qinglongdao
@@ -1625,7 +1625,7 @@ module Base
 		SwingAnim 		= Bat,
 		CriticalChance 		= 35,
 		CritDmgMultiplier 		= 6,
-		DisplayName 		= 合金刀,
+		DisplayName 		= Alloy knife,
 		MinRange 		= 0.3,
 		SwingTime 		= 0.1,
 		HitAngleMod 		= -30,
@@ -1650,16 +1650,16 @@ module Base
 		Icon 		= zhihezi,
 		Weight 		= 20,
 		Type 		= Normal,
-		DisplayName 		= solar generator pack,
+		DisplayName 		= Solar generator pack,
 	}
-	recipe install solargenerator
+	recipe Install solargenerator
 	{
 		keep Wrench,
 		tt_solargenerator,
 		keep Screwdriver,
 		Time 		: 150,
 		Result 		: tt_solargenerator2,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		OnCreate 		: Recipe.OnCreate.solargenerator1,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: true,
@@ -1669,26 +1669,26 @@ module Base
 		Icon 		= solargenerator,
 		Weight 		= 1000,
 		Type 		= Normal,
-		DisplayName 		= solar generator,
+		DisplayName 		= Solar generator,
 	}
-	recipe uninstall solargenerator
+	recipe Uninstall solargenerator
 	{
 		keep Wrench,
 		tt_solargenerator2,
 		keep Screwdriver,
 		Time 		: 150,
 		Result 		: tt_solargenerator,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		OnCreate 		: Recipe.OnCreate.solargenerator2,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe buy solargenerator
+	recipe Buy solargenerator
 	{
 		tt_moneybag=10,
 		keep tradestation,
 		Result 		: tt_solargenerator,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Lottery box ammo
@@ -1697,12 +1697,12 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghedanyao,
 		RemoveResultItem 		: true,
 	}
-	recipe make battery
+	recipe Make battery
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=2,
@@ -1713,14 +1713,14 @@ module Base
 		zombietissue,
 		Result 		: Battery=3,
 		Time 		: 200,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item tt_shiyoukuai
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= zombie oil,
+		DisplayName 		= Zombie oil,
 		Icon 		= shiyoukuai,
 	}
 	item CorpseFemale
@@ -1759,7 +1759,7 @@ module Base
 		DoorDamage 		= 35,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= diamond pickaxe,
+		DisplayName 		= Diamond pickaxe,
 		MinRange 		= 2,
 		SwingTime 		= 4,
 		HitAngleMod 		= -30,
@@ -1806,7 +1806,7 @@ module Base
 		DoorDamage 		= 5,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= diamond sword,
+		DisplayName 		= Diamond sword,
 		MinRange 		= 0.61,
 		SwingTime 		= 3,
 		HitAngleMod 		= -30,
@@ -1849,7 +1849,7 @@ module Base
 		DoorDamage 		= 50,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= diamond axe,
+		DisplayName 		= Diamond axe,
 		MinRange 		= 0.61,
 		SwingTime 		= 3.0,
 		HitAngleMod 		= -30,
@@ -1879,7 +1879,7 @@ module Base
 	item shovel_diamond
 	{
 		Type 		= Weapon,
-		DisplayName 		= diamond shovel,
+		DisplayName 		= Diamond shovel,
 		Icon 		= shovel_diamond,
 		Weight 		= 2.0,
 		SubCategory 		= Swinging,
@@ -1941,7 +1941,7 @@ module Base
 		MaxHitCount 		= 2,
 		DoorDamage 		= 5,
 		SwingAnim 		= Bat,
-		DisplayName 		= a brick,
+		DisplayName 		= Brick,
 		MinRange 		= 0.1,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -1983,7 +1983,7 @@ module Base
 		DoorDamage 		= 35,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= stone pickaxe,
+		DisplayName 		= Stone pickaxe,
 		MinRange 		= 0.61,
 		SwingTime 		= 3.0,
 		HitAngleMod 		= -30,
@@ -2013,7 +2013,7 @@ module Base
 	item shovel_stone
 	{
 		Type 		= Weapon,
-		DisplayName 		= stone shovel,
+		DisplayName 		= Stone shovel,
 		Icon 		= stone_shovel,
 		Weight 		= 2.0,
 		SubCategory 		= Swinging,
@@ -2076,7 +2076,7 @@ module Base
 		DoorDamage 		= 35,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= stone axe,
+		DisplayName 		= Stone axe,
 		MinRange 		= 1,
 		SwingTime 		= 3.0,
 		HitAngleMod 		= -30,
@@ -2123,7 +2123,7 @@ module Base
 		DoorDamage 		= 5,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= stone sword,
+		DisplayName 		= Stone sword,
 		MinRange 		= 0.61,
 		SwingTime 		= 3,
 		HitAngleMod 		= -30,
@@ -2170,7 +2170,7 @@ module Base
 		MaxHitCount 		= 2,
 		DoorDamage 		= 10,
 		SwingAnim 		= Bat,
-		DisplayName 		= chinese machete,
+		DisplayName 		= Chinese machete,
 		MinRange 		= 0.5,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -2212,7 +2212,7 @@ module Base
 		DoorDamage 		= 5,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= polearm,
+		DisplayName 		= Polearm,
 		MinRange 		= 0.7,
 		SwingTime 		= 3,
 		HitAngleMod 		= -30,
@@ -2256,7 +2256,7 @@ module Base
 		IdleAnim 		= Idle_Weapon2,
 		CantAttackWithLowestEndurance 		= TRUE,
 		SwingAnim 		= Heavy,
-		DisplayName 		= sunfalling,
+		DisplayName 		= Sunset Great Blade,
 		MinRange 		= 0.7,
 		SwingTime 		= 1,
 		HitSound 		= AxeHit,
@@ -2284,30 +2284,30 @@ module Base
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= Mutant virus G serum,
+		DisplayName 		= Genetically modified secret medicine,
 		Icon 		= tt_g_serum,
 		Tooltip 		= Tooltip_tt_g_serum,
 	}
-	recipe buy G serum
+	recipe Buy Genetically modified secret medicine
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: tt_g_serum,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe injection
+	recipe Inject genetically modified secret medicine
 	{
 		tt_g_serum,
 		Result 		: tt_g_serum,
 		RemoveResultItem 		: TRUE,
 		Time 		: 100,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.ttgserum,
 	}
-	recipe make chinesemachete
+	recipe Make chinese machete
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=7,
@@ -2322,7 +2322,7 @@ module Base
 		Category 		: Welding,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe make sunfalling
+	recipe Make Sunset Great Blade
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=10,
@@ -2337,7 +2337,7 @@ module Base
 		Category 		: Welding,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe make polearm
+	recipe Make polearm
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=6,
@@ -2356,27 +2356,27 @@ module Base
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 浓缩尼古丁,
+		DisplayName 		= Concentrated Nicotine,
 		Icon 		= nongsuoniguding,
 		Tooltip 		= Tooltip_nongsuoniguding,
 	}
-	recipe 注射 浓缩尼古丁
+	recipe Inject concentrated nicotine
 	{
 		tt_nongsuoniguding,
 		Result 		: tt_nongsuoniguding,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.nongsuoniguding,
 	}
-	recipe 浓缩尼古丁
+	recipe Concentrated nicotine
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: tt_nongsuoniguding,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hejinshoufu
@@ -2398,7 +2398,7 @@ module Base
 		MaxHitCount 		= 2,
 		DoorDamage 		= 20,
 		SwingAnim 		= Bat,
-		DisplayName 		= 合金手斧,
+		DisplayName 		= Alloy hatchet,
 		MinRange 		= 0.61,
 		SwingTime 		= 3,
 		KnockdownMod 		= 2,
@@ -2421,7 +2421,7 @@ module Base
 		AttachmentType 		= Hammer,
 		Tags 		= ChopTree;CutPlant,
 	}
-	recipe 制作 合金手斧
+	recipe Make alloy hatchet
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=3,
@@ -2436,13 +2436,13 @@ module Base
 		Category 		: Welding,
 		CanBeDoneFromFloor 		: true,
 	}
-	recipe 购买 合金手斧
+	recipe Buy alloy hatchet
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: tt_hejinshoufu,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_yaobaobeimian
@@ -2451,7 +2451,7 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Container,
 		Capacity 		= 28,
-		DisplayName 		= 大容量腰包,
+		DisplayName 		= Large-capacity belt bag S,
 		Icon 		= FannyPack,
 		OpenSound 		= OpenBag,
 		CloseSound 		= CloseBag,
@@ -2470,7 +2470,7 @@ module Base
 		Weight 		= 0.2,
 		Type 		= Container,
 		Capacity 		= 35,
-		DisplayName 		= 大容量腰包S,
+		DisplayName 		= Large-capacity belt bag L,
 		Icon 		= FannyPack,
 		OpenSound 		= OpenBag,
 		CloseSound 		= CloseBag,
@@ -2483,16 +2483,16 @@ module Base
 		ClothingItemExtra 		= tt_yaobaozhengmian,
 		ClothingItemExtraOption 		= FannyPack_WearBack,
 	}
-	recipe 购买 大容量腰包
+	recipe Buy large-capacity belt bag S
 	{
 		Money=350,
 		keep tradestation,
 		Result 		: tt_yaobaobeimian,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 制作 霰弹枪子弹
+	recipe Make shotgun bullets
 	{
 		keep BallPeenHammer/ClubHammer/Hammer,
 		tt_tongkuai=1,
@@ -2527,7 +2527,7 @@ module Base
 		MaxHitCount 		= 2,
 		DoorDamage 		= 26,
 		SwingAnim 		= Bat,
-		DisplayName 		= 伐木手斧,
+		DisplayName 		= Logging hatchet,
 		MinRange 		= 0.5,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -2550,22 +2550,22 @@ module Base
 		AttachmentType 		= Hammer,
 		Tags 		= ChopTree;CutPlant,
 	}
-	recipe 购买 伐木手斧
+	recipe Buy logging hatchet
 	{
 		tt_moneybag = 1,
 		keep tradestation,
 		Result 		: tt_famushoufu,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 遗书
+	recipe Buy suicide note
 	{
 		tt_moneybag = 17,
 		keep tradestation,
 		Result 		: tt_yishu,
 		Time 		: 1,
-		Category 		: 交易-盲盒,
+		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -2573,12 +2573,12 @@ module Base
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 雷达控制器,
+		DisplayName 		= Radar controller,
 		Icon 		= WalkieTalkiePolice,
 		Tooltip 		= Tooltip_leidakongzhiqi,
 	}
 
-	recipe 写下遗书并广播
+	recipe Write down suicide note and broadcast
 	{
 		tt_yishu,
 		keep Pencil/Pen,
@@ -2586,65 +2586,65 @@ module Base
 		Result 		: tt_yishu,
 		Time 		: 80,
 		RemoveResultItem 		: TRUE,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.yishu,
 	}
 
-	recipe 打开雷达
+	recipe Turn on the radar
 	{
 		tt_leidakongzhiqi,
 		Result 		: tt_leidakongzhiqi,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.leidakongzhiqi,
 	}
-	recipe 打开肠管
+	recipe Open the bowel
 	{
 		zombiesstomach,
 		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
 		Result 		: zombiesstomach,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.jiangshichangzi,
 		RemoveResultItem 		: TRUE,
 	}
-	recipe 购买 雷达控制器
+	recipe Buy radar controller
 	{
 		tt_moneybag=12,
 		keep tradestation,
 		Result 		: tt_leidakongzhiqi,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 大冰箱
+	recipe Buy big refrigerator
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: bigbigfridge,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 大金属箱子
+	recipe Buy big metal crate
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: bigmentalcrate,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 丙烷罐
+	recipe Buy propane tank
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: PropaneTank,
 		Time 		: 1,
-		Category 		: 交易,
+		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	multistagebuild CreatehejinWall
@@ -2665,24 +2665,24 @@ module Base
 	{
 		Weight 		= 0.001,
 		Type 		= Normal,
-		DisplayName 		= 废弃金属块,
+		DisplayName 		= Scrap metal block,
 		Icon 		= feiqijinshukuai,
 	}
 	item tt_ziseyaoji
 	{
 		Weight 		= 0.3,
 		Type 		= Normal,
-		DisplayName 		= 紫色药剂,
+		DisplayName 		= Purple potion,
 		Icon 		= ziseyaoji,
 		Tooltip 		= Tooltip_ziseyaoji,
 	}
-	recipe 注射 紫色药剂
+	recipe Inject purple potion
 	{
 		tt_ziseyaoji,
 		Result 		: tt_ziseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: 交易-基础,
+		Category 		: TS-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.ziseyaoji,
 	}
@@ -2705,7 +2705,7 @@ module Base
 		MaxHitCount 		= 3,
 		DoorDamage 		= 15,
 		SwingAnim 		= Spear,
-		DisplayName 		= 长矛（骨刀）,
+		DisplayName 		= Spear (bone knife),
 		MinRange 		= 0.81,
 		SwingTime 		= 1.5,
 		KnockdownMod 		= 0,

@@ -1,7 +1,7 @@
 Recipe_EN = {
     Recipe_制作_交易电台 = "Make trading station",
-    Recipe_制作_尸皮包轻装版 = "Make bag light edition",
-    Recipe_制作_尸皮背包 = "Make bag heavy editon",
+    Recipe_制作_尸皮包轻装版 = "Make carcass bag S",
+    Recipe_制作_尸皮背包 = "Make carcass bag L",
     Recipe_制作_炼油器 = "Make refiner",
     Recipe_制作_绷带 = "Make bandage",
     Recipe_制作_骨刀 = "Make bone knife",
@@ -95,7 +95,7 @@ Recipe_EN = {
     Recipe_打开肠管 = "Open the bowel",
     Recipe_购买_养老保险 = "Purchase endowment insurance",
 
-    Recipe_Buy_new_original_car = "Buy a new ordinal car",
+    Recipe_Buy_new_original_car = "Buy a new original car",
     Recipe_Buy_super_sportscar = "Buy a new super car",
-    Recipe_Buy_waste_car = "Buy scrap car",
+    Recipe_Buy_waste_car = "Buy waste car",
 }
