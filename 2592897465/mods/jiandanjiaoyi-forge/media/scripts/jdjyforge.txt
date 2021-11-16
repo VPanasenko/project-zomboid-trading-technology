@@ -29,7 +29,7 @@ module mymod
 		SwingAnim 		= Bat,
 		CriticalChance 		= 35,
 		CritDmgMultiplier 		= 6,
-		DisplayName 		= 长剑,
+		DisplayName 		= Long sword,
 		MinRange 		= 0.75,
 		SwingTime 		= 3.5,
 		HitAngleMod 		= -30,
@@ -69,7 +69,7 @@ module mymod
 		DoorDamage 		= 35,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= 中国抗战大刀,
+		DisplayName 		= Chinese war sword,
 		MinRange 		= 0.55,
 		SwingTime 		= 2.5,
 		SplatSize 		= 5,
@@ -115,7 +115,7 @@ module mymod
 		MaxHitCount 		= 2,
 		DoorDamage 		= 10,
 		SwingAnim 		= Bat,
-		DisplayName 		= 中式砍刀,
+		DisplayName 		= Chinese machete,
 		MinRange 		= 0.55,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -160,7 +160,7 @@ module mymod
 		IsAimedHandWeapon 		= TRUE,
 		DoorDamage 		= 5,
 		SwingAnim 		= Stab,
-		DisplayName 		= 长枪头,
+		DisplayName 		= Long spear head,
 		MinRange 		= 0.61,
 		CloseKillMove 		= Jaw_Stab,
 		SwingTime 		= 2,
@@ -207,7 +207,7 @@ module mymod
 		MaxHitCount 		= 3,
 		DoorDamage 		= 15,
 		SwingAnim 		= Spear,
-		DisplayName 		= 中国长枪,
+		DisplayName 		= Long spear,
 		MinRange 		= 0.81,
 		SwingTime 		= 1.5,
 		KnockdownMod 		= 0,
@@ -240,7 +240,7 @@ module mymod
 		Fixer 		: Glue=2,
 		Fixer 		: Scotchtape=4,
 	}
-	recipe 从木杆上回收长枪头
+	recipe Recover the long spear head from the wooden pole
 	{
 		LongSpear,
 		Result 		: LongSpearHead,
@@ -250,7 +250,7 @@ module mymod
 		Category 		: Survivalist,
 		AllowDestroyedItem 		: true,
 	}
-	recipe 将枪头连接到木杆上
+	recipe Attach the long spear head to the wooden pole
 	{
 		SpearCrafted,
 		keep Hammer,
@@ -266,14 +266,14 @@ module mymod
 	{
 		Weight 		= 0.1,
 		Type 		= Literature,
-		DisplayName 		= 制造中式武器,
+		DisplayName 		= Make chinese weapons,
 		Icon 		= WeaponMag,
-		TeachedRecipes 		= 制作 中式砍刀;制作 长剑;制作 马槊长枪头;制造 中国抗战大刀;制造 长枪头,
+		TeachedRecipes 		= Make chinese machete;Make long sword;Make heavy long spear;Craft chinese war sword;Craft long spear,
 		ReplaceOnUse 		= MakeWeapon,
 		StaticModel 		= Magazine,
 		WorldStaticModel 		= MagazineGround,
 	}
-	recipe 制造 中国抗战大刀
+	recipe Craft chinese war sword
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -285,14 +285,14 @@ module mymod
 		LeatherStrips=6,
 		tt_xikuai=4,
 		tt_qiankuai=4,
-		Result 		: ChineseWarSword,
+		Result 		: chineseWarSword,
 		NeedToBeLearn 		: true,
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
 		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe 制作 中式砍刀
+	recipe Make Chinese machete
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -310,7 +310,7 @@ module mymod
 		Category 		: Welding,
 		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe 制作 长剑
+	recipe Make long sword
 	{
 		keep WeldingMask,
 		keep tt_shizhan,
@@ -328,7 +328,7 @@ module mymod
 		Category 		: Welding,
 		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe 制造 长枪头
+	recipe Craft long spear
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -365,7 +365,7 @@ module mymod
 		MaxHitCount 		= 2,
 		DoorDamage 		= 10,
 		SwingAnim 		= Bat,
-		DisplayName 		= 马槊枪头,
+		DisplayName 		= Heavy long spear head,
 		MinRange 		= 0.55,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -408,7 +408,7 @@ module mymod
 		MaxHitCount 		= 4,
 		DoorDamage 		= 15,
 		SwingAnim 		= Spear,
-		DisplayName 		= 马槊长枪,
+		DisplayName 		= Heavy long spear,
 		MinRange 		= 0.8,
 		SwingTime 		= 1.5,
 		KnockdownMod 		= 0,
@@ -433,7 +433,7 @@ module mymod
 		AttachmentType 		= Shovel,
 		Tags 		= FishingSpear,
 	}
-	recipe 从木杆上回收马槊枪头
+	recipe Reclaim the heavy long spear head from the wooden pole
 	{
 		LongSpear2,
 		Result 		: LongSpearHead2,
@@ -443,7 +443,7 @@ module mymod
 		Category 		: Survivalist,
 		AllowDestroyedItem 		: true,
 	}
-	recipe 将马槊枪头连接到木杆上
+	recipe Attach the heavy long spear head to the wooden pole
 	{
 		SpearCrafted,
 		keep Hammer,
@@ -455,7 +455,7 @@ module mymod
 		OnCreate 		: Recipe.OnCreate.UpgradeSpear,
 		Category 		: Survivalist,
 	}
-	recipe 制作 马槊长枪头
+	recipe Make heavy long spear
 	{
 		keep WeldingMask,
 		keep tt_shizhan,
@@ -481,13 +481,13 @@ module mymod
 		Fixer 		: Glue=2,
 		Fixer 		: Scotchtape=4,
 	}
-	recipe 购买 锻造手册
+	recipe Buy 'Make chinese weapons' book
 	{
 		Money=250,
 		keep tradestation,
 		Result 		: MakeWeapon,
 		Time 		: 1,
-		Category 		: 交易-战斗,
+		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	fixing Fix ChineseMachete
