@@ -1,5 +1,5 @@
 Tooltip_EN= {
-    Tooltip_hongseyaoji = "make you insensitive",
+    Tooltip_hongseyaoji = "Make you insensitive",
     Tooltip_lvseyaoji = "Improve your strength and fitness",
     Tooltip_lanseyaoji = "Heal you all, but at a little cost",
     Tooltip_moneybag = "Five hundred at a time",
@@ -12,6 +12,6 @@ Tooltip_EN= {
     Tooltip_ziseyaoji="Improve your weight-bearing ability. You can't use it indefinitely",
     Tooltip_yishu = "You can set a spawn point, which can only take effect once",
     Tooltip_zombiebutter = "I dont want to eat it.",
-    Tooltip_ershouche = "maybe is a unused car",
-    Tooltip_jiangshichangzi ="there are some items inside",
+    Tooltip_ershouche = "Maybe is an unused car",
+    Tooltip_jiangshichangzi ="There are some items inside",
 }

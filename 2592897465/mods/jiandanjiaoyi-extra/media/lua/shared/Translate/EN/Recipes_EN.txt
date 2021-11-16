@@ -1,0 +1,4 @@
+﻿Recipe_CN = {
+  Recipe_Craft HMSilencer = "Make a home-made silencer",
+  Recipe_Craft Silencer = "Make a silencer",
+}
