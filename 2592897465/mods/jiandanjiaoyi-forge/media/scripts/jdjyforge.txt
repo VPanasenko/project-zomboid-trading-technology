@@ -1,4 +1,4 @@
-module mymod
+module jdjyforge
 {
 	imports
 	{
@@ -290,7 +290,7 @@ module mymod
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
+		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
 	}
 	recipe Make Chinese machete
 	{
@@ -308,7 +308,7 @@ module mymod
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
+		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
 	}
 	recipe Make long sword
 	{
@@ -326,7 +326,7 @@ module mymod
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
+		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
 	}
 	recipe Craft long spear
 	{
@@ -344,7 +344,7 @@ module mymod
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
+		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
 	}
 	item LongSpearHead2
 	{
@@ -471,7 +471,7 @@ module mymod
 		Sound 		: SledqehammerBreak,
 		Time 		: 280.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
+		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
 	}
 	fixing Fix Spear With LongSpear2
 	{

@@ -541,7 +541,7 @@ module Base
 		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Butcher zombie
+	recipe Butcher corpse
 	{
 		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
 		CorpseFemale/CorpseMale,
@@ -1251,7 +1251,7 @@ module Base
 		WorldStaticModel 		= tt_lanseyaoji,
 		Tooltip 		= Tooltip_lanseyaoji,
 	}
-	recipe Blue potion
+	recipe Buy blue potion
 	{
 		tt_moneybag=2,
 		keep tradestation,
@@ -1260,7 +1260,7 @@ module Base
 		Category 		: TS-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Purple potion
+	recipe Buy purple potion
 	{
 		tt_moneybag=2,
 		keep tradestation,
@@ -1464,7 +1464,7 @@ module Base
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.lvseyaoji,
 	}
-	recipe Green potion
+	recipe Buy green potion
 	{
 		tt_moneybag=3,
 		keep tradestation,
@@ -1593,7 +1593,7 @@ module Base
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.hongseyaoji,
 	}
-	recipe Red potion
+	recipe Buy red potion
 	{
 		tt_moneybag=4,
 		keep tradestation,
@@ -2370,7 +2370,7 @@ module Base
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.nongsuoniguding,
 	}
-	recipe Concentrated nicotine
+	recipe Buy concentrated nicotine
 	{
 		tt_moneybag=1,
 		keep tradestation,

@@ -34,6 +34,7 @@ local function Context_chuliCorpse(player, context, worldobjects, test)
         if (playerInv:containsTypeRecurse("BreadKnife") or playerInv:containsTypeRecurse("ButterKnife") or playerInv:containsTypeRecurse("HuntingKnife") or playerInv:containsTypeRecurse("KitchenKnife") or playerInv:containsTypeRecurse("zombieknife")) and playerInv:getItemCount("Base.CorpseMale") == 0 then
             if test == true then return true end
             context:addOption(getText("ContextMenu_chulishiti"), worldobjects, chulicorseaction, player , body);
+            context:addSubMenu(getText("ContextMenu_category"), context);
         end
     end
 end
