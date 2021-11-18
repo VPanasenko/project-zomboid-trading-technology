@@ -603,7 +603,7 @@ module Base
 
 	recipe Sell pager trophies
 	{
-		tradecore
+		tradecore,
 		keep tradestation,
 		Result 		: Money=10,
 		Time 		: 1,
