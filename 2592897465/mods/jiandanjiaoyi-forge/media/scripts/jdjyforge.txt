@@ -285,7 +285,7 @@ module jdjyforge
 		LeatherStrips=6,
 		tt_xikuai=4,
 		tt_qiankuai=4,
-		Result 		: chineseWarSword,
+		Result 		: ChineseWarSword,
 		NeedToBeLearn 		: true,
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,

@@ -613,7 +613,7 @@ module Base
 
 	recipe Sell jewelry trophies
 	{
-		Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
+		Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT/Locket,
 		keep tradestation,
 		Result 		: Money=35,
 		Time 		: 1,
@@ -643,17 +643,37 @@ module Base
 
 	recipe Sell beginner skill book
 	{
-		BookMechanic1/BookMetalWelding1/BookCarpentry1/BookCooking1/BookElectrician1/BookFarming1/BookFirstAid1/BookFishing1/BookForaging1/BookTailoring1/BookTrapping1,
+		BookMechanic1/BookMetalWelding1/BookCarpentry1/BookCooking1/BookElectrician1/BookFarming1/BookFirstAid1/BookFishing1/BookForaging1/BookTailoring1/BookTrapping1/BookBlacksmith1,
 		keep tradestation,
 		Result 		: Money=10,
 		Time 		: 1,
 		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
-	}	
+	}
+
+	recipe Sell foreign beginner skill book
+	{
+		BookSprinting1/BookNimble1/BookAiming1/BookReloading1/BookAxe1/BookBlunt1/BookSmallBlunt1/BookLongBlade1/BookSmallBlade1/BookSpear1/BookMaintenance1/BookSneaking1/BookLightfooted1/BookFitness1/BookStrength1/BookMasonry1/BookSmithing1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
 
 	recipe Sell intermediate skill book
 	{
-		BookMechanic2/BookMetalWelding2/BookCarpentry2/BookCooking2/BookElectrician2/BookFarming2/BookFirstAid2/BookFishing2/BookForaging2/BookTailoring2/BookTrapping2,
+		BookMechanic2/BookMetalWelding2/BookCarpentry2/BookCooking2/BookElectrician2/BookFarming2/BookFirstAid2/BookFishing2/BookForaging2/BookTailoring2/BookTrapping2/BookBlacksmith2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell foreign intermediate skill book
+	{
+		BookSprinting2/BookNimble2/BookAiming2/BookReloading2/BookAxe2/BookBlunt2/BookSmallBlunt2/BookLongBlade2/BookSmallBlade2/BookSpear2/BookMaintenance2/BookSneaking2/BookLightfooted2/BookFitness2/BookStrength2/BookMasonry2/BookSmithing2,
 		keep tradestation,
 		Result 		: Money=20,
 		Time 		: 1,
@@ -663,7 +683,17 @@ module Base
 
 	recipe Sell advanced skill book
 	{
-		BookMechanic3/BookMetalWelding3/BookCarpentry3/BookCooking3/BookElectrician3/BookFarming3/BookFirstAid3/BookFishing3/BookForaging3/BookTailoring3/BookTrapping3,
+		BookMechanic3/BookMetalWelding3/BookCarpentry3/BookCooking3/BookElectrician3/BookFarming3/BookFirstAid3/BookFishing3/BookForaging3/BookTailoring3/BookTrapping3/BookBlacksmith3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell foreign advanced skill book
+	{
+		BookSprinting3/BookNimble3/BookAiming3/BookReloading3/BookAxe3/BookBlunt3/BookSmallBlunt3/BookLongBlade3/BookSmallBlade3/BookSpear3/BookMaintenance3/BookSneaking3/BookLightfooted3/BookFitness3/BookStrength3/BookMasonry3/BookSmithing3,
 		keep tradestation,
 		Result 		: Money=30,
 		Time 		: 1,
@@ -673,7 +703,7 @@ module Base
 
 	recipe Sell expert skill book
 	{
-		BookMechanic4/BookMetalWelding4/BookCarpentry4/BookCooking4/BookElectrician4/BookFarming4/BookFirstAid4/BookFishing4/BookForaging4/BookTailoring4/BookTrapping4,
+		BookMechanic4/BookMetalWelding4/BookCarpentry4/BookCooking4/BookElectrician4/BookFarming4/BookFirstAid4/BookFishing4/BookForaging4/BookTailoring4/BookTrapping4/BookBlacksmith4,
 		keep tradestation,
 		Result 		: Money=40,
 		Time 		: 1,
@@ -681,15 +711,46 @@ module Base
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
+	recipe Sell foreign expert skill book
+	{
+		BookSprinting4/BookNimble4/BookAiming4/BookReloading4/BookAxe4/BookBlunt4/BookSmallBlunt4/BookLongBlade4/BookSmallBlade4/BookSpear4/BookMaintenance4/BookSneaking4/BookLightfooted4/BookFitness4/BookStrength4/BookMasonry4/BookSmithing4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
 	recipe Sell mastery skill book
 	{
-		BookMechanic5/BookMetalWelding5/BookCarpentry5/BookCooking5/BookElectrician5/BookFarming5/BookFirstAid5/BookFishing5/BookForaging5/BookTailoring5/BookTrapping5,
+		BookMechanic5/BookMetalWelding5/BookCarpentry5/BookCooking5/BookElectrician5/BookFarming5/BookFirstAid5/BookFishing5/BookForaging5/BookTailoring5/BookTrapping5/BookBlacksmith5,
 		keep tradestation,
 		Result 		: Money=50,
 		Time 		: 1,
 		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
+
+	recipe Sell foreign mastery skill book
+	{
+		BookSprinting5/BookNimble5/BookAiming5/BookReloading5/BookAxe5/BookBlunt5/BookSmallBlunt5/BookLongBlade5/BookSmallBlade5/BookSpear5/BookMaintenance5/BookSneaking5/BookLightfooted5/BookFitness5/BookStrength5/BookMasonry5/BookSmithing5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell foreign books
+	{
+		Book,
+		keep tradestation,
+		Result 		: Money=8,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
 	recipe Sell groceries
 	{
 		Twigs/TreeBranch/Worm/BaitFish/Cologne,
@@ -1380,4 +1441,3 @@ module Base
 		CanBeDoneFromFloor 		: TRUE,
 	}
 }
-
