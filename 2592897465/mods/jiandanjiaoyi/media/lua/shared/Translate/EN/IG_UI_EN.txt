@@ -30,4 +30,9 @@ IGUI_EN = {
     IGUI_dagongrengongzi = "Today's salary has been paid",
     IGUI_yanglaobaoxian = "Today's salary has been paid",
     IGUI_yanglaobaoxian2 = "Endowment insurance has been purchased, and then some money will be paid every day",
+    IGUI_VehicleNameadvancedhelicopter = "helicopter",
+    IGUI_VehiclePartCatblade = "Propeller",
+    IGUI_VehiclePartheliblade = "Blade",
+    IGUI_CraftUI_Titlel = "Crafting (Refresh: Press "zero")",
+    IGUI_CraftUI_Notel = "If you don't find the new recipe you learned, press number"0" to refresh the Crafting menu.It will take a little time.",
 }

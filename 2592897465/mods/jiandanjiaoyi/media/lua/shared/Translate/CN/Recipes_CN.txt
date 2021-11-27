@@ -36,6 +36,7 @@ Recipe_EN = {
     Recipe_盲盒_衣服 = "盲盒 衣服",
     Recipe_盲盒_食物 = "盲盒 食物",
     Recipe_盲盒_饮料 = "盲盒 饮料",
+    Recipe_盲盒_食物 = "盲盒 食物",
     Recipe_赌博 = "赌博",
     Recipe_注射_红色药剂 = "注射",
     Recipe_注射_蓝色药剂 = "注射",
@@ -98,4 +99,7 @@ Recipe_EN = {
     Recipe_Buy_new_original_car = "购买 全新原版车",
     Recipe_Buy_super_sportscar = "购买 超级跑车",
     Recipe_Buy_waste_car = "购买 废车",
+    Recipe_Buy_Helicopter = "购买 直升机",
+
 }
+

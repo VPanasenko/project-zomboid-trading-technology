@@ -1,4 +1,6 @@
 dropitemss = {}
+dropitemsscloth = {}
+
 local function initToadTraits()
     TraitFactory.addTrait("kuaidiyuan", getText("UI_trait_kuaidiyuan"), 5, getText("UI_trait_kuaidiyuandsc"), false, false)
     TraitFactory.addTrait("shihuangdashi", getText("UI_trait_shihuangdashi"), 12, getText("UI_trait_shihuangdashidsc"), false, false)
@@ -70,6 +72,9 @@ local function weightinit()
     for i = 1,itemscript:size() do
         if itemscript:get(i-1):getActualWeight() < 2.1 and itemscript:get(i-1):getTypeString() ~= "Moveable" then
             table.insert(dropitemss, itemscript:get(i-1))
+            if itemscript:get(i-1):getTypeString() == "Clothing" then
+                table.insert(dropitemsscloth, itemscript:get(i-1))
+            end
         end
     end
 
@@ -89,7 +94,7 @@ local function dropitems(zombbiedropitem)
     if playera:HasTrait("shihuangdashi") then
         if getGameTime():getModData().EnableLoot == 1 then
             local zominv = zombbiedropitem:getInventory()
-            local itemname = dropitemss[ZombRand(#dropitemss + 1)]
+            local itemname = dropitemss[ZombRand(#dropitemss) + 1]
             if ZombRand(100) > 81 then
                 if playera:getModData().zidonghuoqv == 0 then
                     zominv:AddItem(itemname:getModuleName() .. "." .. itemname:getName()) 

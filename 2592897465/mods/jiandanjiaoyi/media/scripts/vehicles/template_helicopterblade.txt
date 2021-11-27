@@ -1,0 +1,116 @@
+module Base
+{
+	model heliblade1
+	{
+		mesh = vehicles/blade_1,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+	
+    model heliblade2
+	{
+		mesh = vehicles/blade_2,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade3
+	{
+		mesh = vehicles/blade_3,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade4
+	{
+		mesh = vehicles/blade_4,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade5
+	{
+		mesh = vehicles/blade_5,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade6
+	{
+		mesh = vehicles/blade_6,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade7
+	{
+		mesh = vehicles/blade_7,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+	model heliblade8
+	{
+		mesh = vehicles/blade_8,
+		texture = Vehicles/Vehicle_UH1Interior2,
+		scale = 0.01,
+		shader = vehiclewheel,
+	}
+
+    template vehicle helicopterblade
+	{
+		part heliblade
+		{
+			model blade1
+			{
+				file = heliblade1,
+			}
+			model blade2
+			{
+				file = heliblade2,
+			}
+			model blade3
+			{
+				file = heliblade3,
+			}
+			model blade4
+			{
+				file = heliblade4,
+			}
+			model blade5
+			{
+				file = heliblade5,
+			}
+			model blade6
+			{
+				file = heliblade6,
+			}
+			model blade7
+			{
+				file = heliblade7,
+			}
+			model blade8
+			{
+				file = heliblade8,
+			}
+			area = Engine,
+			category = blade,
+			specificItem = false,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			lua
+			{
+				create = blade.Create.blader,
+				init = blade.Init.blader,
+			}
+		}
+
+	}
+}

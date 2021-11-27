@@ -36,7 +36,7 @@ function Recipe.OnCreate.jiangshichangzi(items, result, player)
         player:getInventory():AddItem("Base.Cricket")
     end
     if ZombRand(100)> 89 then
-        local itemname = dropitemss[ZombRand(#dropitemss + 1)]
+        local itemname = dropitemss[ZombRand(#dropitemss) + 1]
         player:getInventory():AddItem(itemname:getModuleName() .. "." .. itemname:getName())
     end
 end
@@ -138,6 +138,17 @@ function Recipe.OnCreate.hezhuangqichea(items, result, player)
                 if qichebianhao:getCurrentKey() ~= nil then player:getInventory():AddItem(qichebianhao:getCurrentKey()) else player:getInventory():AddItem(qichebianhao:createVehicleKey()) end
                 player:Say(getText("IGUI_zuzhuangchenggong"))
             end
+        elseif item:getType() == "hezhuangqiche4" then
+            if not player:isOutside() or player:getZ() > 0 then
+                player:Say(getText("IGUI_zuzhuangshibai"))
+                player:getInventory():AddItem("hezhuangqiche4")
+            else
+                local randomdir = {IsoDirections.E,IsoDirections.S,IsoDirections.W,IsoDirections.N}
+                local qichebianhao = addVehicleDebug("Base.advancedhelicopter",randomdir[ZombRand(4) + 1],-1,getSquare(player:getX(), player:getY(),player:getZ()))
+                qichebianhao:repair()
+                if qichebianhao:getCurrentKey() ~= nil then player:getInventory():AddItem(qichebianhao:getCurrentKey()) else player:getInventory():AddItem(qichebianhao:createVehicleKey()) end
+                player:Say(getText("IGUI_zuzhuangchenggong"))
+            end
         end
     end
 end
@@ -151,6 +162,15 @@ function Recipe.OnCreate.mangheshengcunwuzi(items, result, player)
     player:Say(a:getDisplayName())
     player:Say(b:getDisplayName())
     
+end
+function Recipe.OnCreate.manghezhongzi(items, result, player)
+    local scwzmh={"farming.CarrotBagSeed","farming.BroccoliBagSeed","farming.RedRadishBagSeed","farming.StrewberrieBagSeed","farming.TomatoBagSeed","farming.PotatoBagSeed","farming.CabbageBagSeed"}
+    local ranran = ZombRand(#scwzmh)
+    local ranran2 = ZombRand(#scwzmh)
+    local a = player:getInventory():AddItem(scwzmh[ranran + 1])
+    local b = player:getInventory():AddItem(scwzmh[ranran2 + 1])
+    player:Say(a:getDisplayName())
+    player:Say(b:getDisplayName())
 end
 function Recipe.OnCreate.manghefangkuai(items, result, player)
     local scwzmh={"tt_yuanmukuai","tt_caofangkuai","tt_hejinlifangti","tt_touminghejinlifangti","Mov_chinaflag","tt_shazi","tt_xiangshuyezi"};
@@ -181,6 +201,13 @@ function Recipe.OnCreate.manghejunhuo(items, result, player)
     player:Say(a:getDisplayName())
     player:Say(b:getDisplayName())
 
+end
+function Recipe.OnCreate.mangheyiliaoyongpin(items, result, player)
+    local scwzmh={{"AlcoholWipes",1},{"Antibiotics",1},{"Bandage",3},{"Bandaid",3},{"CottonBalls",2},{"Disinfectant",1},{"Pills",1},{"PillsAntiDep",1},{"Pills",1},{"PillsBeta",1},{"PillsSleepingTablets",1},{"SutureNeedle",1},{"SutureNeedleHolder",1},{"Tweezers",1},{"SutureNeedleHolder",1}}
+    local ranran2 = ZombRand(#scwzmh)       
+    local ranran = ZombRand(#scwzmh)
+    local a = player:getInventory():AddItems(scwzmh[ranran + 1][1],scwzmh[ranran + 1][2])
+    local b = player:getInventory():AddItems(scwzmh[ranran + 1][1],scwzmh[ranran + 1][2])
 end
 function Recipe.OnCreate.manghexiyouwuzi(items, result, player)
     local scwzmh={"jiandanjiaoyi_huazi","maotai","Katana","Machete","Axe","Sledgehammer2","brick_brick","tt_yaobaozhengmian"};
@@ -282,6 +309,17 @@ function Recipe.OnCreate.mangheyifu(items, result, player)
     local ranran = ZombRand(#scwzmh);
     local a = player:getInventory():AddItem(scwzmh[ranran + 1]);
     local b = player:getInventory():AddItem(scwzmh[ranran2 + 1]);
+    player:Say(a:getDisplayName())
+    player:Say(b:getDisplayName())
+
+end
+
+function Recipe.OnCreate.mangheyifu2(items, result, player)
+    local scwzmh = dropitemsscloth
+    local ranran2 = scwzmh[ZombRand(#scwzmh) + 1]
+    local ranran = scwzmh[ZombRand(#scwzmh) + 1]
+    local a = player:getInventory():AddItem(ranran:getModuleName() .. "." .. ranran:getName())
+    local b = player:getInventory():AddItem(ranran2:getModuleName() .. "." .. ranran2:getName())
     player:Say(a:getDisplayName())
     player:Say(b:getDisplayName())
 

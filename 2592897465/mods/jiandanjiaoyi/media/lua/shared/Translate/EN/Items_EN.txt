@@ -97,4 +97,5 @@ Items_EN = {
     DisplayName_汽车未组装(废车) = "Vehicle not assembled (waste vehicle)",
     DisplayName_汽车未组装(全新原版车) = "Vehicle not assembled (new original vehicle)",
     DisplayName_汽车未组装(超级跑车) = "Vehicle not assembled (supercar)",
+    DisplayName_直升机(未组装) = "Helicopter not assembled",
 }

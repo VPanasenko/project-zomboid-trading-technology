@@ -406,7 +406,7 @@ module Base
 	}
 	recipe Buy katana
 	{
-		tt_moneybag=2,
+		tt_moneybag=3,
 		keep tradestation,
 		Result 		: Katana,
 		Time 		: 1,
@@ -415,7 +415,7 @@ module Base
 	}
 	recipe Buy axe
 	{
-		tt_moneybag=1,
+		tt_moneybag=2,
 		keep tradestation,
 		Result 		: Axe,
 		Time 		: 1,
@@ -433,7 +433,7 @@ module Base
 	}
 	recipe Buy baseball bat
 	{
-		Money=200,
+		Money=400,
 		keep tradestation,
 		Result 		: BaseballBat,
 		Time 		: 1,
@@ -449,6 +449,17 @@ module Base
 		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
+	recipe Buy seeds
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghezhongzi,
+		RemoveResultItem 		: true,
+	}
 	recipe Buy crisps
 	{
 		Money=120,
@@ -460,7 +471,7 @@ module Base
 	}
 	recipe Buy crowbar
 	{
-		Money=250,
+		tt_moneybag = 1,
 		keep tradestation,
 		Result 		: Crowbar,
 		Time 		: 1,
@@ -507,7 +518,7 @@ module Base
 	{
 		Cabbage/Tomato/Carrots/Broccoli/Potato/RedRadish,
 		keep tradestation,
-		Result 		: Money=3,
+		Result 		: Money=4,
 		Time 		: 1,
 		Category 		: TS-Selling,
 		CanBeDoneFromFloor 		: TRUE,
@@ -745,7 +756,7 @@ module Base
 	{
 		Weight 		= 25,
 		Type 		= Normal,
-		DisplayName 		= Unassembled car (scrap car),
+		DisplayName 		= Unassembled car (waste car),
 		Icon 		= hezhuangqiche,
 		Tooltip = Tooltip_ershouche,
 	}
@@ -763,10 +774,17 @@ module Base
 		DisplayName 		= Unassembled car (supercar),
 		Icon 		= hezhuangqiche,
 	}
+	item hezhuangqiche4
+	{
+		Weight 		= 25,
+		Type 		= Normal,
+		DisplayName 		= Helicopter (unassembled),
+		Icon 		= hezhuangqiche,
+	}
 	recipe Assembly car (outdoor)
 	{
 		keep Wrench,
-		hezhuangqiche/hezhuangqiche2/hezhuangqiche3,
+		hezhuangqiche/hezhuangqiche2/hezhuangqiche3/hezhuangqiche4,
 		TirePump,
 		Time 		: 150,
 		Result 		: TirePump,
@@ -797,6 +815,15 @@ module Base
 		tt_moneybag=20,
 		keep tradestation,
 		Result 		: hezhuangqiche3,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy Helicopter
+	{
+		tt_moneybag=30,
+		keep tradestation,
+		Result 		: hezhuangqiche4,
 		Time 		: 1,
 		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
@@ -1148,6 +1175,27 @@ module Base
 		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
+	recipe Exchange fishing line
+	{
+		tt_feiqihuaxian=5,
+		zombieskin = 2,
+		keep tradestation,
+		Result 		: FishingLine,
+		Time 		: 10,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Exchange clothes
+	{
+		zombieskin = 2,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheyifu2,
+		RemoveResultItem 		: true,
+	}
 	recipe Make twine
 	{
 		keep Scissors,
@@ -1381,6 +1429,24 @@ module Base
 		Category 		: TS-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
+	recipe Buy Dirty than hottie
+	{
+		tt_moneybag = 1,
+		keep tradestation,
+		Result 		: HottieZ,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy generator guide
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: ElectronicsMag4,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
 	recipe Buy zombie's butter
 	{
 		Money=360,
@@ -1432,6 +1498,17 @@ module Base
 		Category 		: TS-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejinengzazhi,
+		RemoveResultItem 		: true,
+	}
+	recipe Lottery Medical
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheyiliaoyongpin,
 		RemoveResultItem 		: true,
 	}
 	recipe Lottery Food
@@ -1652,7 +1729,7 @@ module Base
 		Type 		= Normal,
 		DisplayName 		= Solar generator pack,
 	}
-	recipe Install solargenerator
+	recipe Install solar generator
 	{
 		keep Wrench,
 		tt_solargenerator,
