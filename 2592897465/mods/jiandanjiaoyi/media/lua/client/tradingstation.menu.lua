@@ -8,12 +8,12 @@ function tradingstation.isGoodForTradingStation(selectedItem)
     return true;
 end
 
-local tradingstation_category_buy <const> = "^Buy";
-local tradingstation_category_sell <const> = "^Sell";
-local tradingstation_category_make <const> = "^Make";
-local tradingstation_category_lottery <const> = "^Lottery";
-local tradingstation_category_refine <const> = "^Refine";
-local tradingstation_category_inject <const> = "^Inject";
+local tradingstation_category_buy = "^Buy";
+local tradingstation_category_sell = "^Sell";
+local tradingstation_category_make = "^Make";
+local tradingstation_category_lottery = "^Lottery";
+local tradingstation_category_refine = "^Refine";
+local tradingstation_category_inject = "^Inject";
 
 local baseISInventoryPaneContextMenu = ISInventoryPaneContextMenu.addDynamicalContextMenu;
 function ISInventoryPaneContextMenu.addDynamicalContextMenu(selectedItem, context, recipeList, player, containerList)
@@ -77,8 +77,11 @@ function ISInventoryPaneContextMenu.addDynamicalContextMenu(selectedItem, contex
                 tradingStationSubMenu:addSubMenu(tradingStationSubMenuBuyOtherOption, tradingStationSubMenu_other);                                                                
             end
 
-            local tradingStationSubMenuOption = context:addOption(getText("ContextMenu_category"));
-            context:addSubMenu(tradingStationSubMenuOption, tradingStationSubMenu);
+
+            if (tradingStationSubMenu and #tradingStationSubMenu.options > 0) then
+                local tradingStationSubMenuOption = context:addOption(getText("ContextMenu_category"));
+                context:addSubMenu(tradingStationSubMenuOption, tradingStationSubMenu);
+            end
         end
     end
 
