@@ -1,0 +1,6 @@
+name=简单交易Trading technology
+id=jiandanjiaoyi
+poster=poster.png
+description=简单的交易系统。可以购买盲盒、汽车、修车工具等各种物资。另外增加了一些有用的配方。Simple trading system. You can buy Lottery boxes, cars, repair tools and other materials. In addition, some useful recipe have been added.
+pack=jiandanjiaoyi
+tiledef=jiandanjiaoyi 876

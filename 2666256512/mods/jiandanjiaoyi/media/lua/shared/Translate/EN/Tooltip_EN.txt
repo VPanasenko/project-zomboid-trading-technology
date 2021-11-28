@@ -1,0 +1,18 @@
+Tooltip_EN= {
+    Tooltip_hongseyaoji = "Make you insensitive",
+    Tooltip_lvseyaoji = "Improve your strength and fitness",
+    Tooltip_lanseyaoji = "Heal you all, but at a little cost",
+    Tooltip_moneybag = "Five hundred at a time",
+    Tooltip_pashoujuewu = "When you put it on your body, kill the zombie and get the money automatically",
+    Tooltip_xiuchegongjv = "You can repair any part of the car",
+    Tooltip_tt_g_serum = "Randomly remove a negative feature or gain a positive feature",
+    Tooltip_shihuangzhezhinan = "When you put it on your body, kill the zombie and get the Valuable things automatically",
+    Tooltip_nongsuoniguding = "Reduce your stress, temporarily",
+    Tooltip_leidakongzhiqi="Zombies and buildings can be detected after opening",
+    Tooltip_ziseyaoji="Improve your weight-bearing ability. You can't use it indefinitely",
+    Tooltip_shihuangdashi = "Right-click it to adjust the skill effect of the Scavenger Master",    
+    Tooltip_yishu = "You can set a spawn point, which can only take effect once",
+    Tooltip_zombiebutter = "I dont want to eat it.",
+    Tooltip_ershouche = "Maybe is an unused car",
+    Tooltip_jiangshichangzi ="There are some items inside", 
+}

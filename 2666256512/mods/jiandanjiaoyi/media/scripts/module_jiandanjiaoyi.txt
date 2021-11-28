@@ -1,0 +1,2829 @@
+module Base
+{
+	model pickaxe_diamond
+	{
+		mesh = pickaxe_diamond,
+		texture = pickaxe_diamond,
+	}
+	model sword_diamond
+	{
+		mesh = sword_diamond,
+		texture = sword_diamond,
+	}
+	model axe_diamond
+	{
+		mesh = axe_diamond,
+		texture = axe_diamond,
+	}
+	model shovel_diamond
+	{
+		mesh = shovel_diamond,
+		texture = shovel_diamond,
+	}
+	model stone_pickaxe
+	{
+		mesh = stone_pickaxe,
+		texture = stone_pickaxe,
+	}
+	model stone_shovel
+	{
+		mesh = stone_shovel,
+		texture = stone_shovel,
+	}
+	model stone_axe
+	{
+		mesh = stone_axe,
+		texture = stone_axe,
+	}
+	model stone_sword
+	{
+		mesh = stone_sword,
+		texture = stone_sword,
+	}
+	model brick_brick
+	{
+		mesh = brick_brick,
+		texture = brick_brick,
+	}
+	model tt_sunfalling
+	{
+		mesh = tt_sunfalling,
+		texture = tt_sunfalling,
+	}
+	model tt_polearm
+	{
+		mesh = tt_polearm,
+		texture = tt_polearm,
+	}
+	model tt_chinesemachete
+	{
+		mesh = tt_chinesemachete,
+		texture = tt_chinesemachete,
+	}
+	model tt_hejinshoufu
+	{
+		mesh = Weapons/1handed/HandAxe,
+		texture = tt_hejinshoufu,
+	}
+	model tt_famushoufu
+	{
+		mesh = tt_famushoufu,
+		texture = tt_hejinshoufu,
+	}
+	model zombieknife
+	{
+		mesh = boneKnife,
+		texture = boneKnife,
+	}
+	model boneknifespear
+	{
+		mesh = boneknifespear,
+		texture = boneknifespear,
+	}
+	recipe Buy logs
+	{
+		Money=20,
+		keep tradestation,
+		Result 		: Log,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+
+
+
+
+
+	item tt_water
+	{
+		Icon 		= waterx,
+		Weight 		= 1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_36,
+		DisplayName 		= Water cube,
+	}
+	item tt_water2
+	{
+		Icon 		= watery,
+		Weight 		= 1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_40,
+		DisplayName 		= Pool corner,
+	}
+	item tt_water3
+	{
+		Icon 		= waterz,
+		Weight 		= 1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_44,
+		DisplayName 		= Pool edge,
+	}
+	recipe Buy swimming Pool
+	{
+		tt_moneybag = 6,
+		keep tradestation,
+		Result 		: tt_water2 = 4,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.youyongchi,
+	}
+
+
+
+	item tt_well
+	{
+		Icon 		= shuijinggongjv,
+		Weight 		= 10,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_37,
+		DisplayName 		= Well,
+	}
+	recipe Buy well
+	{
+		tt_moneybag = 4,
+		keep tradestation,
+		Result 		: tt_well,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	
+
+	recipe Buy floor
+	{
+		Money = 250,
+		keep tradestation,
+		Result 		: tt_floor1,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		RemoveResultItem 		: true,
+		OnCreate 		: Recipe.OnCreate.FloorFloor,
+	}
+	item tt_floor1
+	{
+		Icon 		= jiandanjiaoyi_01_48,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_48,
+		DisplayName 		= Floor1,
+	}
+	item tt_floor2
+	{
+		Icon 		= jiandanjiaoyi_01_49,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_49,
+		DisplayName 		= Floor2,
+	}
+	item tt_floor3
+	{
+		Icon 		= jiandanjiaoyi_01_50,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_50,
+		DisplayName 		= Floor3,
+	}
+	item tt_floor4
+	{
+		Icon 		= jiandanjiaoyi_01_51,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_51,
+		DisplayName 		= Floor4,
+	}
+	item tt_floor5
+	{
+		Icon 		= jiandanjiaoyi_01_52,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_52,
+		DisplayName 		= Floor5,
+	}
+	item tt_floor6
+	{
+		Icon 		= jiandanjiaoyi_01_53,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_53,
+		DisplayName 		= Floor6,
+	}
+	item tt_floor7
+	{
+		Icon 		= jiandanjiaoyi_01_54,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_54,
+		DisplayName 		= Floor7,
+	}
+	item tt_floor8
+	{
+		Icon 		= jiandanjiaoyi_01_55,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_55,
+		DisplayName 		= Floor8,
+	}
+	item tt_floor9
+	{
+		Icon 		= jiandanjiaoyi_01_56,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_56,
+		DisplayName 		= Floor9,
+	}
+	item tt_floor10
+	{
+		Icon 		= jiandanjiaoyi_01_57,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_57,
+		DisplayName 		= Floor10,
+	}
+	item tt_floor11
+	{
+		Icon 		= jiandanjiaoyi_01_58,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_58,
+		DisplayName 		= Floor11,
+	}
+	item tt_floor12
+	{
+		Icon 		= jiandanjiaoyi_01_59,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_59,
+		DisplayName 		= Floor12,
+	}
+	item tt_floor13
+	{
+		Icon 		= jiandanjiaoyi_01_60,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_60,
+		DisplayName 		= Floor13,
+	}
+	item tt_floor14
+	{
+		Icon 		= jiandanjiaoyi_01_61,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_61,
+		DisplayName 		= Floor14,
+	}
+	item tt_floor15
+	{
+		Icon 		= jiandanjiaoyi_01_62,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_62,
+		DisplayName 		= Floor15,
+	}
+	item tt_floor16
+	{
+		Icon 		= jiandanjiaoyi_01_63,
+		Weight 		= 0.1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_63,
+		DisplayName 		= Floor16,
+	}
+	
+
+
+
+
+
+	item tt_hejinlifangti
+	{
+		Icon 		= hejinlifangti,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_2,
+		DisplayName 		= Alloy cube,
+	}
+	item tt_touminghejinlifangti
+	{
+		Icon 		= touminglifangti,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_5,
+		DisplayName 		= Transparent cube,
+	}
+	item tt_yuanmukuai
+	{
+		Icon 		= yuanmukuai,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_11,
+		DisplayName 		= Log cube,
+	}
+	item tt_caofangkuai
+	{
+		Icon 		= caofangkuai,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_8,
+		DisplayName 		= Grass cube,
+	}
+	item tt_xiangshuyezi
+	{
+		Icon 		= xiangshuyezi,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_16,
+		DisplayName 		= Oak leaves,
+	}
+	item tt_shazi
+	{
+		Icon 		= shazi,
+		Weight 		= 3,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_19,
+		DisplayName 		= Sand,
+	}
+	item Mov_chinaflag
+	{
+		Icon 		= zhongguoguoqi,
+		Weight 		= 1,
+		Type 		= Moveable,
+		WorldObjectSprite 		= jiandanjiaoyi_01_0,
+		DisplayName 		= Chinese flag,
+	}
+	item bigbigfridge
+	{
+		Type 		= Moveable,
+		Icon 		= dabingxiang,
+		Weight 		= 10,
+		DisplayName 		= Large refrigerator,
+		WorldObjectSprite 		= jiandanjiaoyi_01_32,
+	}
+	item bigmentalcrate
+	{
+		Type 		= Moveable,
+		Icon 		= jinshudaxiangzi,
+		Weight 		= 0.5,
+		DisplayName 		= Big metal crate,
+		WorldObjectSprite 		= jiandanjiaoyi_01_27,
+	}
+	item tradestation
+	{
+		Icon 		= jiaoyidiantai,
+		Weight 		= 30,
+		Type 		= Normal,
+		DisplayName 		= Trade station,
+	}
+
+	item tt_yishu
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	遗书,
+        Icon	=	Paper,
+		Tooltip 		= Tooltip_yishu,
+    }
+
+
+	recipe Sell logs
+	{
+		Log=1,
+		keep tradestation,
+		Result 		: Money=9,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy bread
+	{
+		Money=160,
+		keep tradestation,
+		Result 		: Bread,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy katana
+	{
+		tt_moneybag=3,
+		keep tradestation,
+		Result 		: Katana,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy axe
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: Axe,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy bacon
+	{
+		Money=150,
+		keep tradestation,
+		Result 		: Bacon,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy baseball bat
+	{
+		Money=400,
+		keep tradestation,
+		Result 		: BaseballBat,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy cabbage seeds
+	{
+		Money=150,
+		keep tradestation,
+		Result 		: CabbageBagSeed,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy seeds
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghezhongzi,
+		RemoveResultItem 		: true,
+	}
+	recipe Buy crisps
+	{
+		Money=120,
+		keep tradestation,
+		Result 		: Crisps,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy crowbar
+	{
+		tt_moneybag = 1,
+		keep tradestation,
+		Result 		: Crowbar,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy empty petrol can
+	{
+		Money=100,
+		keep tradestation,
+		Result 		: EmptyPetrolCan,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy TV (Antique)
+	{
+		Money=200,
+		keep tradestation,
+		Result 		: TvAntique,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy watermelon
+	{
+		Money=150,
+		keep tradestation,
+		Result 		: Watermelon,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell book
+	{
+		Book,
+		keep tradestation,
+		Result 		: Money=8,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell agricultural products
+	{
+		Cabbage/Tomato/Carrots/Broccoli/Potato/RedRadish,
+		keep tradestation,
+		Result 		: Money=4,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Make trading station
+	{
+		keep Hammer/ClubHammer/BallPeenHammer,
+		keep LugWrench,
+		RadioBlack/RadioRed,
+		VideoGame,
+		ElectricWire,
+		tradecore=5,
+		Result 		: tradestation,
+		Time 		: 100,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	item tradecore
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Pager,
+		Icon 		= chuanhuji,
+	}
+	recipe Buy hunting knife
+	{
+		Money=200,
+		keep tradestation,
+		Result 		: HuntingKnife,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Butcher corpse
+	{
+		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
+		CorpseFemale/CorpseMale,
+		Result 		: st_zombiemeat,
+		Time 		: 100,
+		Category 		: TS-Basic,
+		OnCreate 		: Recipe.OnCreate.zombiecorpse,
+		CanBeDoneFromFloor 		: true,
+		RemoveResultItem 		: true,
+	}
+	item zombiebone
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Zombie's bone,
+		Icon 		= DogChew,
+		WorldStaticModel 		= zombiebone,
+	}
+	item st_zombiemeat
+	{
+		HungerChange 		= -11,
+		Weight 		= 0.4,
+		Type 		= Food,
+		ThirstChange 		= +30,
+		UnhappyChange 		= +30,
+		DaysTotallyRotten 		= 0,
+		DaysFresh 		= 0,
+		DisplayName 		= Zombie's meat,
+		Icon 		= MeatPattyRotten,
+		Carbohydrates 		= 0,
+		Proteins 		= 0,
+		Lipids 		= 0,
+		Calories 		= 481,
+		Packaged 		= TRUE,
+		CantBeFrozen 		= TRUE,
+	}
+	recipe Make bone knife
+	{
+		keep Axe/WoodAxe/HandAxe,
+		zombiebone,
+		Result 		: zombieknife,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	item zombieknife
+	{
+		MaxRange 		= 0.9,
+		WeaponSprite 		= boneKnife,
+		MinAngle 		= 0.65,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 1,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= SmallBlade,
+		ConditionLowerChanceOneIn 		= 2,
+		Weight 		= 0.2,
+		SplatNumber 		= 4,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Stab,
+		AimingMod 		= 0.8,
+		ConditionMax 		= 20,
+		MaxHitCount 		= 1,
+		IsAimedHandWeapon 		= TRUE,
+		DoorDamage 		= 1,
+		SwingAnim 		= Stab,
+		DisplayName 		= Bone knife,
+		MinRange 		= 0.61,
+		CloseKillMove 		= Jaw_Stab,
+		SwingTime 		= 2,
+		KnockdownMod 		= 0,
+		SplatBloodOnNoDeath 		= TRUE,
+		Icon 		= Knifebone,
+		RunAnim 		= Run_Weapon2,
+		IdleAnim 		= Idle_Weapon2,
+		BreakSound 		= BreakMetalItem,
+		TreeDamage 		= 1,
+		EnduranceMod 		= 0.5,
+		MetalValue 		= 10,
+		CriticalChance 		= 75,
+		CritDmgMultiplier 		= 4,
+		MinDamage 		= 0.7,
+		MaxDamage 		= 1,
+		WeaponLength 		= 0.20,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		HitFloorSound 		= BladeHit,
+		ImpactSound 		= BladeHit,
+		HitSound 		= BladeHit,
+		AttachmentType 		= Knife,
+		Tags 		= CutPlant,
+	}
+	recipe Sell zombie parts
+	{
+		st_zombiemeat/zombieskin/zombiebone,
+		keep tradestation,
+		Result 		: Money=1,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item zombieskin
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		DisplayName 		= Zombie's skin,
+		Icon 		= zombieskin,
+		WorldStaticModel 		= zombieskin,
+	}
+	recipe Make a bandage
+	{
+		keep Scissors,
+		zombieskin,
+		CleaningLiquid2=2,
+		Disinfectant,
+		Result 		: Bandage=5,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	item zombieoilfac
+	{
+		Icon 		= lianyouqi,
+		Weight 		= 25,
+		Type 		= Container,
+		DisplayName 		= Oil refiner,
+		Capacity 		= 50,
+	}
+	recipe Make corpse refinery (for oil)
+	{
+		keep Hammer/ClubHammer/BallPeenHammer,
+		keep Saw/GardenSaw,
+		DuctTape,
+		BucketEmpty=2,
+		MetalBar=3,
+		SmallSheetMetal=2,
+		SheetMetal=5,
+		keep BlowTorch,
+		WeldingRods,
+		EmptyPetrolCan,
+		Result 		: zombieoilfac,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Refine corpse oil
+	{
+		Charcoal/Plank,
+		keep zombieoilfac,
+		CorpseFemale/CorpseMale,
+		Result 		: tt_shiyoukuai,
+		Time 		: 100,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.zombieoil,
+	}
+	item zombieoilcan
+	{
+		Weight 		= 7,
+		Type 		= Drainable,
+		UseWhileEquipped 		= FALSE,
+		UseDelta 		= 0.125,
+		DisplayName 		= Corpse oil barrel,
+		Icon 		= Petrol,
+		ReplaceOnDeplete 		= EmptyPetrolCan,
+		ReplaceInSecondHand 		= Bag_GasCan_LHand holdingbagleft,
+		ReplaceInPrimaryHand 		= Bag_GasCan_RHand holdingbagright,
+	}
+	recipe Refine biogasoline
+	{
+		EmptyPetrolCan,
+		keep zombieoilfac,
+		Charcoal/Plank,
+		tt_shiyoukuai=7,
+		Result 		: PetrolCan,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.zombieoil2,
+	}
+	item zombiebutter
+	{
+		HungerChange 		= -30,
+		Weight 		= 0.2,
+		Type 		= Food,
+		UnhappyChange 		= +5,
+		DisplayName 		= Zombie's butter,
+		Icon 		= jinglianzhifang,
+		FoodType 		= NoExplicit,
+		Carbohydrates 		= 0,
+		Proteins 		= 0,
+		Lipids 		= 9540,
+		Calories 		= 11780,
+		Packaged 		= TRUE,
+		CantBeFrozen = TRUE,
+		CustomEatSound = EatingSoup,
+		WorldStaticModel 		= zombiebutter,
+		Tooltip = Tooltip_zombiebutter,
+	}
+	item hezhuangqiche
+	{
+		Weight 		= 25,
+		Type 		= Normal,
+		DisplayName 		= Unassembled car (waste car),
+		Icon 		= hezhuangqiche,
+		Tooltip = Tooltip_ershouche,
+	}
+	item hezhuangqiche2
+	{
+		Weight 		= 25,
+		Type 		= Normal,
+		DisplayName 		= Unassembled car (new original car),
+		Icon 		= hezhuangqiche,
+	}
+	item hezhuangqiche3
+	{
+		Weight 		= 25,
+		Type 		= Normal,
+		DisplayName 		= Unassembled car (supercar),
+		Icon 		= hezhuangqiche,
+	}
+	item hezhuangqiche4
+	{
+		Weight 		= 25,
+		Type 		= Normal,
+		DisplayName 		= Helicopter (unassembled),
+		Icon 		= hezhuangqiche,
+	}
+	recipe Assembly car (outdoor)
+	{
+		keep Wrench,
+		hezhuangqiche/hezhuangqiche2/hezhuangqiche3/hezhuangqiche4,
+		TirePump,
+		Time 		: 150,
+		Result 		: TirePump,
+		Category 		: TS-Construction,
+		OnCreate 		: Recipe.OnCreate.hezhuangqichea,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy waste car
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: hezhuangqiche,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy new original car
+	{
+		tt_moneybag=3,
+		keep tradestation,
+		Result 		: hezhuangqiche2,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy super sportscar
+	{
+		tt_moneybag=20,
+		keep tradestation,
+		Result 		: hezhuangqiche3,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy Helicopter
+	{
+		tt_moneybag=30,
+		keep tradestation,
+		Result 		: hezhuangqiche4,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item zombietissue
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Zombie's tissue,
+		Icon 		= jiangshizuzhi,
+		WorldStaticModel 		= zombietissue,
+	}
+	item zombiesstomach
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		DisplayName 		= Zombie intestines,
+		Icon 		= jiangshichangzi,
+		WorldStaticModel 		= zombiesstomach,
+		Tooltip = Tooltip_jiangshichangzi,
+	}
+	item zombiebag1
+	{
+		Type 		= Container,
+		DisplayName 		= Carcass bag S,
+		ClothingItem 		= Bag_ALICEpack_Army,
+		CanBeEquipped 		= Back,
+		WeightReduction 		= 100,
+		Weight 		= 0.3,
+		Capacity 		= 25,
+		Icon 		= AliceBag_Camo,
+		OpenSound 		= OpenBag,
+		CloseSound 		= CloseBag,
+		PutInSound 		= PutItemInBag,
+		BloodLocation 		= Bag,
+		RunSpeedModifier 		= 1.2,
+		CanHaveHoles 		= false,
+		AttachmentReplacement 		= Bag,
+		ReplaceInSecondHand 		= Bag_ALICEpack_Army_LHand holdingbagleft,
+		ReplaceInPrimaryHand 		= Bag_ALICEpack_Army_RHand holdingbagright,
+	}
+	item zombiebag2
+	{
+		Type 		= Container,
+		DisplayName 		= Carcass bag L,
+		ClothingItem 		= Bag_ALICEpack_Army,
+		CanBeEquipped 		= Back,
+		WeightReduction 		= 92,
+		Weight 		= 3.5,
+		Capacity 		= 45,
+		Icon 		= AliceBag_Camo,
+		OpenSound 		= OpenBag,
+		CloseSound 		= CloseBag,
+		PutInSound 		= PutItemInBag,
+		BloodLocation 		= Bag,
+		RunSpeedModifier 		= 0.93,
+		CanHaveHoles 		= false,
+		AttachmentReplacement 		= Bag,
+		ReplaceInSecondHand 		= Bag_ALICEpack_Army_LHand holdingbagleft,
+		ReplaceInPrimaryHand 		= Bag_ALICEpack_Army_RHand holdingbagright,
+	}
+	recipe Lottery Box Survival Supplies
+	{
+		Money=190,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheshengcunwuzi,
+		RemoveResultItem 		: true,
+	}
+	recipe Lottery Cube decoration
+	{
+		Money=100,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghefangkuai,
+		RemoveResultItem 		: true,
+	}
+	item zhihezi
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Lottery box,
+		Icon 		= zhihezi,
+	}
+	recipe Lottery Drinks
+	{
+		Money=140,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghejiu,
+		RemoveResultItem 		: true,
+	}
+	recipe Lottery Arms
+	{
+		Money=250,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghejunhuo,
+		RemoveResultItem 		: true,
+	}
+	recipe Make carcass bag L
+	{
+		keep Scissors,
+		keep Needle,
+		zombieskin=3,
+		Twine=5,
+		Thread=2,
+		Glue=1,
+		RippedSheets=5,
+		Bag_Schoolbag=2,
+		Result 		: zombiebag2,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Make carcass bag S
+	{
+		keep Scissors,
+		keep Needle,
+		zombieskin=1,
+		Twine=5,
+		Thread=2,
+		Glue=1,
+		RippedSheets=2,
+		Bag_Schoolbag=1,
+		Result 		: zombiebag1,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Lottery Rare materials
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghexiyouwuzi,
+		RemoveResultItem 		: true,
+	}
+	item jiandanjiaoyi_huazi
+	{
+		Count 		= 10,
+		Weight 		= 0.005,
+		HungerChange 		= 0,
+		RequireInHandOrInventory 		= Lighter/Matches,
+		Type 		= Food,
+		DisplayName 		= Huazi,
+		StressChange 		= -15,
+		BoredomChange 		= -15,
+		UnhappyChange 		= -15,
+		FatigueChange 		= -10,
+		Icon 		= huazi,
+		CustomContextMenu 		= Smoke,
+		CantBeFrozen 		= TRUE,
+		OnEat 		= OnEat_Cigarettes,
+		StaticModel 		= Cigarette,
+	}
+	item maotai
+	{
+		HungerChange 		= -30,
+		Weight 		= 0.7,
+		Type 		= Food,
+		ThirstChange 		= -30,
+		DisplayName 		= Maotai,
+		Alcoholic 		= TRUE,
+		UnhappyChange 		= -30,
+		ReplaceOnUse 		= maotaiEmpty,
+		Icon 		= maotai,
+		CustomContextMenu 		= Drink,
+		CustomEatSound 		= DrinkingFromBottle,
+		AlcoholPower 		= 2,
+		Carbohydrates 		= 0,
+		Proteins 		= 100,
+		Lipids 		= 0,
+		Calories 		= 2000,
+		Packaged 		= TRUE,
+		CantBeFrozen 		= TRUE,
+		StaticModel 		= WhiskeyBottle,
+		EatType 		= Bourbon,
+		WorldStaticModel 		= maotai,
+	}
+	item xiuchegongjv
+	{
+		Weight 		= 0.5,
+		Type 		= Normal,
+		DisplayName 		= Universal repair tool,
+		Icon 		= xiuchegongjv,
+		Tooltip 		= Tooltip_xiuchegongjv,
+	}
+	recipe Buy universal repair tool
+	{
+		Money=250,
+		keep tradestation,
+		Result 		: xiuchegongjv,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy seasoning gift box
+	{
+		Money = 300,
+		keep tradestation,
+		Result 		:zhihezi ,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.tiaoweiliao,
+		RemoveResultItem 		: true,
+	}
+	recipe Buy afternoon tea gift box
+	{
+		tt_moneybag = 1,
+		keep tradestation,
+		Result 		:zhihezi,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.chataozhuang,
+		RemoveResultItem 		: true,
+	}
+	item Money
+	{
+		Weight 		= 0.003,
+		Type 		= Normal,
+		DisplayName 		= Money,
+		Icon 		= Money,
+	}
+	item maotaiEmpty
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		DisplayName 		= Moutai empty bottle,
+		Icon 		= maotai,
+		StaticModel 		= maotaiEmpty,
+	}
+	recipe Lottery Building materials
+	{
+		keep tradestation,
+		Money=130,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghejianzhucailiao,
+		RemoveResultItem 		: true,
+	}
+	item tt_ronghuaqi
+	{
+		Icon 		= ronghuaqi,
+		Weight 		= 30,
+		Type 		= Normal,
+		DisplayName 		= Melting furnace,
+	}
+	recipe Make melting furnace
+	{
+		keep Shovel/Shovel2/SnowShovel,
+		keep HandShovel,
+		Stone=15,
+		Plank=4,
+		BucketConcreteFull=4,
+		Water=10,
+		Wire=4,
+		Result 		: tt_ronghuaqi,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Recycle for coarse metals
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
+		Result 		: tt_feiqijinshukuai,
+		Time 		: 1,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Refine coarse metals
+	{
+		Water=5,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		tt_feiqijinshukuai = 10,
+		Result 		: tt_feiqiguijinshu = 3,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		RemoveResultItem 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.liancujinshu,
+	}
+	item tt_feiqiguijinshu
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		UseWhileEquipped 		= FALSE,
+		DisplayName 		= Coarse metal,
+		Icon 		= feiqiguijinshu,
+	}
+	item tt_feiqihuaxian
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		UseWhileEquipped 		= FALSE,
+		DisplayName 		= Waste chemical fiber,
+		Icon 		= shitizuzhi,
+	}
+	recipe Refine waste chemical fiber
+	{
+		Water=5,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		[Recipe.GetItemTypes.CraftSheetRope],
+		Result 		: tt_feiqihuaxian,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Make garbage bag
+	{
+		keep Scissors,
+		keep Needle,
+		tt_feiqihuaxian,
+		keep tt_ronghuaqi,
+		Charcoal/Plank,
+		Result 		: Base.Garbagebag,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Exchange charcoal
+	{
+		tt_feiqihuaxian=16,
+		keep tradestation,
+		Result 		: Charcoal,
+		Time 		: 10,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Exchange fishing line
+	{
+		tt_feiqihuaxian=5,
+		zombieskin = 2,
+		keep tradestation,
+		Result 		: FishingLine,
+		Time 		: 10,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Exchange clothes
+	{
+		zombieskin = 2,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheyifu2,
+		RemoveResultItem 		: true,
+	}
+	recipe Make twine
+	{
+		keep Scissors,
+		tt_feiqihuaxian=3,
+		keep tt_ronghuaqi,
+		Charcoal/Plank,
+		Result 		: Twine,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Sell antibiotics
+	{
+		Antibiotics,
+		keep tradestation,
+		Result 		: Money=160,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell ice pick
+	{
+		IcePick,
+		keep tradestation,
+		Result 		: Money=150,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell hottiez
+	{
+		HottieZ,
+		keep tradestation,
+		Result 		: Money=150,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell videogame
+	{
+		VideoGame,
+		keep tradestation,
+		Result 		: Money=100,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell radio
+	{
+		HamRadio1/HamRadio2/HamRadioMakeShift,
+		keep tradestation,
+		Result 		: Money=200,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Sell medical plants
+	{
+		WildGarlic/CommonMallow/Comfrey/BlackSage,
+		keep tradestation,
+		Result 		: Money=12,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell metal
+	{
+		SmallSheetMetal/SheetMetal/MetalBar/MetalPipe/RearCarDoor1/RearCarDoor2/RearCarDoor3/FrontCarDoor1/FrontCarDoor2/FrontCarDoor3,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+
+	recipe Sell fish
+	{
+		Catfish/Bass/Perch/Crappie/Panfish,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Do nothing but play
+	{
+		Baseball,
+		Time 		: 100,
+		Result 		: Baseball,
+		Category 		: TS-Construction,
+		OnCreate 		: Recipe.OnCreate.jiushiwan,
+	}
+	item tt_lanseyaoji
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Blue potion,
+		Icon 		= lanseyaoji,
+		WorldStaticModel 		= tt_lanseyaoji,
+		Tooltip 		= Tooltip_lanseyaoji,
+	}
+	recipe Buy blue potion
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: tt_lanseyaoji,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy purple potion
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: tt_ziseyaoji,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Inject blue potion
+	{
+		tt_lanseyaoji,
+		Result 		: tt_lanseyaoji,
+		RemoveResultItem 		: TRUE,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.lanseyaoji,
+	}
+	recipe Make a bucket of concrete
+	{
+		destroy BucketEmpty,
+		Water=5,
+		ConcretePowder,
+		Result 		: BucketConcreteFull,
+		Time 		: 80,
+		Category 		: TS-Basic,
+	}
+	item tt_tongkuai
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		UseWhileEquipped 		= FALSE,
+		DisplayName 		= Copper block,
+		Icon 		= tongkuai,
+	}
+	item tt_qiankuai
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		UseWhileEquipped 		= FALSE,
+		DisplayName 		= Lead block,
+		Icon 		= qiankuai,
+	}
+	item tt_xikuai
+	{
+		Weight 		= 0.2,
+		Type 		= Normal,
+		UseWhileEquipped 		= FALSE,
+		DisplayName 		= Tin block,
+		Icon 		= qiankuai,
+	}
+	recipe Sell precious metals
+	{
+		tt_feiqiguijinshu,
+		keep tradestation,
+		Result 		: Money=42,
+		Time 		: 1,
+		Category 		: TS-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item tt_hejindao
+	{
+		MaxRange 		= 1.7,
+		WeaponSprite 		= Katana,
+		MinAngle 		= 0.4,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 0.3,
+		HitFloorSound 		= BladeHit,
+		ImpactSound 		= BladeHit,
+		HitSound 		= BladeHit,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= LongBlade,
+		Weight 		= 2,
+		ConditionLowerChanceOneIn 		= 15,
+		PushBackMod 		= 0.5,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 15,
+		MaxHitCount 		= 5,
+		DoorDamage 		= 10,
+		SwingAnim 		= Bat,
+		CriticalChance 		= 35,
+		CritDmgMultiplier 		= 6,
+		DisplayName 		= Alloy knife,
+		MinRange 		= 0.6,
+		SwingTime 		= 0.6,
+		HitAngleMod 		= -30,
+		KnockdownMod 		= 0,
+		Icon 		= hejindao,
+		RunAnim 		= Run_Weapon2,
+		BreakSound 		= BreakMetalItem,
+		TreeDamage 		= 2,
+		CriticalChance 		= 50,
+		CritDmgMultiplier 		= 10,
+		MinDamage 		= 5,
+		MaxDamage 		= 5,
+		BaseSpeed 		= 5,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		TwoHandWeapon 		= FALSE,
+		WeaponLength 		= 0.6,
+		AttachmentType 		= BigBlade,
+	}
+	item tt_shizhan
+	{
+		Weight 		= 20,
+		Type 		= Normal,
+		DisplayName 		= Stone anvil,
+		Icon 		= shizhan,
+		WorldStaticModel 		= tt_shizhan,
+	}
+	recipe Buy concrete
+	{
+		Money=150,
+		keep tradestation,
+		Result 		: ConcretePowder,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy Dirty than hottie
+	{
+		tt_moneybag = 1,
+		keep tradestation,
+		Result 		: HottieZ,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy generator guide
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: ElectronicsMag4,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy zombie's butter
+	{
+		Money=360,
+		keep tradestation,
+		Result 		: zombiebutter,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy fishing rod
+	{
+		Money=200,
+		keep tradestation,
+		Result 		: FishingRod,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy stone anvil
+	{
+		Money=100,
+		keep tradestation,
+		Result 		: tt_shizhan,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Make alloy knife
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=5,
+		tt_xikuai=4,
+		tt_qiankuai=4,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: tt_hejindao,
+		Time 		: 200,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Lottery Skill book
+	{
+		Money=200,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghejinengzazhi,
+		RemoveResultItem 		: true,
+	}
+	recipe Lottery Medical
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheyiliaoyongpin,
+		RemoveResultItem 		: true,
+	}
+	recipe Lottery Food
+	{
+		Money=300,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheshiwu,
+		RemoveResultItem 		: true,
+	}
+	item tt_lvseyaoji
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Green potion,
+		Icon 		= lvseyaoji,
+		WorldStaticModel 		= tt_lvseyaoji,
+		Tooltip 		= Tooltip_lvseyaoji,
+	}
+	recipe Inject green potion
+	{
+		tt_lvseyaoji,
+		Result 		: tt_lvseyaoji,
+		RemoveResultItem 		: TRUE,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.lvseyaoji,
+	}
+	recipe Buy green potion
+	{
+		tt_moneybag=3,
+		keep tradestation,
+		Result 		: tt_lvseyaoji,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Lottery Clothing
+	{
+		Money=160,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.mangheyifu,
+		RemoveResultItem 		: true,
+	}
+	recipe Gamble
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: Money,
+		Time 		: 40,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.dubodubo,
+		RemoveResultItem 		: true,
+	}
+	item tt_moneybag
+	{
+		Weight 		= 1,
+		Type 		= Drainable,
+		UseWhileEquipped 		= FALSE,
+		UseDelta 		= 0.05,
+		DisplayName 		= Money bag,
+		Icon 		= zhuangqiandebao,
+		WeightEmpty 		= 0.1,
+		DisappearOnUse 		= FALSE,
+		Tooltip 		= Tooltip_moneybag,
+	}
+	recipe Put in 500$
+	{
+		Money=500,
+		destroy tt_moneybag,
+		Result 		: tt_moneybag,
+		Time 		: 1,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.fangruwubaiyuan,
+	}
+	recipe Take out 500$
+	{
+		tt_moneybag=1,
+		Result 		: Money=500,
+		Time 		: 40,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Make stone anvil
+	{
+		keep HandShovel,
+		BallPeenHammer/Hammer/ClubHammer,
+		BucketConcreteFull,
+		Stone=5,
+		Result 		: tt_shizhan,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Buy money bag
+	{
+		Money=100,
+		keep tradestation,
+		Result 		: tt_moneybag;0,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.goumaiqiandaizi,
+	}
+	recipe Buy pension
+	{
+		tt_moneybag = 14,
+		keep tradestation,
+		Result 		: tradestation,
+		RemoveResultItem 		: true,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.yanglaobaoxian,
+		OnTest 		: Recipe.OnTest.yanglaobaoxian,
+	}
+	item tt_pashoujuewu
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Thief's Book auto get money,
+		Icon 		= Book9,
+		Tooltip 		= Tooltip_pashoujuewu,
+	}
+	recipe Buy Thief's Book auto get money
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: tt_pashoujuewu,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item tt_hongseyaoji
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Red potion,
+		Icon 		= hongseyaoji,
+		Tooltip 		= Tooltip_hongseyaoji,
+	}
+	recipe Inject red potion
+	{
+		tt_hongseyaoji,
+		Result 		: tt_hongseyaoji,
+		RemoveResultItem 		: TRUE,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.hongseyaoji,
+	}
+	recipe Buy red potion
+	{
+		tt_moneybag=4,
+		keep tradestation,
+		Result 		: tt_hongseyaoji,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item tt_qinglongdao
+	{
+		MaxRange 		= 10,
+		WeaponSprite 		= Katana,
+		MinAngle 		= 0.4,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 0.1,
+		HitFloorSound 		= BladeHit,
+		ImpactSound 		= BladeHit,
+		HitSound 		= BladeHit,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.1,
+		Categories 		= LongBlade,
+		Weight 		= 2,
+		ConditionLowerChanceOneIn 		= 15,
+		PushBackMod 		= 0.5,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 15,
+		MaxHitCount 		= 5,
+		DoorDamage 		= 10,
+		SwingAnim 		= Bat,
+		CriticalChance 		= 35,
+		CritDmgMultiplier 		= 6,
+		DisplayName 		= Alloy knife,
+		MinRange 		= 0.3,
+		SwingTime 		= 0.1,
+		HitAngleMod 		= -30,
+		KnockdownMod 		= 0,
+		Icon 		= hejindao,
+		RunAnim 		= Run_Weapon2,
+		BreakSound 		= BreakMetalItem,
+		TreeDamage 		= 2,
+		CriticalChance 		= 50,
+		CritDmgMultiplier 		= 10,
+		MinDamage 		= 5,
+		MaxDamage 		= 5,
+		BaseSpeed 		= 11,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		TwoHandWeapon 		= TRUE,
+		WeaponLength 		= 5,
+		AttachmentType 		= BigBlade,
+	}
+	item tt_solargenerator
+	{
+		Icon 		= zhihezi,
+		Weight 		= 20,
+		Type 		= Normal,
+		DisplayName 		= Solar generator pack,
+	}
+	recipe Install solar generator
+	{
+		keep Wrench,
+		tt_solargenerator,
+		keep Screwdriver,
+		Time 		: 150,
+		Result 		: tt_solargenerator2,
+		Category 		: TS-Construction,
+		OnCreate 		: Recipe.OnCreate.solargenerator1,
+		CanBeDoneFromFloor 		: TRUE,
+		RemoveResultItem 		: true,
+	}
+	item tt_solargenerator2
+	{
+		Icon 		= solargenerator,
+		Weight 		= 1000,
+		Type 		= Normal,
+		DisplayName 		= Solar generator,
+	}
+	recipe Uninstall solargenerator
+	{
+		keep Wrench,
+		tt_solargenerator2,
+		keep Screwdriver,
+		Time 		: 150,
+		Result 		: tt_solargenerator,
+		Category 		: TS-Construction,
+		OnCreate 		: Recipe.OnCreate.solargenerator2,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy solargenerator
+	{
+		tt_moneybag=10,
+		keep tradestation,
+		Result 		: tt_solargenerator,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Lottery box ammo
+	{
+		Money=330,
+		keep tradestation,
+		Result 		: zhihezi,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.manghedanyao,
+		RemoveResultItem 		: true,
+	}
+	recipe Make battery
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=2,
+		tt_xikuai=3,
+		tt_qiankuai=2,
+		keep tt_shizhan,
+		Water=5,
+		zombietissue,
+		Result 		: Battery=3,
+		Time 		: 200,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: true,
+	}
+	item tt_shiyoukuai
+	{
+		Weight 		= 0.1,
+		Type 		= Normal,
+		DisplayName 		= Zombie oil,
+		Icon 		= shiyoukuai,
+	}
+	item CorpseFemale
+	{
+		Weight 		= 5,
+		Type 		= Normal,
+		DisplayName 		= Corpse,
+		Icon 		= DeadPerson_FemaleZombie,
+		RequiresEquippedBothHands 		= true,
+	}
+	item CorpseMale
+	{
+		Weight 		= 6,
+		Type 		= Normal,
+		DisplayName 		= Corpse,
+		Icon 		= DeadPerson_MaleZombie,
+		RequiresEquippedBothHands 		= true,
+	}
+	item pickaxe_diamond
+	{
+		MaxRange 		= 1.7,
+		WeaponSprite 		= pickaxe_diamond,
+		MinAngle 		= 0.65,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 3.0,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.002,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 20,
+		Weight 		= 3,
+		SplatNumber 		= 3,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 13,
+		MaxHitCount 		= 3,
+		DoorDamage 		= 35,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Diamond pickaxe,
+		MinRange 		= 2,
+		SwingTime 		= 4,
+		HitAngleMod 		= -30,
+		SplatSize 		= 5,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= TRUE,
+		Icon 		= pickaxe_diamond,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 35,
+		MetalValue 		= 120,
+		CriticalChance 		= 25,
+		CritDmgMultiplier 		= 9,
+		MinDamage 		= 1,
+		MaxDamage 		= 2.2,
+		BaseSpeed 		= 0.8,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= BigBlade,
+		Tags 		= DigPlow,
+	}
+	item sword_diamond
+	{
+		MaxRange 		= 1.9,
+		WeaponSprite 		= sword_diamond,
+		MinAngle 		= 0.75,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 3,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Blunt,
+		ConditionLowerChanceOneIn 		= 20,
+		Weight 		= 2,
+		SplatNumber 		= 1,
+		PushBackMod 		= 0.5,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 15,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 5,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Diamond sword,
+		MinRange 		= 0.61,
+		SwingTime 		= 3,
+		HitAngleMod 		= -30,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= sword_diamond,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 1,
+		CriticalChance 		= 40,
+		critDmgMultiplier 		= 2,
+		MinDamage 		= 0.8,
+		MaxDamage 		= 1.1,
+		BaseSpeed 		= 1,
+		WeaponLength 		= 0.5,
+		AttachmentType 		= Shovel,
+	}
+	item axe_diamond
+	{
+		MaxRange 		= 1.6,
+		WeaponSprite 		= axe_diamond,
+		MinAngle 		= 0.72,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 1.7,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.002,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 15,
+		Weight 		= 3,
+		SplatNumber 		= 3,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 20,
+		MaxHitCount 		= 3,
+		DoorDamage 		= 50,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Diamond axe,
+		MinRange 		= 0.61,
+		SwingTime 		= 3.0,
+		HitAngleMod 		= -30,
+		SplatSize 		= 5,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= TRUE,
+		Icon 		= axe_diamond,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		BreakSound 		= AxeHit,
+		TreeDamage 		= 50,
+		CriticalChance 		= 20,
+		CritDmgMultiplier 		= 5,
+		BaseSpeed 		= 1,
+		MinDamage 		= 1,
+		MaxDamage 		= 3,
+		WeaponLength 		= 0.8,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= BigWeapon,
+		Tags 		= ChopTree;CutPlant,
+	}
+	item shovel_diamond
+	{
+		Type 		= Weapon,
+		DisplayName 		= Diamond shovel,
+		Icon 		= shovel_diamond,
+		Weight 		= 2.0,
+		SubCategory 		= Swinging,
+		MinAngle 		= 0.85,
+		MaxRange 		= 1.4,
+		MinRange 		= 1,
+		PushBackMod 		= 0.5,
+		HitAngleMod 		= -30.0,
+		SwingAnim 		= Bat,
+		MaxHitCount 		= 3,
+		WeaponSprite 		= shovel_diamond,
+		IdleAnim 		= Idle_Weapon2,
+		RunAnim 		= Run_Weapon2,
+		Weight 		= 1.5,
+		DoorDamage 		= 10,
+		MinimumSwingTime 		= 2.1,
+		SwingTime 		= 2.1,
+		SwingAmountBeforeImpact 		= 0.02,
+		ConditionLowerChanceOneIn 		= 10,
+		ConditionMax 		= 10,
+		Categories 		= Blunt,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		KnockdownMod 		= 2,
+		KnockBackOnNoDeath 		= TRUE,
+		MetalValue 		= 70,
+		TreeDamage 		= 1,
+		CriticalChance 		= 40,
+		CritDmgMultiplier 		= 2,
+		MaxDamage 		= 1.9,
+		MinDamage 		= 0.8,
+		BaseSpeed 		= 0.8,
+		WeaponLength 		= 0.8,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= Shovel,
+		Tags 		= ClearAshes;DigGrave;DigPlow;TakeDirt,
+	}
+	item brick_brick
+	{
+		MaxRange 		= 0.5,
+		WeaponSprite 		= brick_brick,
+		MinAngle 		= 0.75,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 1,
+		KnockBackOnNoDeath 		= FALSE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Improvised;Blunt,
+		ConditionLowerChanceOneIn 		= 2,
+		Weight 		= 1,
+		SplatNumber 		= 1,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 5,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 5,
+		SwingAnim 		= Bat,
+		DisplayName 		= Brick,
+		MinRange 		= 0.1,
+		SwingTime 		= 4,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= brick_brick,
+		RunAnim 		= Run_Weapon2,
+		IdleAnim 		= Idle_Weapon2,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 0,
+		TwoHandWeapon 		= false,
+		CriticalChance 		= 30,
+		CritDmgMultiplier 		= 2,
+		MinDamage 		= 1,
+		MaxDamage 		= 4,
+		BaseSpeed 		= 2,
+		AttachmentType 		= Shovel,
+	}
+	item pickaxe_stone
+	{
+		MaxRange 		= 3,
+		WeaponSprite 		= stone_pickaxe,
+		MinAngle 		= 0.65,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 3.0,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.002,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 20,
+		Weight 		= 3,
+		SplatNumber 		= 3,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 13,
+		MaxHitCount 		= 3,
+		DoorDamage 		= 35,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Stone pickaxe,
+		MinRange 		= 0.61,
+		SwingTime 		= 3.0,
+		HitAngleMod 		= -30,
+		SplatSize 		= 5,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= TRUE,
+		Icon 		= stone_pickaxe,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 35,
+		MetalValue 		= 120,
+		CriticalChance 		= 25,
+		CritDmgMultiplier 		= 9,
+		MinDamage 		= 1,
+		MaxDamage 		= 1.5,
+		BaseSpeed 		= 0.8,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= BigBlade,
+		Tags 		= DigPlow,
+	}
+	item shovel_stone
+	{
+		Type 		= Weapon,
+		DisplayName 		= Stone shovel,
+		Icon 		= stone_shovel,
+		Weight 		= 2.0,
+		SubCategory 		= Swinging,
+		MinAngle 		= 0.85,
+		MaxRange 		= 1.6,
+		MinRange 		= 0.61,
+		PushBackMod 		= 0.5,
+		HitAngleMod 		= -30.0,
+		SwingAnim 		= Bat,
+		MaxHitCount 		= 3,
+		WeaponSprite 		= stone_shovel,
+		IdleAnim 		= Idle_Weapon2,
+		RunAnim 		= Run_Weapon2,
+		Weight 		= 1.5,
+		DoorDamage 		= 10,
+		MinimumSwingTime 		= 2.1,
+		SwingTime 		= 2.1,
+		SwingAmountBeforeImpact 		= 0.02,
+		ConditionLowerChanceOneIn 		= 10,
+		ConditionMax 		= 10,
+		Categories 		= Blunt,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		KnockdownMod 		= 2,
+		KnockBackOnNoDeath 		= TRUE,
+		MetalValue 		= 70,
+		TreeDamage 		= 1,
+		CriticalChance 		= 40,
+		CritDmgMultiplier 		= 2,
+		MaxDamage 		= 1.9,
+		MinDamage 		= 0.8,
+		BaseSpeed 		= 0.8,
+		WeaponLength 		= 0.55,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= Shovel,
+		Tags 		= ClearAshes;DigGrave;DigPlow;TakeDirt,
+	}
+	item axe_stone
+	{
+		MaxRange 		= 2,
+		WeaponSprite 		= stone_axe,
+		MinAngle 		= 0.72,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 2,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.002,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 22,
+		Weight 		= 4,
+		SplatNumber 		= 3,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 13,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 35,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Stone axe,
+		MinRange 		= 1,
+		SwingTime 		= 3.0,
+		HitAngleMod 		= -30,
+		SplatSize 		= 5,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= TRUE,
+		Icon 		= stone_axe,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		BreakSound 		= AxeHit,
+		TreeDamage 		= 15,
+		CriticalChance 		= 20,
+		CritDmgMultiplier 		= 5,
+		BaseSpeed 		= 1,
+		MinDamage 		= 0.8,
+		MaxDamage 		= 1,
+		WeaponLength 		= 0.5,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= BigWeapon,
+		Tags 		= ChopTree;CutPlant,
+	}
+	item sword_stone
+	{
+		MaxRange 		= 1.25,
+		WeaponSprite 		= stone_sword,
+		MinAngle 		= 0.75,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 3,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Blunt,
+		ConditionLowerChanceOneIn 		= 20,
+		Weight 		= 2,
+		SplatNumber 		= 1,
+		PushBackMod 		= 0.5,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 15,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 5,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Stone sword,
+		MinRange 		= 0.61,
+		SwingTime 		= 3,
+		HitAngleMod 		= -30,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= stone_sword,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 1,
+		CriticalChance 		= 40,
+		critDmgMultiplier 		= 2,
+		MinDamage 		= 0.8,
+		MaxDamage 		= 1.1,
+		BaseSpeed 		= 1,
+		WeaponLength 		= 0.5,
+		AttachmentType 		= Shovel,
+	}
+	item tt_chinesemachete
+	{
+		MaxRange 		= 1.3,
+		WeaponSprite 		= tt_chinesemachete,
+		MinAngle 		= 0.7,
+		Type 		= Weapon,
+		SwingSound 		= AxeSwing,
+		HitFloorSound 		= AxeHit,
+		ImpactSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		MinimumSwingTime 		= 4,
+		KnockBackOnNoDeath 		= FALSE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= LongBlade,
+		ConditionLowerChanceOneIn 		= 25,
+		Weight 		= 2,
+		SplatNumber 		= 2,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 13,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 10,
+		SwingAnim 		= Bat,
+		DisplayName 		= Chinese machete,
+		MinRange 		= 0.5,
+		SwingTime 		= 4,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= Machete,
+		TreeDamage 		= 10,
+		CriticalChance 		= 20,
+		CritDmgMultiplier 		= 5,
+		MinDamage 		= 2,
+		MaxDamage 		= 3,
+		BaseSpeed 		= 1,
+		WeaponLength 		= 0.3,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= BigBlade,
+		Tags 		= CutPlant,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		BreakSound 		= AxeHit,
+	}
+	item tt_polearm
+	{
+		MaxRange 		= 2,
+		WeaponSprite 		= tt_polearm,
+		MinAngle 		= 0.75,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 3,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Blunt,
+		ConditionLowerChanceOneIn 		= 20,
+		Weight 		= 2,
+		SplatNumber 		= 1,
+		PushBackMod 		= 0.5,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 15,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 5,
+		IdleAnim 		= Idle_Weapon2,
+		SwingAnim 		= Bat,
+		DisplayName 		= Polearm,
+		MinRange 		= 0.7,
+		SwingTime 		= 3,
+		HitAngleMod 		= -30,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= tt_polearm,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		DoorHitSound 		= AxeHit,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		TreeDamage 		= 1,
+		CriticalChance 		= 50,
+		critDmgMultiplier 		= 2,
+		MinDamage 		= 1,
+		MaxDamage 		= 2,
+		BaseSpeed 		= 1,
+		WeaponLength 		= 0.5,
+		AttachmentType 		= Shovel,
+	}
+	item tt_sunfalling
+	{
+		MaxRange 		= 1.7,
+		WeaponSprite 		= tt_sunfalling,
+		MinAngle 		= 0.8,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 2,
+		KnockBackOnNoDeath 		= TRUE,
+		SwingAmountBeforeImpact 		= 0.04,
+		Categories 		= Blunt,
+		ConditionLowerChanceOneIn 		= 40,
+		Weight 		= 6,
+		SplatNumber 		= 3,
+		PushBackMod 		= 1,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 12,
+		MaxHitCount 		= 3,
+		DoorDamage 		= 40,
+		IdleAnim 		= Idle_Weapon2,
+		CantAttackWithLowestEndurance 		= TRUE,
+		SwingAnim 		= Heavy,
+		DisplayName 		= Sunset Great Blade,
+		MinRange 		= 0.7,
+		SwingTime 		= 1,
+		HitSound 		= AxeHit,
+		HitFloorSound 		= AxeHit,
+		SwingSound 		= AxeSwing,
+		DoorHitSound 		= AxeHit,
+		KnockdownMod 		= 3,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= tt_sunfalling,
+		RunAnim 		= Run_Weapon2,
+		TwoHandWeapon 		= TRUE,
+		BreakSound 		= AxeHit,
+		TreeDamage 		= 10,
+		MinDamage 		= 2,
+		MaxDamage 		= 3,
+		MetalValue 		= 120,
+		AlwaysKnockdown 		= TRUE,
+		CritDmgMultiplier 		= 2,
+		BaseSpeed 		= 0.9,
+		WeaponLength 		= 0.65,
+		RequiresEquippedBothHands 		= TRUE,
+		AttachmentType 		= BigBlade,
+	}
+	item tt_g_serum
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Genetically modified secret medicine,
+		Icon 		= tt_g_serum,
+		Tooltip 		= Tooltip_tt_g_serum,
+	}
+	recipe Buy Genetically modified secret medicine
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: tt_g_serum,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Inject genetically modified secret medicine
+	{
+		tt_g_serum,
+		Result 		: tt_g_serum,
+		RemoveResultItem 		: TRUE,
+		Time 		: 100,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.ttgserum,
+	}
+	recipe Make chinese machete
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=7,
+		tt_xikuai=6,
+		tt_qiankuai=5,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: tt_chinesemachete,
+		Time 		: 200,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Make Sunset Great Blade
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=10,
+		tt_xikuai=7,
+		tt_qiankuai=6,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: tt_sunfalling,
+		Time 		: 200,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Make polearm
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=6,
+		tt_xikuai=6,
+		tt_qiankuai=5,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: tt_polearm,
+		Time 		: 200,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	item tt_nongsuoniguding
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Concentrated Nicotine,
+		Icon 		= nongsuoniguding,
+		Tooltip 		= Tooltip_nongsuoniguding,
+	}
+	recipe Inject concentrated nicotine
+	{
+		tt_nongsuoniguding,
+		Result 		: tt_nongsuoniguding,
+		RemoveResultItem 		: TRUE,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.nongsuoniguding,
+	}
+	recipe Buy concentrated nicotine
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: tt_nongsuoniguding,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item tt_hejinshoufu
+	{
+		MaxRange 		= 1.3,
+		WeaponSprite 		= tt_hejinshoufu,
+		MinAngle 		= 0.67,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 2,
+		KnockBackOnNoDeath 		= FALSE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 15,
+		Weight 		= 1.3,
+		SplatNumber 		= 2,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 24,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 20,
+		SwingAnim 		= Bat,
+		DisplayName 		= Alloy hatchet,
+		MinRange 		= 0.61,
+		SwingTime 		= 3,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= tt_hejinshoufu,
+		BreakSound 		= HandAxeBreak,
+		DoorHitSound 		= HandAxeHit,
+		HitSound 		= HandAxeHit,
+		HitFloorSound 		= HandAxeHit,
+		SwingSound 		= HandAxeSwing,
+		TreeDamage 		= 35,
+		CriticalChance 		= 25,
+		CritDmgMultiplier 		= 5,
+		MinDamage 		= 1,
+		MaxDamage 		= 2.6,
+		BaseSpeed 		= 1.3,
+		WeaponLength 		= 0.4,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= Hammer,
+		Tags 		= ChopTree;CutPlant,
+	}
+	recipe Make alloy hatchet
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=3,
+		tt_xikuai=4,
+		tt_qiankuai=2,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: tt_hejinshoufu,
+		Time 		: 200,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	recipe Buy alloy hatchet
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: tt_hejinshoufu,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	item tt_yaobaobeimian
+	{
+		WeightReduction 		= 93,
+		Weight 		= 0.2,
+		Type 		= Container,
+		Capacity 		= 28,
+		DisplayName 		= Large-capacity belt bag S,
+		Icon 		= FannyPack,
+		OpenSound 		= OpenBag,
+		CloseSound 		= CloseBag,
+		PutInSound 		= PutItemInBag,
+		BodyLocation 		= FannyPackBack,
+		ClothingItem 		= Bag_FannyPackBack,
+		CanBeEquipped 		= FannyPackBack,
+		RunSpeedModifier 		= 0.98,
+		WorldStaticModel 		= FannyPack_Ground,
+		ClothingItemExtra 		= tt_yaobaobeimian,
+		ClothingItemExtraOption 		= FannyPack_WearBack,
+	}
+	item tt_yaobaozhengmian
+	{
+		WeightReduction 		= 99,
+		Weight 		= 0.2,
+		Type 		= Container,
+		Capacity 		= 35,
+		DisplayName 		= Large-capacity belt bag L,
+		Icon 		= FannyPack,
+		OpenSound 		= OpenBag,
+		CloseSound 		= CloseBag,
+		PutInSound 		= PutItemInBag,
+		BodyLocation 		= FannyPackFront,
+		ClothingItem 		= Bag_FannyPackFront,
+		CanBeEquipped 		= FannyPackFront,
+		RunSpeedModifier 		= 1.1,
+		WorldStaticModel 		= FannyPack_Ground,
+		ClothingItemExtra 		= tt_yaobaozhengmian,
+		ClothingItemExtraOption 		= FannyPack_WearBack,
+	}
+	recipe Buy large-capacity belt bag S
+	{
+		Money=350,
+		keep tradestation,
+		Result 		: tt_yaobaobeimian,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Make shotgun bullets
+	{
+		keep BallPeenHammer/ClubHammer/Hammer,
+		tt_tongkuai=1,
+		tt_xikuai=1,
+		tt_qiankuai=1,
+		GunPowder=120,
+		Charcoal/Plank,
+		keep tt_ronghuaqi,
+		keep tt_shizhan,
+		Water=5,
+		Result 		: ShotgunShells=2,
+		Time 		: 80,
+		Category 		: Welding,
+		CanBeDoneFromFloor 		: true,
+	}
+	item tt_famushoufu
+	{
+		MaxRange 		= 1,
+		WeaponSprite 		= tt_famushoufu,
+		MinAngle 		= 0.67,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 2,
+		KnockBackOnNoDeath 		= FALSE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Axe,
+		ConditionLowerChanceOneIn 		= 15,
+		Weight 		= 1.3,
+		SplatNumber 		= 2,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Swinging,
+		ConditionMax 		= 24,
+		MaxHitCount 		= 2,
+		DoorDamage 		= 26,
+		SwingAnim 		= Bat,
+		DisplayName 		= Logging hatchet,
+		MinRange 		= 0.5,
+		SwingTime 		= 4,
+		KnockdownMod 		= 2,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= tt_famushoufu,
+		BreakSound 		= HandAxeBreak,
+		DoorHitSound 		= HandAxeHit,
+		HitSound 		= HandAxeHit,
+		HitFloorSound 		= HandAxeHit,
+		SwingSound 		= HandAxeSwing,
+		TreeDamage 		= 44,
+		CriticalChance 		= 25,
+		CritDmgMultiplier 		= 5,
+		MinDamage 		= 0.9,
+		MaxDamage 		= 1.5,
+		BaseSpeed 		= 1,
+		WeaponLength 		= 0.4,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		AttachmentType 		= Hammer,
+		Tags 		= ChopTree;CutPlant,
+	}
+	recipe Buy logging hatchet
+	{
+		tt_moneybag = 1,
+		keep tradestation,
+		Result 		: tt_famushoufu,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy suicide note
+	{
+		tt_moneybag = 17,
+		keep tradestation,
+		Result 		: tt_yishu,
+		Time 		: 1,
+		Category 		: TS-Construction,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	item tt_leidakongzhiqi
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Radar controller,
+		Icon 		= WalkieTalkiePolice,
+		Tooltip 		= Tooltip_leidakongzhiqi,
+	}
+
+	recipe Write down suicide note and broadcast
+	{
+		tt_yishu,
+		keep Pencil/Pen,
+		keep tradestation,
+		Result 		: tt_yishu,
+		Time 		: 80,
+		RemoveResultItem 		: TRUE,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.yishu,
+	}
+
+	recipe Turn on the radar
+	{
+		tt_leidakongzhiqi,
+		Result 		: tt_leidakongzhiqi,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.leidakongzhiqi,
+	}
+	recipe Open the bowel
+	{
+		zombiesstomach,
+		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
+		Result 		: zombiesstomach,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.jiangshichangzi,
+		RemoveResultItem 		: TRUE,
+	}
+	recipe Buy radar controller
+	{
+		tt_moneybag=12,
+		keep tradestation,
+		Result 		: tt_leidakongzhiqi,
+		Time 		: 1,
+		Category 		: TS-Weapons,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy big refrigerator
+	{
+		tt_moneybag=2,
+		keep tradestation,
+		Result 		: bigbigfridge,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy big metal crate
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: bigmentalcrate,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	recipe Buy propane tank
+	{
+		tt_moneybag=1,
+		keep tradestation,
+		Result 		: PropaneTank,
+		Time 		: 1,
+		Category 		: TS-Common,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	multistagebuild CreatehejinWall
+	{
+		PreviousStage 		: WoodenWallFrame;MetalWallFrame,
+		Name 		: CreatehejinWall,
+		TimeNeeded 		: 250,
+		BonusHealth 		: 99999,
+		SkillRequired 		: MetalWelding=1,
+		ItemsRequired 		: Base.tt_qiankuai=1;Base.tt_xikuai=5;Base.tt_tongkuai=5,
+		ItemsToKeep 		: Base.Hammer,
+		Sprite 		: jiandanjiaoyi_01_24,
+		NorthSprite 		: jiandanjiaoyi_01_25,
+		CraftingSound 		: Hammering,
+		ID 		: CreatehejinWall,
+	}
+	item tt_feiqijinshukuai
+	{
+		Weight 		= 0.001,
+		Type 		= Normal,
+		DisplayName 		= Scrap metal block,
+		Icon 		= feiqijinshukuai,
+	}
+	item tt_ziseyaoji
+	{
+		Weight 		= 0.3,
+		Type 		= Normal,
+		DisplayName 		= Purple potion,
+		Icon 		= ziseyaoji,
+		Tooltip 		= Tooltip_ziseyaoji,
+	}
+	recipe Inject purple potion
+	{
+		tt_ziseyaoji,
+		Result 		: tt_ziseyaoji,
+		RemoveResultItem 		: TRUE,
+		Time 		: 80,
+		Category 		: TS-Basic,
+		CanBeDoneFromFloor 		: TRUE,
+		OnCreate 		: Recipe.OnCreate.ziseyaoji,
+	}
+	item boneknifespear
+	{
+		MaxRange 		= 1.5,
+		WeaponSprite 		= boneknifespear,
+		MinAngle 		= 0.8,
+		Type 		= Weapon,
+		MinimumSwingTime 		= 1.5,
+		KnockBackOnNoDeath 		= FALSE,
+		SwingAmountBeforeImpact 		= 0.02,
+		Categories 		= Improvised;Spear,
+		ConditionLowerChanceOneIn 		= 8,
+		Weight 		= 1.3,
+		SplatNumber 		= 4,
+		PushBackMod 		= 0.3,
+		SubCategory 		= Spear,
+		ConditionMax 		= 24,
+		MaxHitCount 		= 3,
+		DoorDamage 		= 15,
+		SwingAnim 		= Spear,
+		DisplayName 		= Spear (bone knife),
+		MinRange 		= 0.81,
+		SwingTime 		= 1.5,
+		KnockdownMod 		= 0,
+		SplatBloodOnNoDeath 		= FALSE,
+		Icon 		= SpearKnife,
+		RunAnim 		= Run_Weapon2,
+		IdleAnim 		= Idle_Weapon2,
+		TreeDamage 		= 0,
+		TwoHandWeapon 		= TRUE,
+		CriticalChance 		= 45,
+		CritDmgMultiplier 		= 15,
+		MinDamage 		= 1,
+		MaxDamage 		= 2,
+		DamageCategory 		= Slash,
+		DamageMakeHole 		= TRUE,
+		BreakSound 		= SpearHuntingKnifeBreak,
+		HitFloorSound 		= SpearHuntingKnifeHit,
+		ImpactSound 		= SpearHuntingKnifeHit,
+		DoorHitSound 		= SpearHuntingKnifeHit,
+		HitSound 		= SpearHuntingKnifeHit,
+		SwingSound 		= SpearHuntingKnifeSwing,
+		AttachmentType 		= Shovel,
+		Tags 		= FishingSpear,
+	}
+	recipe Attach boneknife to Spear
+	{
+		SpearCrafted,
+		zombieknife,
+		DuctTape=2,
+		Result 		: boneknifespear,
+		Time 		: 100.0,
+		OnCreate 		: Recipe.OnCreate.UpgradeSpear,
+		Category 		: Survivalist,
+	}
+	recipe Reclaim boneknife from Spear
+	{
+		boneknifespear,
+		Result 		: zombieknife,
+		OnCreate 		: Recipe.OnCreate.DismantleSpear,
+		Time 		: 60.0,
+		Category 		: Survivalist,
+		AllowDestroyedItem 		: true,
+	}
+}

@@ -1,0 +1,14 @@
+module Base
+{
+	sound HeliSound
+	{
+		category = Heli,
+		loop = true,
+		master = Ambient,
+		clip
+		{
+			file = media/sound/heli_sound.ogg,
+			volume = 1,
+		}
+	}
+}

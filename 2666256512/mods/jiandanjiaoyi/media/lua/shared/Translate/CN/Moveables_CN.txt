@@ -1,0 +1,6 @@
+Moveables_CN = {
+    water_tt_water = "水池",
+    water2_tt_water = "水池",
+    water3_tt_water = "水池",
+    well_tt_well = "人造水井",
+}

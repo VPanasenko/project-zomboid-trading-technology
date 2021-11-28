@@ -1,0 +1,3 @@
+MultiStageBuild_CN = {
+    MultiStageBuild_CreatehejinWall = "建造合金墙",
+}
