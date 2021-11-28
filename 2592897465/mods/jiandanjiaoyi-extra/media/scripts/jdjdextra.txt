@@ -600,226 +600,93 @@ module Base
 		ModelWeaponPart 		= Silencer.HMSilencer Silencer.AssaultRifle02Silencer,
 		StopPower 		= 2,
 	}
-
-	recipe Sell pager trophies
+	recipe 卖出 战利品
 	{
-		tradecore,
+		tradecore/Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
 		keep tradestation,
-		Result 		: Money=10,
+		Result 		: Money=11,
 		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}	
-
-	recipe Sell jewelry trophies
-	{
-		Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT/Locket,
-		keep tradestation,
-		Result 		: Money=35,
-		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: 交易-收购,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-
-	recipe Sell silver trophies
+	recipe 卖出 技能书
 	{
-		Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver,
-		keep tradestation,
-		Result 		: Money=15,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell gold trophies
-	{
-		Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold,
-		keep tradestation,
-		Result 		: Money=25,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell beginner skill book
-	{
-		BookMechanic1/BookMetalWelding1/BookCarpentry1/BookCooking1/BookElectrician1/BookFarming1/BookFirstAid1/BookFishing1/BookForaging1/BookTailoring1/BookTrapping1/BookBlacksmith1,
-		keep tradestation,
-		Result 		: Money=10,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell foreign beginner skill book
-	{
-		BookSprinting1/BookNimble1/BookAiming1/BookReloading1/BookAxe1/BookBlunt1/BookSmallBlunt1/BookLongBlade1/BookSmallBlade1/BookSpear1/BookMaintenance1/BookSneaking1/BookLightfooted1/BookFitness1/BookStrength1/BookMasonry1/BookSmithing1,
-		keep tradestation,
-		Result 		: Money=10,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell intermediate skill book
-	{
-		BookMechanic2/BookMetalWelding2/BookCarpentry2/BookCooking2/BookElectrician2/BookFarming2/BookFirstAid2/BookFishing2/BookForaging2/BookTailoring2/BookTrapping2/BookBlacksmith2,
-		keep tradestation,
-		Result 		: Money=20,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell foreign intermediate skill book
-	{
-		BookSprinting2/BookNimble2/BookAiming2/BookReloading2/BookAxe2/BookBlunt2/BookSmallBlunt2/BookLongBlade2/BookSmallBlade2/BookSpear2/BookMaintenance2/BookSneaking2/BookLightfooted2/BookFitness2/BookStrength2/BookMasonry2/BookSmithing2,
-		keep tradestation,
-		Result 		: Money=20,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}	
-
-	recipe Sell advanced skill book
-	{
-		BookMechanic3/BookMetalWelding3/BookCarpentry3/BookCooking3/BookElectrician3/BookFarming3/BookFirstAid3/BookFishing3/BookForaging3/BookTailoring3/BookTrapping3/BookBlacksmith3,
+		BookMechanic5/BookMetalWelding5/BookCarpentry5/BookCooking5/BookElectrician5/BookFarming5/BookFirstAid5/BookFishing5/BookForaging5/BookTailoring5/BookTrapping5/BookMechanic4/BookMetalWelding4/BookCarpentry4/BookCooking4/BookElectrician4/BookFarming4/BookFirstAid4/BookFishing4/BookForaging4/BookTailoring4/BookTrapping4,
 		keep tradestation,
 		Result 		: Money=30,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: 交易-收购,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-
-	recipe Sell foreign advanced skill book
-	{
-		BookSprinting3/BookNimble3/BookAiming3/BookReloading3/BookAxe3/BookBlunt3/BookSmallBlunt3/BookLongBlade3/BookSmallBlade3/BookSpear3/BookMaintenance3/BookSneaking3/BookLightfooted3/BookFitness3/BookStrength3/BookMasonry3/BookSmithing3,
-		keep tradestation,
-		Result 		: Money=30,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}	
-
-	recipe Sell expert skill book
-	{
-		BookMechanic4/BookMetalWelding4/BookCarpentry4/BookCooking4/BookElectrician4/BookFarming4/BookFirstAid4/BookFishing4/BookForaging4/BookTailoring4/BookTrapping4/BookBlacksmith4,
-		keep tradestation,
-		Result 		: Money=40,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell foreign expert skill book
-	{
-		BookSprinting4/BookNimble4/BookAiming4/BookReloading4/BookAxe4/BookBlunt4/BookSmallBlunt4/BookLongBlade4/BookSmallBlade4/BookSpear4/BookMaintenance4/BookSneaking4/BookLightfooted4/BookFitness4/BookStrength4/BookMasonry4/BookSmithing4,
-		keep tradestation,
-		Result 		: Money=40,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}	
-
-	recipe Sell mastery skill book
-	{
-		BookMechanic5/BookMetalWelding5/BookCarpentry5/BookCooking5/BookElectrician5/BookFarming5/BookFirstAid5/BookFishing5/BookForaging5/BookTailoring5/BookTrapping5/BookBlacksmith5,
-		keep tradestation,
-		Result 		: Money=50,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell foreign mastery skill book
-	{
-		BookSprinting5/BookNimble5/BookAiming5/BookReloading5/BookAxe5/BookBlunt5/BookSmallBlunt5/BookLongBlade5/BookSmallBlade5/BookSpear5/BookMaintenance5/BookSneaking5/BookLightfooted5/BookFitness5/BookStrength5/BookMasonry5/BookSmithing5,
-		keep tradestation,
-		Result 		: Money=50,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell foreign books
-	{
-		Book,
-		keep tradestation,
-		Result 		: Money=8,
-		Time 		: 1,
-		Category 		: TS-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
-
-	recipe Sell groceries
+	recipe 卖出 杂货
 	{
 		Twigs/TreeBranch/Worm/BaitFish/Cologne,
 		keep tradestation,
 		Result 		: Money=4,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: 交易-收购,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy sledge hammer
+	recipe 购买 大铁锤
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: Sledgehammer,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy bucket with water
+	recipe 购买 水桶
 	{
 		Money=350,
 		keep tradestation,
 		Result 		: BucketWaterFull,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy hammer
+	recipe 购买 铁锤
 	{
 		Money=200,
 		keep tradestation,
 		Result 		: Hammer,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy mop
+	recipe 购买 拖把
 	{
 		Money=150,
 		keep tradestation,
 		Result 		: Mop,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy bleach
+	recipe 购买 漂白剂
 	{
 		Money=60,
 		keep tradestation,
 		Result 		: Bleach,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_shihuangzhezhinan
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= Scavenging guide,
+		DisplayName 		= 拾荒指南,
 		Icon 		= Book8,
 		Tooltip 		= Tooltip_shihuangzhezhinan,
 	}
-	recipe Buy Scavenging guide
+	recipe 购买 拾荒指南
 	{
 		tt_moneybag=4,
 		keep tradestation,
 		Result 		: tt_shihuangzhezhinan,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item ShotgunSawnoff
@@ -967,58 +834,58 @@ module Base
 		haveChamber 		= FALSE,
 		StopPower 		= 40,
 	}
-	recipe Buy home-made silencer
+	recipe 购买 民用消音器
 	{
 		tt_moneybag=1,
 		keep tradestation,
 		Result 		: Silencer.HMSilencer,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Buy advanced silencer
+	recipe 购买 高级消音器
 	{
 		tt_moneybag=3,
 		keep tradestation,
 		Result 		: Silencer.Silencer,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_jiaoyiduijiangji
 	{
 		Weight 		= 0.1,
 		Type 		= Normal,
-		DisplayName 		= Walkie-Talkie Civilian,
+		DisplayName 		= 交易对讲机,
 		Icon 		= WalkieTalkieCivilian,
 	}
-	recipe Set the airdrop location (zombies)
+	recipe 设置空投地点（僵尸）
 	{
 		tt_jiaoyiduijiangji,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 20,
-		Category 		: TS-Basic,
+		Category 		: 交易-基础,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.shezhikongtoudidian,
 	}
-	recipe Drop zombies
+	recipe 投放僵尸
 	{
 		tt_jiaoyiduijiangji,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 60,
-		Category 		: TS-Basic,
+		Category 		: 交易-基础,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.toufangjianshi,
 		OnTest 		: Recipe.OnTest.toufangjianshi,
 	}
-	recipe Buy a bundle of zombies
+	recipe 购买一捆僵尸
 	{
 		tt_moneybag=2,
 		keep tradestation,
 		Result 		: tt_jiaoyiduijiangji,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item Revolver
@@ -1339,18 +1206,18 @@ module Base
 	{
 		Weight 		= -5,
 		Type 		= Normal,
-		DisplayName 		= Helium balloon,
+		DisplayName 		= 氢气球,
 		Icon 		= qingqiqiu,
 		Tooltip 		= Tooltip_qingqiqiu,
 	}
-	recipe Buy hydrogen balloon (max buy = 5)
+	recipe 购买 氢气球（最多买5个）
 	{
 		Money=200,
 		keep tradestation,
 		tt_feiqihuaxian=10,
 		Result 		: tt_qingqiqiu,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: 交易,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.qingqiqiucishu,
 		OnTest 		    : Recipe.OnTest.qingqiqiucishu,
@@ -1437,7 +1304,8 @@ module Base
 		keep tradestation,
 		Result 		: tt_shotgunplus,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 }
+

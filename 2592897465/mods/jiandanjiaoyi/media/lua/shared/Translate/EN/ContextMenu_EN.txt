@@ -1,11 +1,3 @@
 ContextMenu_EN = {
-    ContextMenu_chulishiti = "Butcher corpse",
-    ContextMenu_category = "Trading station",
-    ContextMenu_category_buy = "Buy",
-    ContextMenu_category_sell = "Sell",
-    ContextMenu_category_make = "Make",
-    ContextMenu_category_lottery = "Lottery",
-    ContextMenu_category_refine = "Refine",
-    ContextMenu_category_inject = "Inject",
-    ContextMenu_category_other = "Other",
+    ContextMenu_chulishiti = "Dissect zombie",
 }

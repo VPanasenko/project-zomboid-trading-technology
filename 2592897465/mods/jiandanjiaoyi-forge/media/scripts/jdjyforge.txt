@@ -1,4 +1,4 @@
-module jdjyforge
+module mymod
 {
 	imports
 	{
@@ -29,7 +29,7 @@ module jdjyforge
 		SwingAnim 		= Bat,
 		CriticalChance 		= 35,
 		CritDmgMultiplier 		= 6,
-		DisplayName 		= Long sword,
+		DisplayName 		= 长剑,
 		MinRange 		= 0.75,
 		SwingTime 		= 3.5,
 		HitAngleMod 		= -30,
@@ -69,7 +69,7 @@ module jdjyforge
 		DoorDamage 		= 35,
 		IdleAnim 		= Idle_Weapon2,
 		SwingAnim 		= Bat,
-		DisplayName 		= Chinese war sword,
+		DisplayName 		= 中国抗战大刀,
 		MinRange 		= 0.55,
 		SwingTime 		= 2.5,
 		SplatSize 		= 5,
@@ -115,7 +115,7 @@ module jdjyforge
 		MaxHitCount 		= 2,
 		DoorDamage 		= 10,
 		SwingAnim 		= Bat,
-		DisplayName 		= Chinese machete,
+		DisplayName 		= 中式砍刀,
 		MinRange 		= 0.55,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -160,7 +160,7 @@ module jdjyforge
 		IsAimedHandWeapon 		= TRUE,
 		DoorDamage 		= 5,
 		SwingAnim 		= Stab,
-		DisplayName 		= Long spear head,
+		DisplayName 		= 长枪头,
 		MinRange 		= 0.61,
 		CloseKillMove 		= Jaw_Stab,
 		SwingTime 		= 2,
@@ -207,7 +207,7 @@ module jdjyforge
 		MaxHitCount 		= 3,
 		DoorDamage 		= 15,
 		SwingAnim 		= Spear,
-		DisplayName 		= Long spear,
+		DisplayName 		= 中国长枪,
 		MinRange 		= 0.81,
 		SwingTime 		= 1.5,
 		KnockdownMod 		= 0,
@@ -240,7 +240,7 @@ module jdjyforge
 		Fixer 		: Glue=2,
 		Fixer 		: Scotchtape=4,
 	}
-	recipe Recover the long spear head from the wooden pole
+	recipe 从木杆上回收长枪头
 	{
 		LongSpear,
 		Result 		: LongSpearHead,
@@ -250,7 +250,7 @@ module jdjyforge
 		Category 		: Survivalist,
 		AllowDestroyedItem 		: true,
 	}
-	recipe Attach the long spear head to the wooden pole
+	recipe 将枪头连接到木杆上
 	{
 		SpearCrafted,
 		keep Hammer,
@@ -266,14 +266,14 @@ module jdjyforge
 	{
 		Weight 		= 0.1,
 		Type 		= Literature,
-		DisplayName 		= Make chinese weapons,
+		DisplayName 		= 制造中式武器,
 		Icon 		= WeaponMag,
-		TeachedRecipes 		= Make chinese machete;Make long sword;Make heavy long spear;Craft chinese war sword;Craft long spear,
+		TeachedRecipes 		= 制作 中式砍刀;制作 长剑;制作 马槊长枪头;制造 中国抗战大刀;制造 长枪头,
 		ReplaceOnUse 		= MakeWeapon,
 		StaticModel 		= Magazine,
 		WorldStaticModel 		= MagazineGround,
 	}
-	recipe Craft chinese war sword
+	recipe 制造 中国抗战大刀
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -290,9 +290,9 @@ module jdjyforge
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
+		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe Make Chinese machete
+	recipe 制作 中式砍刀
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -308,9 +308,9 @@ module jdjyforge
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
+		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe Make long sword
+	recipe 制作 长剑
 	{
 		keep WeldingMask,
 		keep tt_shizhan,
@@ -326,9 +326,9 @@ module jdjyforge
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
+		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
-	recipe Craft long spear
+	recipe 制造 长枪头
 	{
 		keep WeldingMask,
 		keep BallPeenHammer/ClubHammer/Hammer,
@@ -344,7 +344,7 @@ module jdjyforge
 		Sound 		: SledqehammerBreak,
 		Time 		: 220.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
+		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
 	item LongSpearHead2
 	{
@@ -365,7 +365,7 @@ module jdjyforge
 		MaxHitCount 		= 2,
 		DoorDamage 		= 10,
 		SwingAnim 		= Bat,
-		DisplayName 		= Heavy long spear head,
+		DisplayName 		= 马槊枪头,
 		MinRange 		= 0.55,
 		SwingTime 		= 4,
 		KnockdownMod 		= 2,
@@ -408,7 +408,7 @@ module jdjyforge
 		MaxHitCount 		= 4,
 		DoorDamage 		= 15,
 		SwingAnim 		= Spear,
-		DisplayName 		= Heavy long spear,
+		DisplayName 		= 马槊长枪,
 		MinRange 		= 0.8,
 		SwingTime 		= 1.5,
 		KnockdownMod 		= 0,
@@ -433,7 +433,7 @@ module jdjyforge
 		AttachmentType 		= Shovel,
 		Tags 		= FishingSpear,
 	}
-	recipe Reclaim the heavy long spear head from the wooden pole
+	recipe 从木杆上回收马槊枪头
 	{
 		LongSpear2,
 		Result 		: LongSpearHead2,
@@ -443,7 +443,7 @@ module jdjyforge
 		Category 		: Survivalist,
 		AllowDestroyedItem 		: true,
 	}
-	recipe Attach the heavy long spear head to the wooden pole
+	recipe 将马槊枪头连接到木杆上
 	{
 		SpearCrafted,
 		keep Hammer,
@@ -455,7 +455,7 @@ module jdjyforge
 		OnCreate 		: Recipe.OnCreate.UpgradeSpear,
 		Category 		: Survivalist,
 	}
-	recipe Make heavy long spear
+	recipe 制作 马槊长枪头
 	{
 		keep WeldingMask,
 		keep tt_shizhan,
@@ -471,7 +471,7 @@ module jdjyforge
 		Sound 		: SledqehammerBreak,
 		Time 		: 280.0,
 		Category 		: Welding,
-		OnGiveXP 		: Recipe.OnGiveXP.MetalWelding25,
+		OnGiveXP 		: Recipe.OnGiveXP.Welding50,
 	}
 	fixing Fix Spear With LongSpear2
 	{
@@ -481,13 +481,13 @@ module jdjyforge
 		Fixer 		: Glue=2,
 		Fixer 		: Scotchtape=4,
 	}
-	recipe Buy 'Make chinese weapons' book
+	recipe 购买 锻造手册
 	{
 		Money=250,
 		keep tradestation,
 		Result 		: MakeWeapon,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	fixing Fix ChineseMachete

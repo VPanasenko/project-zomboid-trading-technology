@@ -15,4 +15,7 @@ Tooltip_CN= {
     Tooltip_zombiebutter = "这东西让人有点反胃。。",
     Tooltip_ershouche = "可能是个废车",
     Tooltip_jiangshichangzi = "塞的满满的，谁知道脏逼吃了什么好东西。",
+    Tooltip_zombietrap = "持续对僵尸造成伤害"，
+    Tooltip_zombietrap2 = "可以秒杀僵尸"，
 }
+

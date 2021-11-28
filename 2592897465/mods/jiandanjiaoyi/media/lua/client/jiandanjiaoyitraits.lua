@@ -47,9 +47,9 @@ local function initToadTraitsItems(_player)
     _player:getModData().yanglaobaoxian = 0
 
     if player:HasTrait("morilailin") then
-        player:getModData().morilailin =true
+        getGameTime():getModData().morilailin =true
     else
-        player:getModData().morilailin =false
+        getGameTime():getModData().morilailin =false
     end
 end
 
@@ -107,7 +107,7 @@ local function dropitems(zombbiedropitem)
             end
         end
     end
-    if zombbiedropitem:getModData().super == "fuhuojiangshi" and ZombRand(10)>1 then
+    if zombbiedropitem:getModData().super == "fuhuojiangshi" and ZombRand(10)>4 then
         zombbiedropitem:getInventory():AddItem("xiuchegongjv")
     end
 end

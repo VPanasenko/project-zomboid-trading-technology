@@ -1,6 +1,6 @@
 UI_EN = {
     UI_trait_kuaidiyuan = "The Courier",
-    UI_trait_kuaidiyuandsc = "You have a Trading station and a moneybag",
+    UI_trait_kuaidiyuandsc = "you have a Trading station and a moneybag",
     UI_trait_shihuangdashi = "Scavenger master",
     UI_trait_shihuangdashidsc = "People who practice their rag picking skills to the extreme are called the strongest professionals in the end of the world.",
     UI_trait_tuhao = "RichMan",

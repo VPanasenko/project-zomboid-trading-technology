@@ -1,5 +1,0 @@
-﻿Items_EN = {
-
-	DisplayName_Silencer = "Silencer",
-	DisplayName_Home_Made_Silencer = "Home-made silencer",
-}

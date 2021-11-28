@@ -1,4 +1,4 @@
-IGUI_EN = {
+IGUI_CN = {
 	-- 金色喵球制作
 	IGUI_xiuligongjvxiuli = "Use repair tools",
     IGUI_xiuligongjvxiulisay = "Repair successful",
@@ -9,13 +9,12 @@ IGUI_EN = {
     IGUI_CraftCategory_交易-战斗 = "Trade-Fighting",
     IGUI_CraftCategory_交易-基础 = "Trade-Base",
     IGUI_CraftCategory_交易-收购 = "Sell",
-    IGUI_CraftCategory_交易-弹药 = "Trade-Ammunition",
     IGUI_zuzhuangshibai = "fail",
     IGUI_zuzhuangchenggong = "success",
     IGUI_lanseyaoji = "My body recovered but felt very tired",
     IGUI_lvseyaoji = "Feel more powerful!",
     IGUI_jiushiwan = "Boredom -20%",
-    IGUI_dubodubo = "Get 2000$",
+    IGUI_dubodubo = "get 2000$",
     IGUI_duboshibai = "one more time"，
     IGUI_hongseyaoji = "Become numb",
     IGUI_Gserum = "I dont feel good"
@@ -33,6 +32,4 @@ IGUI_EN = {
     IGUI_VehicleNameadvancedhelicopter = "helicopter",
     IGUI_VehiclePartCatblade = "Propeller",
     IGUI_VehiclePartheliblade = "Blade",
-    IGUI_CraftUI_Titlel = "Crafting (Refresh: Press "zero")",
-    IGUI_CraftUI_Notel = "If you don't find the new recipe you learned, press number"0" to refresh the Crafting menu.It will take a little time.",
 }

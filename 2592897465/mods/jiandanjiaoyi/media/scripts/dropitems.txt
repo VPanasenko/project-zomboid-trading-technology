@@ -19,7 +19,7 @@ module dropitems
 		Time 		: 20,
 		CanBeDoneFromFloor 		: TRUE,
 		OnTest 		: Recipe.OnTest.buyLootController,
-		Category 		: TS-Weapons,
+		Category 		: 交易-战斗,
 	}
     recipe Enable Loot Prompt
 	{

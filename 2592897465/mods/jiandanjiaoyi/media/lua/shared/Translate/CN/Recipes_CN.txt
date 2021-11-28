@@ -101,5 +101,7 @@ Recipe_EN = {
     Recipe_Buy_waste_car = "购买 废车",
     Recipe_Buy_Helicopter = "购买 直升机",
 
+    Recipe_Buy_disposable_trap = "购买 一次性僵尸陷阱",
+    Recipe_Buy_zombie_trap =  "购买 僵尸陷阱",
 }
 

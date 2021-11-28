@@ -1,6 +1,3 @@
 Moveables_EN = {
-    water_tt_water = "Water cube",
-    water2_tt_water = "Pool corner",
-    water3_tt_water = "Pool edge",
-    well_tt_well = "Man-made water well",
+    water_tt_water = "Water",
 }

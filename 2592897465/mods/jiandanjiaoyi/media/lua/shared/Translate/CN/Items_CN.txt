@@ -101,5 +101,6 @@
     DisplayName_汽车未组装(超级跑车) = "汽车未组装(超级跑车)",
     DisplayName_直升机(未组装) = "直升机(未组装)",
 
-
+    DisplayName_Zombie_trap = "尖刺",
+    DisplayName_Disposable_zombie_trap = "夹子",
 }

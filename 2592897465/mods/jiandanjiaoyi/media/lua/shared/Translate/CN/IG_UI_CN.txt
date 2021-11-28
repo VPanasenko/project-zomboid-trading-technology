@@ -34,6 +34,4 @@
     IGUI_VehiclePartCatblade = "螺旋桨",
     IGUI_VehiclePartheliblade = "螺旋桨",
 
-    IGUI_CraftUI_Titlel = "合成(按数字"0"键刷新)",
-    IGUI_CraftUI_Notel = "如果你没有找到你学的新配方，按"0"键刷新合成菜单。刷新时会卡一会",
 }
