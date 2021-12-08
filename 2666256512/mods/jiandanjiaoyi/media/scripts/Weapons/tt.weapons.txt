@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Base
+    }
+
+    /************************WEAPONS************************/
+
+	recipe Sell pens and pencils
+	{
+		Pencil/Pen/RedPen/BluePen,
+		keep tradestation,
+		Result 		: Money=5,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}
