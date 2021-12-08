@@ -26,7 +26,7 @@
     IGUI_taishu = "台",
     IGUI_yiyichu = "已移除编号为：",
     IGUI_detaiyangneng = " 的太阳能" ,
-    IGUI_chushengdian = "当你死去，也许其他人会找到这儿：",
+    IGUI_chushengdian = "已记录各项技能经验及坐标：",
     IGUI_dagongrengongzi = "今日工资已发放",
     IGUI_yanglaobaoxian = "今日养老保险已发放",
     IGUI_yanglaobaoxian2 = "养老保险已购买,之后每天会发放一些钱",

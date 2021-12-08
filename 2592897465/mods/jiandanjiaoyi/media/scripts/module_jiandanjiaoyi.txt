@@ -2664,9 +2664,9 @@ module Base
 		Category 		: 交易-战斗,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe 购买 遗书
+	recipe 遗书（活不下去就remake吧）
 	{
-		tt_moneybag = 17,
+		tt_moneybag = 7,
 		keep tradestation,
 		Result 		: tt_yishu,
 		Time 		: 1,
@@ -2683,7 +2683,7 @@ module Base
 		Tooltip 		= Tooltip_leidakongzhiqi,
 	}
 
-	recipe 写下遗书并广播
+	recipe 写下遗书
 	{
 		tt_yishu,
 		keep Pencil/Pen,

@@ -699,6 +699,24 @@ end
 
 
 function Recipe.OnCreate.yishu(items, result, player)
-    getGameTime():getModData().chushengdianzuobiao  = {player:getCurrentSquare():getX(),player:getCurrentSquare():getY(),player:getCurrentSquare():getZ()}
-    player:Say(getText("IGUI_chushengdian") .. tostring(getGameTime():getModData().chushengdianzuobiao[1])..",".. tostring(getGameTime():getModData().chushengdianzuobiao[2]).."," ..tostring(getGameTime():getModData().chushengdianzuobiao[3]))
+
+    getGameTime():getModData().chushengdianzuobiao = {}
+    getGameTime():getModData().chushengdianzuobiao[1]  = {player:getCurrentSquare():getX(),player:getCurrentSquare():getY(),player:getCurrentSquare():getZ()}
+
+    local skillbackup = {}
+    local skilllevel = PerkFactory.PerkList
+    for i = 1,skilllevel:size() do
+        local skillindex = skilllevel:get(i-1)
+        if skillindex ~= nil and tostring(skillindex) ~= "Strength" and tostring(skillindex) ~= "Fitness" then
+            table.insert(skillbackup, {skillindex,player:getXp():getXP(skillindex) / SandboxVars.XpMultiplier * 0.85 * 4})
+        end
+    end
+    getGameTime():getModData().chushengdianzuobiao[2] = skillbackup
+
+    -- getPlayer():getXp():AddXP(getGameTime():getModData().chushengdianzuobiao[2][1][1], 200)
+    -- print(getSandboxOptions():get("Character.XPMultiplier"))
+    -- print(getSandboxOptions():get(0))
+
+    
+    player:Say(getText("IGUI_chushengdian") .. tostring(getGameTime():getModData().chushengdianzuobiao[1][1])..",".. tostring(getGameTime():getModData().chushengdianzuobiao[1][2]).."," ..tostring(getGameTime():getModData().chushengdianzuobiao[1][3]))
 end
