@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		filcher
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell CookingTime recipes
+	recipe Sell recipes CookingTime
 	{
 		SFCookingMag1/SFCookingMag2/SFCookingMag3/SFCookingGuide,
 		keep tradestation,

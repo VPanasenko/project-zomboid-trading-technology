@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		BetLock
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell betterLockpicking recipes
+	recipe Sell recipes betterLockpicking
 	{
 		LockpickingMag/AlarmMag,
 		keep tradestation,

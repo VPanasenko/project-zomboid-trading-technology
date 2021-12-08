@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Aquatsar
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell AquatsarYachtClub recipes
+	recipe Sell recipes AquatsarYachtClub
 	{
 		BoatMag/SwimMag,
 		keep tradestation,

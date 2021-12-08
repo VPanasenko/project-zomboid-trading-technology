@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		FMJ
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell LockpickingOnly recipes
+	recipe Sell recipes LockpickingOnly
 	{
 		LockPickingMag/LockPickingMag2,
 		keep tradestation,

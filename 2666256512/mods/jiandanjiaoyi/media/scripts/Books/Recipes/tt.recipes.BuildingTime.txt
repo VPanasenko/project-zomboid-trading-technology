@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		filcher
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell BuildingTime recipes
+	recipe Sell recipes BuildingTime
 	{
 		SFMasonMag/SFMetalworkMag5,
 		keep tradestation,

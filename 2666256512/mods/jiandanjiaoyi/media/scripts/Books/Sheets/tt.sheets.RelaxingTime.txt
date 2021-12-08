@@ -6,7 +6,7 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************SHEETS************************/
 
 	recipe Sell RelaxingTime sheets
 	{

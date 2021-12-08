@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell JarringMadeEasy recipes
+	recipe Sell recipes JarringMadeEasy
 	{
 		JarringMag1/JarringMag2/JarringMag3,
 		keep tradestation,

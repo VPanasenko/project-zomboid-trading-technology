@@ -5,7 +5,7 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************REGULAR BOOKS************************/
 
 	recipe Sell books
 	{

@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		filcher
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell FarmingTime recipes
+	recipe Sell recipes FarmingTime
 	{
 		SFBookFarm/SFFarmMag2/SFFarmMag3,
 		keep tradestation,

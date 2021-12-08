@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		ESYB
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell eggonsSharpenYourBlades recipes
+	recipe Sell recipes eggonsSharpenYourBlades
 	{
 		MagazineAllAboutBladeBevels/MagazineTableGrinderUserManual/MagazineJapaneseMastersSpecialEdition/MagazineTypicalSharpeningMistakes/MagazineHomemadeGrindingTools,
 		keep tradestation,

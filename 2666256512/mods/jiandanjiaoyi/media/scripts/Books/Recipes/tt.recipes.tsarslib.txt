@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Autotsar
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell tsarslib recipes
+	recipe Sell recipes tsarslib
 	{
 		ATATuningMagUniverse,
 		keep tradestation,

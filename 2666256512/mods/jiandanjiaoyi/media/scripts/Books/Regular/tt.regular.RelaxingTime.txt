@@ -6,7 +6,7 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************REGULAR BOOKS************************/
 
 	recipe Sell RelaxingTime books
 	{

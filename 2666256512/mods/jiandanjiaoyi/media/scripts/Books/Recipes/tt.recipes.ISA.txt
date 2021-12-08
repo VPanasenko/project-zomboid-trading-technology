@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		ISA
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell ISA recipes
+	recipe Sell recipes ISA
 	{
 		ISAMag1,
 		keep tradestation,

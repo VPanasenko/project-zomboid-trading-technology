@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Autotsar
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell ATA_Bus recipes
+	recipe Sell recipes ATA_Bus
 	{
 		AtTuningMagBus/Bullbar2Blueprint/Bullbar3Blueprint,
 		keep tradestation,

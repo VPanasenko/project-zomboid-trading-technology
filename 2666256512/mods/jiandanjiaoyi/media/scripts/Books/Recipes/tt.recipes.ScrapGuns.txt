@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		SGuns
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell ScrapGuns recipes
+	recipe Sell recipes ScrapGuns
 	{
 		ScrapGunMag1/ScrapGunMag2/ScrapGunMag3/ScrapGunMag4,
 		keep tradestation,

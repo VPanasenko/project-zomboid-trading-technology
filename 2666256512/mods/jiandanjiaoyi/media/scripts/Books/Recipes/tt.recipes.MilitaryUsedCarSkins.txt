@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell MilitaryUsedCarSkins recipes
+	recipe Sell recipes MilitaryUsedCarSkins
 	{
 		IntelFolder,
 		keep tradestation,

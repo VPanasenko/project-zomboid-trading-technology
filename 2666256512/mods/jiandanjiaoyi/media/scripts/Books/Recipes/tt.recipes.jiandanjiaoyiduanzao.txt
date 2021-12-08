@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		jdjyforge
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell jiandanjiaoyiduanzao recipes
+	recipe Sell recipes jiandanjiaoyiduanzao
 	{
 		MakeWeapon,
 		keep tradestation,

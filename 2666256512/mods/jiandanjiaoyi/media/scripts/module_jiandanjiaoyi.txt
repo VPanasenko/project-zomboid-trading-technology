@@ -505,15 +505,6 @@ module Base
 		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
-	recipe Sell book
-	{
-		Book,
-		keep tradestation,
-		Result 		: Money=8,
-		Time 		: 1,
-		Category 		: TT-Selling,
-		CanBeDoneFromFloor 		: TRUE,
-	}
 	recipe Sell agricultural products
 	{
 		Cabbage/Tomato/Carrots/Broccoli/Potato/RedRadish,

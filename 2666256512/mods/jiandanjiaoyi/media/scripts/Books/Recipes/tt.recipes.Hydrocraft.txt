@@ -6,9 +6,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCBookastronomy/HCBookanimalhusbandry/HCBookceltic/HCBookchemistry/HCBookboneworking/HCBookentomology/HCBookmedical/HCBookmusic/HCBooktreeguide/HCBookvet/HCBookanatomy/HCBookarthistory/HCBookbirdgude/HCBookeconomics/HCBookfishguide/HCBookflowerguide/HCBookgeology/HCBookgemcutting/HCBookjewelry/HCBookmammalguide/HCBooknorsemyths/HCBookoceanography/HCBookscience/HCBookapiculture/HCBookplumbing/HCBookelectrical/HCBookcomputerprograming/HCBookbattery/HCBookarchery/HCBookpottery/HCBookglassworking/HCBookcopperworking/HCBooktinworking/HCBookbronzeworking/HCBookalloys/HCBookmetalurgy/HCBookironworking/HCBookleadworking/HCBooksteelworking/HCBookcoalworking/HCBooksilverworking/HCBookgoldworking/HCBookaluminumworking/HCBooktitaniumworking/HCBooklithiumworking/HCBookrubberworking/HCBookcandlemaking/HCBooksoapmaking/HCBookbasketry/HCBookmasonry/HCBookstoneworking/HCBookhunting/HCBookleatherworking/HCBooktailoring/HCBookhatter/HCBookcobbling/HCBookarmorcrafting/HCBookherbalism/HCBooksericulture/HCBookfungiguide/HCBookpharmacology/HCBookwelding/HCBookwire/HCBookmagnets/HCBookindustrial/HCBookgunsmithing/HCBookrocketry/HCBookjunk/HCBookauto/HCBookbicycle/HCBookanarchist/HCBookanarchisthmtd/HCBookanarchistammonal/HCBookanarchistpn02/HCBooklocksmithing/HCBookmicrobiology/HCBookgardening/HCBooksculpting/HCBookorganicchemistry/HCBookexplosives/HCBookbiodiesel/HCBookdistillery/HCBookphotography/HCBookmycology/HCBooktaxidermy/HCBookpapermaking/HCBooktoys,
 		keep tradestation,
@@ -18,7 +18,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4,
 		keep tradestation,
@@ -28,7 +28,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCBlueprintpoatocannon/HCBlueprintflamethrower/HCBlueprintrocketlauncher/HCBlueprintducttapefletching/HCBlueprintbonearrowhead/HCBlueprintfishingrod/HCBlueprintfishingnet/HCBlueprinttrapcrate/HCBlueprinttrapstick/HCBlueprinttrapsnare/HCBlueprinttrapbox/HCBlueprinttrapcage/HCBlueprintmousetrap/HCBlueprintnailtrap/HCBlueprinthazmatsuit/HCBlueprintantibiotics/HCBlueprintpainkillers/HCBlueprintantidepression/HCBlueprintproflab/HCBlueprintmeth/HCBlueprintbluemeth/HCBlueprintinjections/HCBlueprintskinanimal/HCBlueprintopium/HCBlueprintether/HCBlueprintsolarpark/HCBlueprinthmtd/HCBlueprintHerbalMed/HCBlueprintammonal/HCBlueprintjackalope/HCBlueprintsteampot/HCBlueprintcarbon/HCBlueprintbetablocker/HCBlueprintcomposter2/HCBlueprintcomputermouse/HCBlueprintcomputerkeyboard/HCBlueprintcomputermonitor/HCBlueprintextractworkingcpu/HCBlueprintmakecomputerpsu/HCBlueprintmakecomputerfan/HCBlueprintmakecomputertower/HCPlanIronMine/HCPlanCoalMine/HCAdvFitPlan/HCCookbookMethanol/HCknittingTextBook/HCSilkworkingTextbook,
 		keep tradestation,
@@ -38,7 +38,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCCookbookbbq/HCBookbaking/HCCookbookbutcher/HCBookcheesemaking/HCCookbookdried/HCCookbookegg/HCCookbookjerky/HCCookbookmexican/HCCookbookpasta/HCCookbookpickling/HCCookbookpizza/HCCookbooksalt/HCBooksausagemaking/HCCookbooksmoking/HCCookbookspices/HCBookwinemaking/HCCookbookyogurt/HCCookbookalcoholic,
 		keep tradestation,
@@ -48,7 +48,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCSuicidenote,
 		keep tradestation,
@@ -58,7 +58,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCMagazinemetalworking1/HCMagazinemetalworking2/HCMagazinemetalworking3/HCMagazinemetalworking4/HCMagazinemetalworking5/HCMagazinemetalworking6/HCMagazinemetalworking7/HCMagazinefarming1/HCMagazineelectronics01/HCMagazineelectronics02/HCMagazineelectronics03/HCMagazinespopularmachines01/HCMagazinexmas,
 		keep tradestation,
@@ -68,7 +68,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Hydrocraft recipes
+	recipe Sell recipes Hydrocraft
 	{
 		HCTabletskinanimal/HCTabletButcherCarcass/HCTabletberries/HCTabletshrooms/HCTabletbirchbarkbasket/HCTabletwickerbasket/HCTabletstrawbasket/HCTabletsticktrap/HCTabletBoneNeedles/HCTabletDryingFrame,
 		keep tradestation,

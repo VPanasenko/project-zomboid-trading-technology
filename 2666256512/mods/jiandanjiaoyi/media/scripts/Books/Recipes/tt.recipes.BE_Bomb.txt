@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell BE Bombs recipes
+	recipe Sell recipes BE Bombs
 	{
 		ModConflictMagHairsprayBomb/ModConflictMagLightbulbBomb/ModConflictMagLunchboxBomb/ModConflictMagLunchboxBomb2,
 		keep tradestation,

@@ -6,9 +6,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell Blacksmith41 recipes
+	recipe Sell recipes Blacksmith41
 	{
 		SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4,
 		keep tradestation,
@@ -18,7 +18,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell Blacksmith41 recipes
+	recipe Sell recipes Blacksmith41
 	{
 		SmithingMag0/SmithingMag5/SmithingMag6/SmithingMag7/SmithingMag8/SmithingMag9/SmithingMag10/SmithingMag11,
 		keep tradestation,

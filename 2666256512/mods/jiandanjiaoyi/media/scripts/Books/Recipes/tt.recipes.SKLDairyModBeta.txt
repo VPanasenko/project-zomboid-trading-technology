@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		Base
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell SKLDairyModBeta recipes
+	recipe Sell recipes SKLDairyModBeta
 	{
 		DairyCookingMag,
 		keep tradestation,

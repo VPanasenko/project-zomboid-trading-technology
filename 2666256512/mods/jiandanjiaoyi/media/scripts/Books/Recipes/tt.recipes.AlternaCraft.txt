@@ -5,9 +5,9 @@ module TradingTechnologyEN
 		SGuns
     }
 
-    /************************SKILLS************************/
+    /************************RECIPES************************/
 
-	recipe Sell AlternaCraft recipes
+	recipe Sell recipes AlternaCraft
 	{
 		HistoryOfFireworks,
 		keep tradestation,
@@ -17,7 +17,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell AlternaCraft recipes
+	recipe Sell recipes AlternaCraft
 	{
 		NaturalDyesMag,
 		keep tradestation,
@@ -27,7 +27,7 @@ module TradingTechnologyEN
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
-	recipe Sell AlternaCraft recipes
+	recipe Sell recipes AlternaCraft
 	{
 		ToServeMan,
 		keep tradestation,
