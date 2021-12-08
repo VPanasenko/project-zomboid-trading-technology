@@ -134,9 +134,11 @@ local function checkmori(zombie)
         else
             trapnumber = 0
             if objectname == "jiandanjiaoyi_01_38" then
-                zombie:setHealth(zombie:getHealth()-0.08)
-                
+                -- zombie:addRandomVisualDamages()
+                zombie:addBlood(2)
+                zombie:setHealth(zombie:getHealth()-0.11)
             elseif objectname == "jiandanjiaoyi_01_39"  then
+                zombie:addBlood(100)
                 zombie:setHealth(0)
                 traps:get(i):removeFromSquare()
             end

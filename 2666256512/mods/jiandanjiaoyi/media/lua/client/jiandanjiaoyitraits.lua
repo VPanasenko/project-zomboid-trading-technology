@@ -22,29 +22,35 @@ local function initToadTraitsItems(_player)
         local aa = inv:AddItem("tt_moneybag")
         aa:setUsedDelta(0.21)
     end
-    _player:getModData().zidonghuoqv = 0
+    player:getModData().zidonghuoqv = 0
     getGameTime():getModData().Enabledropprompt = 0
     -- getGameTime():getModData().Disabledropprompt = 1
     getGameTime():getModData().EnableLoot = 1
     -- getGameTime():getModData().DisableLoot = 0
-    if _player:HasTrait("shihuangdashi") then
-        _player:getInventory():AddItem("dropitems.Dropcontroller")
-        _player:getInventory():AddItem("tt_shihuangzhezhinan")
-        _player:getInventory():AddItem("tt_pashoujuewu")
+    if player:HasTrait("shihuangdashi") then
+        player:getInventory():AddItem("dropitems.Dropcontroller")
+        player:getInventory():AddItem("tt_shihuangzhezhinan")
+        player:getInventory():AddItem("tt_pashoujuewu")
     end
-    if getGameTime():getModData().chushengdianzuobiao ~= nil then
-        _player:setX(getGameTime():getModData().chushengdianzuobiao[1])
-        _player:setY(getGameTime():getModData().chushengdianzuobiao[2])
-        _player:setZ(getGameTime():getModData().chushengdianzuobiao[3])
-        _player:setLx(getPlayer():getX())
-        _player:setLy(getPlayer():getY())
-        _player:setLz(getPlayer():getZ())
+    if getGameTime():getModData().chushengdianzuobiao~= nil then
+        player:setX(getGameTime():getModData().chushengdianzuobiao[1][1])
+        player:setY(getGameTime():getModData().chushengdianzuobiao[1][2])
+        player:setZ(getGameTime():getModData().chushengdianzuobiao[1][3])
+        player:setLx(getPlayer():getX())
+        player:setLy(getPlayer():getY())
+        player:setLz(getPlayer():getZ())
+        local skilladd = getGameTime():getModData().chushengdianzuobiao[2]
+        if skilladd ~= nil then
+            for i =1 , #skilladd do
+                player:getXp():AddXP(skilladd[i][1],skilladd[i][2])
+            end
+        end
         getGameTime():getModData().chushengdianzuobiao = nil
     end
     if player:HasTrait("dagongren") then
-        _player:getModData().dagongrengongzi = 1
+        player:getModData().dagongrengongzi = 1
     end
-    _player:getModData().yanglaobaoxian = 0
+    player:getModData().yanglaobaoxian = 0
 
     if player:HasTrait("morilailin") then
         getGameTime():getModData().morilailin =true
