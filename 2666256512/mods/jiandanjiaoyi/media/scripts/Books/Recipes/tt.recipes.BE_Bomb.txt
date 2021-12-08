@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BE Bombs recipes
+	{
+		ModConflictMagHairsprayBomb/ModConflictMagLightbulbBomb/ModConflictMagLunchboxBomb/ModConflictMagLunchboxBomb2,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

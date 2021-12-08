@@ -1,6 +1,6 @@
 ContextMenu_EN = {
     ContextMenu_chulishiti = "Butcher corpse",
-    ContextMenu_category = "Trading station",
+    ContextMenu_category = "Trading technology",
     ContextMenu_category_buy = "Buy",
     ContextMenu_category_sell = "Sell",
     ContextMenu_category_make = "Make",

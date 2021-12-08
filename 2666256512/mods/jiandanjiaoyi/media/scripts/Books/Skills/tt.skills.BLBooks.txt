@@ -1,0 +1,59 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+        BLBooks
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BLBooks beginner skill book
+	{
+		BookLockpicking1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BLBooks intermediate skill book
+	{
+		BookLockpicking2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BLBooks advanced skill book
+	{
+		BookLockpicking3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BLBooks expert skill book
+	{
+		BookLockpicking4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BLBooks mastery skill book
+	{
+		BookLockpicking5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

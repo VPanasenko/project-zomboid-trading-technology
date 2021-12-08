@@ -1,0 +1,59 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+        filcher
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell ExtraSkillsExample41 beginner skill book
+	{
+		BookSleeping1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell ExtraSkillsExample41 intermediate skill book
+	{
+		BookSleeping2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell ExtraSkillsExample41 advanced skill book
+	{
+		BookSleeping3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell ExtraSkillsExample41 expert skill book
+	{
+		BookSleeping4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell ExtraSkillsExample41 mastery skill book
+	{
+		BookSleeping5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell JarringMadeEasy recipes
+	{
+		JarringMag1/JarringMag2/JarringMag3,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

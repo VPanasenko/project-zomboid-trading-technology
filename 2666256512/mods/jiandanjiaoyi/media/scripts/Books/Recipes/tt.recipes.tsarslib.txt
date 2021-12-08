@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Autotsar
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell tsarslib recipes
+	{
+		ATATuningMagUniverse,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

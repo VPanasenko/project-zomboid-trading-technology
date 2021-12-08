@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		SArmor
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell ScrapArmor recipes
+	{
+		ArmorMag1/ArmorMag2/ArmorMag3/ArmorMag4/ArmorMag5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

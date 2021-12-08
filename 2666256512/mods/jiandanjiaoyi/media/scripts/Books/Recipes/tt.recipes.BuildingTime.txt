@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		filcher
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BuildingTime recipes
+	{
+		SFMasonMag/SFMetalworkMag5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

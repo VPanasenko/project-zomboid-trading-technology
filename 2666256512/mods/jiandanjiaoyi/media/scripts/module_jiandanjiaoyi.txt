@@ -86,7 +86,7 @@ module Base
 		keep tradestation,
 		Result 		: Log,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -125,7 +125,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_water2 = 4,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.youyongchi,
 	}
@@ -146,7 +146,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_well,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	
@@ -157,7 +157,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_floor1,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: true,
 		OnCreate 		: Recipe.OnCreate.FloorFloor,
@@ -392,7 +392,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=9,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy bread
@@ -401,7 +401,7 @@ module Base
 		keep tradestation,
 		Result 		: Bread,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy katana
@@ -410,7 +410,7 @@ module Base
 		keep tradestation,
 		Result 		: Katana,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy axe
@@ -419,7 +419,7 @@ module Base
 		keep tradestation,
 		Result 		: Axe,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy bacon
@@ -428,7 +428,7 @@ module Base
 		keep tradestation,
 		Result 		: Bacon,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy baseball bat
@@ -437,7 +437,7 @@ module Base
 		keep tradestation,
 		Result 		: BaseballBat,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy cabbage seeds
@@ -446,7 +446,7 @@ module Base
 		keep tradestation,
 		Result 		: CabbageBagSeed,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy seeds
@@ -455,7 +455,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghezhongzi,
 		RemoveResultItem 		: true,
@@ -466,7 +466,7 @@ module Base
 		keep tradestation,
 		Result 		: Crisps,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy crowbar
@@ -475,7 +475,7 @@ module Base
 		keep tradestation,
 		Result 		: Crowbar,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy empty petrol can
@@ -484,7 +484,7 @@ module Base
 		keep tradestation,
 		Result 		: EmptyPetrolCan,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy TV (Antique)
@@ -493,7 +493,7 @@ module Base
 		keep tradestation,
 		Result 		: TvAntique,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy watermelon
@@ -502,7 +502,7 @@ module Base
 		keep tradestation,
 		Result 		: Watermelon,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell book
@@ -511,7 +511,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=8,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell agricultural products
@@ -520,7 +520,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=4,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Make trading station
@@ -533,7 +533,7 @@ module Base
 		tradecore=5,
 		Result 		: tradestation,
 		Time 		: 100,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item tradecore
@@ -549,7 +549,7 @@ module Base
 		keep tradestation,
 		Result 		: HuntingKnife,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Butcher corpse
@@ -558,7 +558,7 @@ module Base
 		CorpseFemale/CorpseMale,
 		Result 		: st_zombiemeat,
 		Time 		: 100,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		OnCreate 		: Recipe.OnCreate.zombiecorpse,
 		CanBeDoneFromFloor 		: true,
 		RemoveResultItem 		: true,
@@ -595,7 +595,7 @@ module Base
 		zombiebone,
 		Result 		: zombieknife,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item zombieknife
@@ -651,7 +651,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=1,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item zombieskin
@@ -670,7 +670,7 @@ module Base
 		Disinfectant,
 		Result 		: Bandage=5,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item zombieoilfac
@@ -695,7 +695,7 @@ module Base
 		EmptyPetrolCan,
 		Result 		: zombieoilfac,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Refine corpse oil
@@ -705,7 +705,7 @@ module Base
 		CorpseFemale/CorpseMale,
 		Result 		: tt_shiyoukuai,
 		Time 		: 100,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.zombieoil,
 	}
@@ -729,7 +729,7 @@ module Base
 		tt_shiyoukuai=7,
 		Result 		: PetrolCan,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.zombieoil2,
 	}
@@ -788,7 +788,7 @@ module Base
 		TirePump,
 		Time 		: 150,
 		Result 		: TirePump,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		OnCreate 		: Recipe.OnCreate.hezhuangqichea,
 		CanBeDoneFromFloor 		: TRUE,
 	}
@@ -798,7 +798,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy new original car
@@ -807,7 +807,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche2,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy super sportscar
@@ -816,7 +816,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche3,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy Helicopter
@@ -825,7 +825,7 @@ module Base
 		keep tradestation,
 		Result 		: hezhuangqiche4,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item zombietissue
@@ -891,7 +891,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheshengcunwuzi,
 		RemoveResultItem 		: true,
@@ -902,7 +902,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghefangkuai,
 		RemoveResultItem 		: true,
@@ -920,7 +920,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejiu,
 		RemoveResultItem 		: true,
@@ -931,7 +931,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejunhuo,
 		RemoveResultItem 		: true,
@@ -948,7 +948,7 @@ module Base
 		Bag_Schoolbag=2,
 		Result 		: zombiebag2,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Make carcass bag S
@@ -963,7 +963,7 @@ module Base
 		Bag_Schoolbag=1,
 		Result 		: zombiebag1,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Lottery Rare materials
@@ -972,7 +972,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghexiyouwuzi,
 		RemoveResultItem 		: true,
@@ -1033,7 +1033,7 @@ module Base
 		keep tradestation,
 		Result 		: xiuchegongjv,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy seasoning gift box
@@ -1042,7 +1042,7 @@ module Base
 		keep tradestation,
 		Result 		:zhihezi ,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.tiaoweiliao,
 		RemoveResultItem 		: true,
@@ -1053,7 +1053,7 @@ module Base
 		keep tradestation,
 		Result 		:zhihezi,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.chataozhuang,
 		RemoveResultItem 		: true,
@@ -1079,7 +1079,7 @@ module Base
 		Money=130,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejianzhucailiao,
 		RemoveResultItem 		: true,
@@ -1102,7 +1102,7 @@ module Base
 		Wire=4,
 		Result 		: tt_ronghuaqi,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Recycle for coarse metals
@@ -1111,7 +1111,7 @@ module Base
 		Necklace_Gold/Necklace_GoldRuby/Necklace_GoldDiamond/Necklace_Silver/Necklace_SilverSapphire/Necklace_SilverCrucifix/Necklace_SilverDiamond/Necklace_Crucifix/Necklace_YingYang/Necklace_Pearl/NecklaceLong_Gold/NecklaceLong_GoldDiamond/NecklaceLong_Silver/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/NecklaceLong_Amber/Necklace_Choker/Necklace_Choker_Sapphire/Necklace_Choker_Amber/Necklace_Choker_Diamond/NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/Bracelet_RightFriendshipTINT/Bracelet_LeftFriendshipTINT,
 		Result 		: tt_feiqijinshukuai,
 		Time 		: 1,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Refine coarse metals
@@ -1122,7 +1122,7 @@ module Base
 		tt_feiqijinshukuai = 10,
 		Result 		: tt_feiqiguijinshu = 3,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.liancujinshu,
@@ -1151,7 +1151,7 @@ module Base
 		[Recipe.GetItemTypes.CraftSheetRope],
 		Result 		: tt_feiqihuaxian,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Make garbage bag
@@ -1163,7 +1163,7 @@ module Base
 		Charcoal/Plank,
 		Result 		: Base.Garbagebag,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Exchange charcoal
@@ -1172,7 +1172,7 @@ module Base
 		keep tradestation,
 		Result 		: Charcoal,
 		Time 		: 10,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Exchange fishing line
@@ -1182,7 +1182,7 @@ module Base
 		keep tradestation,
 		Result 		: FishingLine,
 		Time 		: 10,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Exchange clothes
@@ -1191,7 +1191,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheyifu2,
 		RemoveResultItem 		: true,
@@ -1204,7 +1204,7 @@ module Base
 		Charcoal/Plank,
 		Result 		: Twine,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Sell antibiotics
@@ -1213,7 +1213,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=160,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell ice pick
@@ -1222,7 +1222,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=150,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell hottiez
@@ -1231,7 +1231,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=150,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell videogame
@@ -1240,7 +1240,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=100,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell radio
@@ -1249,7 +1249,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=200,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Sell medical plants
@@ -1258,7 +1258,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=12,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -1268,7 +1268,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=10,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -1279,7 +1279,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=15,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Do nothing but play
@@ -1287,7 +1287,7 @@ module Base
 		Baseball,
 		Time 		: 100,
 		Result 		: Baseball,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		OnCreate 		: Recipe.OnCreate.jiushiwan,
 	}
 	item tt_lanseyaoji
@@ -1305,7 +1305,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_lanseyaoji,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy purple potion
@@ -1314,7 +1314,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_ziseyaoji,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Inject blue potion
@@ -1323,7 +1323,7 @@ module Base
 		Result 		: tt_lanseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.lanseyaoji,
 	}
@@ -1334,7 +1334,7 @@ module Base
 		ConcretePowder,
 		Result 		: BucketConcreteFull,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 	}
 	item tt_tongkuai
 	{
@@ -1366,7 +1366,7 @@ module Base
 		keep tradestation,
 		Result 		: Money=42,
 		Time 		: 1,
-		Category 		: TS-Selling,
+		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hejindao
@@ -1426,7 +1426,7 @@ module Base
 		keep tradestation,
 		Result 		: ConcretePowder,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy Dirty than hottie
@@ -1435,7 +1435,7 @@ module Base
 		keep tradestation,
 		Result 		: HottieZ,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy generator guide
@@ -1444,7 +1444,7 @@ module Base
 		keep tradestation,
 		Result 		: ElectronicsMag4,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy zombie's butter
@@ -1453,7 +1453,7 @@ module Base
 		keep tradestation,
 		Result 		: zombiebutter,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy fishing rod
@@ -1462,7 +1462,7 @@ module Base
 		keep tradestation,
 		Result 		: FishingRod,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy stone anvil
@@ -1471,7 +1471,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_shizhan,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Make alloy knife
@@ -1495,7 +1495,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghejinengzazhi,
 		RemoveResultItem 		: true,
@@ -1506,7 +1506,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheyiliaoyongpin,
 		RemoveResultItem 		: true,
@@ -1517,7 +1517,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheshiwu,
 		RemoveResultItem 		: true,
@@ -1537,7 +1537,7 @@ module Base
 		Result 		: tt_lvseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.lvseyaoji,
 	}
@@ -1547,7 +1547,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_lvseyaoji,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Lottery Clothing
@@ -1556,7 +1556,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.mangheyifu,
 		RemoveResultItem 		: true,
@@ -1567,7 +1567,7 @@ module Base
 		keep tradestation,
 		Result 		: Money,
 		Time 		: 40,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.dubodubo,
 		RemoveResultItem 		: true,
@@ -1590,7 +1590,7 @@ module Base
 		destroy tt_moneybag,
 		Result 		: tt_moneybag,
 		Time 		: 1,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.fangruwubaiyuan,
 	}
@@ -1599,7 +1599,7 @@ module Base
 		tt_moneybag=1,
 		Result 		: Money=500,
 		Time 		: 40,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Make stone anvil
@@ -1610,7 +1610,7 @@ module Base
 		Stone=5,
 		Result 		: tt_shizhan,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	recipe Buy money bag
@@ -1619,7 +1619,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_moneybag;0,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.goumaiqiandaizi,
 	}
@@ -1630,7 +1630,7 @@ module Base
 		Result 		: tradestation,
 		RemoveResultItem 		: true,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.yanglaobaoxian,
 		OnTest 		: Recipe.OnTest.yanglaobaoxian,
@@ -1649,7 +1649,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_pashoujuewu,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hongseyaoji
@@ -1666,7 +1666,7 @@ module Base
 		Result 		: tt_hongseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.hongseyaoji,
 	}
@@ -1676,7 +1676,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_hongseyaoji,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_qinglongdao
@@ -1736,7 +1736,7 @@ module Base
 		keep Screwdriver,
 		Time 		: 150,
 		Result 		: tt_solargenerator2,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		OnCreate 		: Recipe.OnCreate.solargenerator1,
 		CanBeDoneFromFloor 		: TRUE,
 		RemoveResultItem 		: true,
@@ -1755,7 +1755,7 @@ module Base
 		keep Screwdriver,
 		Time 		: 150,
 		Result 		: tt_solargenerator,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		OnCreate 		: Recipe.OnCreate.solargenerator2,
 		CanBeDoneFromFloor 		: TRUE,
 	}
@@ -1765,7 +1765,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_solargenerator,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Lottery box ammo
@@ -1774,7 +1774,7 @@ module Base
 		keep tradestation,
 		Result 		: zhihezi,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.manghedanyao,
 		RemoveResultItem 		: true,
@@ -1790,7 +1790,7 @@ module Base
 		zombietissue,
 		Result 		: Battery=3,
 		Time 		: 200,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: true,
 	}
 	item tt_shiyoukuai
@@ -2371,7 +2371,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_g_serum,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Inject genetically modified secret medicine
@@ -2380,7 +2380,7 @@ module Base
 		Result 		: tt_g_serum,
 		RemoveResultItem 		: TRUE,
 		Time 		: 100,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.ttgserum,
 	}
@@ -2443,7 +2443,7 @@ module Base
 		Result 		: tt_nongsuoniguding,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.nongsuoniguding,
 	}
@@ -2453,7 +2453,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_nongsuoniguding,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_hejinshoufu
@@ -2519,7 +2519,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_hejinshoufu,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	item tt_yaobaobeimian
@@ -2566,7 +2566,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_yaobaobeimian,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Make shotgun bullets
@@ -2633,7 +2633,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_famushoufu,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy suicide note
@@ -2642,7 +2642,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_yishu,
 		Time 		: 1,
-		Category 		: TS-Construction,
+		Category 		: TT-Construction,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 
@@ -2663,7 +2663,7 @@ module Base
 		Result 		: tt_yishu,
 		Time 		: 80,
 		RemoveResultItem 		: TRUE,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.yishu,
 	}
@@ -2673,7 +2673,7 @@ module Base
 		tt_leidakongzhiqi,
 		Result 		: tt_leidakongzhiqi,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.leidakongzhiqi,
 	}
@@ -2683,7 +2683,7 @@ module Base
 		keep BreadKnife/ButterKnife/HuntingKnife/KitchenKnife/zombieknife,
 		Result 		: zombiesstomach,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.jiangshichangzi,
 		RemoveResultItem 		: TRUE,
@@ -2694,7 +2694,7 @@ module Base
 		keep tradestation,
 		Result 		: tt_leidakongzhiqi,
 		Time 		: 1,
-		Category 		: TS-Weapons,
+		Category 		: TT-Weapons,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy big refrigerator
@@ -2703,7 +2703,7 @@ module Base
 		keep tradestation,
 		Result 		: bigbigfridge,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy big metal crate
@@ -2712,7 +2712,7 @@ module Base
 		keep tradestation,
 		Result 		: bigmentalcrate,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	recipe Buy propane tank
@@ -2721,7 +2721,7 @@ module Base
 		keep tradestation,
 		Result 		: PropaneTank,
 		Time 		: 1,
-		Category 		: TS-Common,
+		Category 		: TT-Common,
 		CanBeDoneFromFloor 		: TRUE,
 	}
 	multistagebuild CreatehejinWall
@@ -2759,7 +2759,7 @@ module Base
 		Result 		: tt_ziseyaoji,
 		RemoveResultItem 		: TRUE,
 		Time 		: 80,
-		Category 		: TS-Basic,
+		Category 		: TT-Basic,
 		CanBeDoneFromFloor 		: TRUE,
 		OnCreate 		: Recipe.OnCreate.ziseyaoji,
 	}

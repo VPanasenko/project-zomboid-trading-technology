@@ -1,0 +1,119 @@
+module TradingTechnologyEN
+{
+    imports
+    {
+        filcher
+    }
+
+    /************************SKILLS************************/
+
+    /*recipe Sell foreign beginner skill book
+	{
+		BookSprinting1/BookNimble1/BookAiming1/BookReloading1/BookAxe1/BookBlunt1/BookSmallBlunt1/BookLongBlade1/BookSmallBlade1/BookSpear1/BookMaintenance1/BookSneaking1/BookLightfooted1/BookFitness1/BookStrength1/BookMasonry1/BookSmithing1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell foreign intermediate skill book
+	{
+		BookSprinting2/BookNimble2/BookAiming2/BookReloading2/BookAxe2/BookBlunt2/BookSmallBlunt2/BookLongBlade2/BookSmallBlade2/BookSpear2/BookMaintenance2/BookSneaking2/BookLightfooted2/BookFitness2/BookStrength2/BookMasonry2/BookSmithing2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell foreign advanced skill book
+	{
+		BookSprinting3/BookNimble3/BookAiming3/BookReloading3/BookAxe3/BookBlunt3/BookSmallBlunt3/BookLongBlade3/BookSmallBlade3/BookSpear3/BookMaintenance3/BookSneaking3/BookLightfooted3/BookFitness3/BookStrength3/BookMasonry3/BookSmithing3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell foreign expert skill book
+	{
+		BookSprinting4/BookNimble4/BookAiming4/BookReloading4/BookAxe4/BookBlunt4/BookSmallBlunt4/BookLongBlade4/BookSmallBlade4/BookSpear4/BookMaintenance4/BookSneaking4/BookLightfooted4/BookFitness4/BookStrength4/BookMasonry4/BookSmithing4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell foreign mastery skill book
+	{
+		BookSprinting5/BookNimble5/BookAiming5/BookReloading5/BookAxe5/BookBlunt5/BookSmallBlunt5/BookLongBlade5/BookSmallBlade5/BookSpear5/BookMaintenance5/BookSneaking5/BookLightfooted5/BookFitness5/BookStrength5/BookMasonry5/BookSmithing5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell foreign books
+	{
+		Book,
+		keep tradestation,
+		Result 		: Money=8,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}*/
+
+	recipe Sell LearningTime beginner skill book
+	{
+		BookMaintenance1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell LearningTime intermediate skill book
+	{
+		BookMaintenance2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell LearningTime advanced skill book
+	{
+		BookMaintenance3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell LearningTime expert skill book
+	{
+		BookMaintenance4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell LearningTime mastery skill book
+	{
+		BookMaintenance5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

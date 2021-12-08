@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		jdjyforge
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell jiandanjiaoyiduanzao recipes
+	{
+		MakeWeapon,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

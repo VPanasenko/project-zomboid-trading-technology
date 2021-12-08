@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell SKLDairyModBeta recipes
+	{
+		DairyCookingMag,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

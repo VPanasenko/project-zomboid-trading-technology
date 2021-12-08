@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell books
+	{
+		Book,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,30 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		filcher,
+		Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell Blacksmith41 recipes
+	{
+		SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Blacksmith41 recipes
+	{
+		SmithingMag0/SmithingMag5/SmithingMag6/SmithingMag7/SmithingMag8/SmithingMag9/SmithingMag10/SmithingMag11,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

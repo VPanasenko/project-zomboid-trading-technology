@@ -1,0 +1,19 @@
+module TradingTechnologyEN
+{
+	imports
+    {
+		filcher
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell ApocalypseMachines2WheelZ recipes
+	{
+		SFMechanicMag4,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}
