@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes ScrapGuns
+	recipe Sell ScrapGuns teachings
 	{
 		ScrapGunMag1/ScrapGunMag2/ScrapGunMag3/ScrapGunMag4,
 		keep tradestation,

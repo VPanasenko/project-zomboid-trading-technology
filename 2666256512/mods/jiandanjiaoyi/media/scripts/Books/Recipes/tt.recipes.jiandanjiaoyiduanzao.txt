@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes jiandanjiaoyiduanzao
+	recipe Sell jiandanjiaoyiduanzao teachings
 	{
 		MakeWeapon,
 		keep tradestation,

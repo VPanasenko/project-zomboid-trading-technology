@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes eggonsSharpenYourBlades
+	recipe Sell eggonsSharpenYourBlades teachings
 	{
 		MagazineAllAboutBladeBevels/MagazineTableGrinderUserManual/MagazineJapaneseMastersSpecialEdition/MagazineTypicalSharpeningMistakes/MagazineHomemadeGrindingTools,
 		keep tradestation,

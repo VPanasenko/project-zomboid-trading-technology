@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes betterLockpicking
+	recipe Sell betterLockpicking teachings
 	{
 		LockpickingMag/AlarmMag,
 		keep tradestation,

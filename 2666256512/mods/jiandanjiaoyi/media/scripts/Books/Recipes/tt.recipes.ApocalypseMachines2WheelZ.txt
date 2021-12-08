@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes ApocalypseMachines2WheelZ
+	recipe Sell ApocalypseMachines2WheelZ teachings
 	{
 		SFMechanicMag4,
 		keep tradestation,

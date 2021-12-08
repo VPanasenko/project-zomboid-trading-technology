@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes JarringMadeEasy
+	recipe Sell JarringMadeEasy teachings
 	{
 		JarringMag1/JarringMag2/JarringMag3,
 		keep tradestation,

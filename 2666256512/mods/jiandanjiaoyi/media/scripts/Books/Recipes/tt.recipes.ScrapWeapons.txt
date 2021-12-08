@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes ScrapWeapons
+	recipe Sell ScrapWeapons teachings
 	{
 		WeaponMag1/WeaponMag2/WeaponMag3/WeaponMag4/WeaponMag5/WeaponMag6/WeaponMag7/WeaponMag8/WeaponMag9/WeaponMag10,
 		keep tradestation,

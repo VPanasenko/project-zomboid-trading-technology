@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes tsarslib
+	recipe Sell tsarslib teachings
 	{
 		ATATuningMagUniverse,
 		keep tradestation,

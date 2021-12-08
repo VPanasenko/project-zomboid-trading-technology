@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes improvedbuildmenu412
+	recipe Sell improvedbuildmenu412 teachings
 	{
 		MetalworkMag4,
 		keep tradestation,

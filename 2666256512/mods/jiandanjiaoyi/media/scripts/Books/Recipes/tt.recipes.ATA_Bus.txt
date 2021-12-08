@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes ATA_Bus
+	recipe Sell ATA_Bus teachings
 	{
 		AtTuningMagBus/Bullbar2Blueprint/Bullbar3Blueprint,
 		keep tradestation,

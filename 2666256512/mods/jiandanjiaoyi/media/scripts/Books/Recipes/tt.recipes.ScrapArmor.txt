@@ -7,7 +7,7 @@ module TradingTechnologyEN
 
     /************************RECIPES************************/
 
-	recipe Sell recipes ScrapArmor
+	recipe Sell ScrapArmor teachings
 	{
 		ArmorMag1/ArmorMag2/ArmorMag3/ArmorMag4/ArmorMag5,
 		keep tradestation,
