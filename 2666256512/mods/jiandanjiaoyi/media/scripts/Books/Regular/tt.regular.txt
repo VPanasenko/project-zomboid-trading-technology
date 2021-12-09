@@ -16,4 +16,14 @@ module TradingTechnologyEN
 		Category 		: TT-Selling,
 		CanBeDoneFromFloor 		: TRUE,
 	}
+
+	recipe Sell magazines
+	{
+		Magazine/HottieZ/Newspaper/ComicBook,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
 }
