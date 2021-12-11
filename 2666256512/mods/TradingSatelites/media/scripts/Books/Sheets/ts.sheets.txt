@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    { 
+		Base
+    }
+
+    /************************SHEETS************************/
+
+	recipe Sell sheets
+	{
+		Notebook/Doodle/Journal/SheetPaper2,
+		keep tradestation,
+		Result 		: Money=2,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

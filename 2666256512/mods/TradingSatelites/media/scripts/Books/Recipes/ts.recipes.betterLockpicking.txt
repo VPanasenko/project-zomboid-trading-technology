@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		BetLock
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell betterLockpicking teachings
+	{
+		LockpickingMag/AlarmMag,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

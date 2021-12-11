@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		ISA
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell ISA teachings
+	{
+		ISAMag1,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,59 @@
+module TradingSatelites
+{
+	imports
+    {
+        Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell beginner skill book
+	{
+		BookTrapping1/BookFishing1/BookCarpentry1/BookMechanic1/BookFirstAid1/BookBlacksmith1/BookMetalWelding1/BookElectrician1/BookCooking1/BookFarming1/BookForaging1/BookTailoring1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell intermediate skill book
+	{
+		BookTrapping2/BookFishing2/BookCarpentry2/BookMechanic2/BookFirstAid2/BookBlacksmith2/BookMetalWelding2/BookElectrician2/BookCooking2/BookFarming2/BookForaging2/BookTailoring2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell advanced skill book
+	{
+		BookTrapping3/BookFishing3/BookCarpentry3/BookMechanic3/BookFirstAid3/BookBlacksmith3/BookMetalWelding3/BookElectrician3/BookCooking3/BookFarming3/BookForaging3/BookTailoring3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell expert skill book
+	{
+		BookTrapping4/BookFishing4/BookCarpentry4/BookMechanic4/BookFirstAid4/BookBlacksmith4/BookMetalWelding4/BookElectrician4/BookCooking4/BookFarming4/BookForaging4/BookTailoring4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell mastery skill book
+	{
+		BookTrapping5/BookFishing5/BookCarpentry5/BookMechanic5/BookFirstAid5/BookBlacksmith5/BookMetalWelding5/BookElectrician5/BookCooking5/BookFarming5/BookForaging5/BookTailoring5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

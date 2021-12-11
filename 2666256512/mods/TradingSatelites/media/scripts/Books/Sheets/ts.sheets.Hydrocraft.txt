@@ -1,0 +1,29 @@
+module TradingSatelites
+{
+	imports
+    {
+        Hydrocraft
+    }
+
+    /************************SHEETS************************/
+
+	recipe Sell Hydrocraft postcards
+	{
+		HCPostcard1/HCPostcard2/HCPostcard3/HCPostcard4/HCPostcard5/HCPostcard6/HCPostcard7/HCPostcard8,
+		keep tradestation,
+		Result 		: Money=2,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft bookcovers
+	{
+		HCBookcover/HCBookmark,
+		keep tradestation,
+		Result 		: Money=2,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

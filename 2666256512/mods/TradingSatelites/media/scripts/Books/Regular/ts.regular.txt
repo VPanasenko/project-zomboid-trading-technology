@@ -1,0 +1,29 @@
+module TradingSatelites
+{
+	imports
+    {
+		Base
+    }
+
+    /************************REGULAR BOOKS************************/
+
+	recipe Sell books
+	{
+		Book,
+		keep tradestation,
+		Result 		: Money=3,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell magazines
+	{
+		Magazine/HottieZ/Newspaper/ComicBook,
+		keep tradestation,
+		Result 		: Money=3,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

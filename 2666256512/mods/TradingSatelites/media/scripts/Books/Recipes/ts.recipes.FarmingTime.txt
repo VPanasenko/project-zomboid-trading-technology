@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		filcher
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell FarmingTime teachings
+	{
+		SFBookFarm/SFFarmMag2/SFFarmMag3,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

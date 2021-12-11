@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		filcher
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell LearningTime teachings
+	{
+		SFGuideCooking/SFGuideEletronics/SFGuideEngineering/SFGuideFishing/SFGuideMechanics/SFGuideMetalworking/SFGuideRadio/SFGuideTrapping/FarmingNotes1/FarmingNotes2/FarmingNotes3/FishingNotes1/FishingNotes2/HuntingNotes1/HuntingNotes2/HuntingNotes3/HerbalistNotes/MetalworkNotes1/MetalworkNotes2/MetalworkNotes3/MetalworkNotes4/CookingNotes1/CookingNotes2/SFCookingNotes1/ElectronicsNotes1/ElectronicsNotes2/ElectronicsNotes3/ElectronicsNotes4/ElectronicsNotes5/EngineerNotes1/EngineerNotes2/EngineerNotes3/EngineerNotes4/EngineerNotes5/MechanicNotes1/MechanicNotes2/MechanicNotes3/RadioNotes1/RadioNotes2/RadioNotes3/SmithingNotes1/SmithingNotes2/SmithingNotes3/SmithingNotes4/SmithingNotes5,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

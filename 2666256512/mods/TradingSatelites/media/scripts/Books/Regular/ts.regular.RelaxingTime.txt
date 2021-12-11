@@ -1,0 +1,30 @@
+module TradingSatelites
+{
+	imports
+    {
+        filcher, 
+		Base
+    }
+
+    /************************REGULAR BOOKS************************/
+
+	recipe Sell RelaxingTime books
+	{
+		ColoringBook/Crosswords/NotesJokes/Novel,
+		keep tradestation,
+		Result 		: Money=3,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell RelaxingTime books
+	{
+		Book/Disc/ComicBook/HottieZ/Journal/Magazine,
+		keep tradestation,
+		Result 		: Money=3,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

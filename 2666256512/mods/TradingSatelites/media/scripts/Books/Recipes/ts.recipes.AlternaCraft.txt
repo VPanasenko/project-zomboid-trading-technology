@@ -1,0 +1,39 @@
+module TradingSatelites
+{
+	imports
+    {
+		SGuns
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell AlternaCraft teachings
+	{
+		HistoryOfFireworks,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell AlternaCraft teachings
+	{
+		NaturalDyesMag,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell AlternaCraft teachings
+	{
+		ToServeMan,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

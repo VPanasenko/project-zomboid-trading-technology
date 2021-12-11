@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		Base
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell PLLootF teachings
+	{
+		Grimoire,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

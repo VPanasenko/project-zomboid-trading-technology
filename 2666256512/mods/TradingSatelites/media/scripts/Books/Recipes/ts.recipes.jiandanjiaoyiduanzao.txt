@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		jdjyforge
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell jiandanjiaoyiduanzao teachings
+	{
+		MakeWeapon,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		TapedTvShows
+    }
+
+    /************************ITEMS************************/
+
+	recipe Sell TapedTvShows video tapes
+	{
+		VideoTape1/VideoTape2/VideoTape3/VideoTape4/VideoTape5/VideoTape6/VideoTape7/VideoTape8/VideoTape9/VideoTape10/VideoTape11/VideoTape12/VideoTape13/VideoTape14/VideoTape15/VideoTape16/VideoTape17/VideoTape18/VideoTape19/VideoTape20/VideoTape21/VideoTape22/VideoTape23/VideoTape24/VideoTape25,
+		keep tradestation,
+		Result 		: Money=5,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

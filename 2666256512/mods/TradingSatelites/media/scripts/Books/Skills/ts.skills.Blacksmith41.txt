@@ -1,0 +1,59 @@
+module TradingSatelites
+{
+	imports
+    {
+        Base
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell Blacksmith41 beginner skill book
+	{
+		BookSmithing1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell Blacksmith41 intermediate skill book
+	{
+		BookSmithing2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell Blacksmith41 advanced skill book
+	{
+		BookSmithing3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell Blacksmith41 expert skill book
+	{
+		BookSmithing4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell Blacksmith41 mastery skill book
+	{
+		BookSmithing5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

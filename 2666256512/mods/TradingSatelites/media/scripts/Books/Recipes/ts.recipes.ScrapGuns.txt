@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		SGuns
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell ScrapGuns teachings
+	{
+		ScrapGunMag1/ScrapGunMag2/ScrapGunMag3/ScrapGunMag4,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

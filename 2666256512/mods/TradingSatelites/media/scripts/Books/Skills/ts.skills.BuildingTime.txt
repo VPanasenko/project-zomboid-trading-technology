@@ -1,0 +1,59 @@
+module TradingSatelites
+{
+	imports
+    {
+        filcher
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BuildingTime beginner skill book
+	{
+		BookMasonry1,
+		keep tradestation,
+		Result 		: Money=10,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BuildingTime intermediate skill book
+	{
+		BookMasonry2,
+		keep tradestation,
+		Result 		: Money=20,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BuildingTime advanced skill book
+	{
+		BookMasonry3,
+		keep tradestation,
+		Result 		: Money=30,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BuildingTime expert skill book
+	{
+		BookMasonry4,
+		keep tradestation,
+		Result 		: Money=40,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BuildingTime mastery skill book
+	{
+		BookMasonry5,
+		keep tradestation,
+		Result 		: Money=50,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

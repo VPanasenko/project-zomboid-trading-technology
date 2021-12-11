@@ -1,0 +1,19 @@
+module TradingSatelites
+{
+	imports
+    {
+		Aquatsar
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell AquatsarYachtClub teachings
+	{
+		BoatMag/SwimMag,
+		keep tradestation,
+		Result 		: Money=15,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}
