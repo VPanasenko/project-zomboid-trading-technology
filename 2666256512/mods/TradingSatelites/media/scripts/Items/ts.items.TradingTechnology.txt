@@ -1,0 +1,29 @@
+module TradingSatelites
+{
+	imports
+    { 
+		Base
+    }
+
+    /************************ITEMS************************/
+
+	recipe Sell big metal crate
+	{
+		bigmentalcrate,
+		keep tradestation,
+		Result 		: Money=500,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell big fridge
+	{
+		bigbigfridge,
+		keep tradestation,
+		Result 		: Money=1000,
+		Time 		: 1,
+		Category 		: TT-Selling,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}
