@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+        Base, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+    recipe Sell SkillRecoveryJournal skill book
+	{
+		SkillRecoveryJournal,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

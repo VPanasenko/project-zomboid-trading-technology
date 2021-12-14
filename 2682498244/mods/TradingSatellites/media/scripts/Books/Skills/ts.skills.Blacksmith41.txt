@@ -1,0 +1,60 @@
+module TradingSatellites
+{
+	imports
+    {
+        Base, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell Blacksmith41 beginner skill book
+	{
+		BookSmithing1,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell Blacksmith41 intermediate skill book
+	{
+		BookSmithing2,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell Blacksmith41 advanced skill book
+	{
+		BookSmithing3,
+		keep HCTradingpost,
+		Result 		: HCDollar=30,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell Blacksmith41 expert skill book
+	{
+		BookSmithing4,
+		keep HCTradingpost,
+		Result 		: HCDollar=40,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell Blacksmith41 mastery skill book
+	{
+		BookSmithing5,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

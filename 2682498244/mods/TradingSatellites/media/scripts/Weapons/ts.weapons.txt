@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		Base, 
+		Hydrocraft
+    }
+
+    /************************WEAPONS************************/
+
+	recipe Sell pens and pencils
+	{
+		Pencil/Pen/RedPen/BluePen,
+		keep HCTradingpost,
+		Result 		: HCDollar=1,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

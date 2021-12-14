@@ -1,0 +1,31 @@
+module TradingSatellites
+{
+	imports
+    {
+		filcher,
+		Base, 
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell Blacksmith41 teachings
+	{
+		SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Blacksmith41 teachings
+	{
+		SmithingMag0/SmithingMag5/SmithingMag6/SmithingMag7/SmithingMag8/SmithingMag9/SmithingMag10/SmithingMag11,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

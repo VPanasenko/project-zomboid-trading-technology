@@ -1,0 +1,60 @@
+module TradingSatellites
+{
+	imports
+    {
+        BLBooks, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BLBooks beginner skill book
+	{
+		BookLockpicking1,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BLBooks intermediate skill book
+	{
+		BookLockpicking2,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BLBooks advanced skill book
+	{
+		BookLockpicking3,
+		keep HCTradingpost,
+		Result 		: HCDollar=30,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BLBooks expert skill book
+	{
+		BookLockpicking4,
+		keep HCTradingpost,
+		Result 		: HCDollar=40,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BLBooks mastery skill book
+	{
+		BookLockpicking5,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		filcher,
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell FarmingTime teachings
+	{
+		SFBookFarm/SFFarmMag2/SFFarmMag3,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

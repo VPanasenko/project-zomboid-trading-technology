@@ -1,0 +1,60 @@
+module TradingSatellites
+{
+	imports
+    {
+        Base, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell EliazFitnessStrengthBooks beginner skill book
+	{
+		BookStrength1/BookFitness1,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell EliazFitnessStrengthBooks intermediate skill book
+	{
+		BookStrength2/BookFitness2,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell EliazFitnessStrengthBooks advanced skill book
+	{
+		BookStrength3/BookFitness3,
+		keep HCTradingpost,
+		Result 		: HCDollar=30,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell EliazFitnessStrengthBooks expert skill book
+	{
+		BookStrength4/BookFitness4,
+		keep HCTradingpost,
+		Result 		: HCDollar=40,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell EliazFitnessStrengthBooks mastery skill book
+	{
+		BookStrength5/BookFitness5,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

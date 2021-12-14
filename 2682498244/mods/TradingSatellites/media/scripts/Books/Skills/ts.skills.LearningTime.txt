@@ -1,0 +1,60 @@
+module TradingSatellites
+{
+    imports
+    {
+        filcher, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell LearningTime beginner skill book
+	{
+		BookMaintenance1,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell LearningTime intermediate skill book
+	{
+		BookMaintenance2,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell LearningTime advanced skill book
+	{
+		BookMaintenance3,
+		keep HCTradingpost,
+		Result 		: HCDollar=30,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell LearningTime expert skill book
+	{
+		BookMaintenance4,
+		keep HCTradingpost,
+		Result 		: HCDollar=40,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell LearningTime mastery skill book
+	{
+		BookMaintenance5,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

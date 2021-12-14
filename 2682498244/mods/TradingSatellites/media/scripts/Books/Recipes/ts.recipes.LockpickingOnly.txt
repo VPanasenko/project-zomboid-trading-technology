@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		FMJ, 
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell LockpickingOnly teachings
+	{
+		LockPickingMag/LockPickingMag2,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

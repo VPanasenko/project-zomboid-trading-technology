@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		Base, 
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell BE Bombs teachings
+	{
+		ModConflictMagHairsprayBomb/ModConflictMagLightbulbBomb/ModConflictMagLunchboxBomb/ModConflictMagLunchboxBomb2,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

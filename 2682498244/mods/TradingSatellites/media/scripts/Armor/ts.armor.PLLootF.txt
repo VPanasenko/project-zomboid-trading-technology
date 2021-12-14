@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		Base, 
+		Hydrocraft
+    }
+
+    /************************ARMOR************************/
+
+	recipe Sell Ares armor body
+	{
+		aresbody,
+		keep HCTradingpost,
+		Result 		: HCDollar=550,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

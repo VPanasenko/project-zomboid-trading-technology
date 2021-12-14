@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    { 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************SHEETS************************/
+
+	recipe Sell sheets
+	{
+		Notebook/Doodle/Journal/SheetPaper2,
+		keep HCTradingpost,
+		Result 		: HCDollar=2,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		ESYB,
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell eggonsSharpenYourBlades teachings
+	{
+		MagazineAllAboutBladeBevels/MagazineTableGrinderUserManual/MagazineJapaneseMastersSpecialEdition/MagazineTypicalSharpeningMistakes/MagazineHomemadeGrindingTools,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

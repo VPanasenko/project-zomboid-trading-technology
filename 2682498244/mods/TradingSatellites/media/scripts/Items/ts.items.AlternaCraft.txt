@@ -1,0 +1,80 @@
+module TradingSatellites
+{
+	imports
+    { 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************ITEMS************************/
+
+	recipe Exchange 1 Dollar
+	{
+		1_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=1,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 2 Dollars
+	{
+		2_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=2,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 5 Dollars
+	{
+		5_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=5,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 10 Dollars
+	{
+		10_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 20 Dollars
+	{
+		20_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 50 Dollars
+	{
+		50_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Exchange 100 Dollars
+	{
+		100_DollarBill,
+		keep HCTradingpost,
+		Result 		: HCDollar=100,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

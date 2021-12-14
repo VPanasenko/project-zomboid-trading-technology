@@ -1,0 +1,31 @@
+module TradingSatellites
+{
+	imports
+    {
+        filcher, 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************REGULAR BOOKS************************/
+
+	recipe Sell RelaxingTime books
+	{
+		ColoringBook/Crosswords/NotesJokes/Novel,
+		keep HCTradingpost,
+		Result 		: HCDollar=3,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell RelaxingTime books
+	{
+		Book/Disc/ComicBook/HottieZ/Journal/Magazine,
+		keep HCTradingpost,
+		Result 		: HCDollar=3,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

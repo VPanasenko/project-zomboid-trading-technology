@@ -1,0 +1,50 @@
+module TradingSatellites
+{
+	imports
+    { 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************ITEMS************************/
+
+	recipe Sell big metal crate
+	{
+		bigmentalcrate,
+		keep HCTradingpost,
+		Result 		: HCDollar=500,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell big fridge
+	{
+		bigbigfridge,
+		keep HCTradingpost,
+		Result 		: HCDollar=1000,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell money
+	{
+		Money,
+		keep HCTradingpost,
+		Result 		: HCDollar=1,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft dollars
+	{
+		HCDollar,
+		keep HCTradingpost,
+		Result 		: Money=1,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

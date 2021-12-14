@@ -1,0 +1,40 @@
+module TradingSatellites
+{
+	imports
+    {
+		SGuns,
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell AlternaCraft teachings
+	{
+		HistoryOfFireworks,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell AlternaCraft teachings
+	{
+		NaturalDyesMag,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell AlternaCraft teachings
+	{
+		ToServeMan,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

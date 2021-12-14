@@ -1,0 +1,80 @@
+module TradingSatellites
+{
+	imports
+    {
+        Base,
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCBookastronomy/HCBookanimalhusbandry/HCBookceltic/HCBookchemistry/HCBookboneworking/HCBookentomology/HCBookmedical/HCBookmusic/HCBooktreeguide/HCBookvet/HCBookanatomy/HCBookarthistory/HCBookbirdgude/HCBookeconomics/HCBookfishguide/HCBookflowerguide/HCBookgeology/HCBookgemcutting/HCBookjewelry/HCBookmammalguide/HCBooknorsemyths/HCBookoceanography/HCBookscience/HCBookapiculture/HCBookplumbing/HCBookelectrical/HCBookcomputerprograming/HCBookbattery/HCBookarchery/HCBookpottery/HCBookglassworking/HCBookcopperworking/HCBooktinworking/HCBookbronzeworking/HCBookalloys/HCBookmetalurgy/HCBookironworking/HCBookleadworking/HCBooksteelworking/HCBookcoalworking/HCBooksilverworking/HCBookgoldworking/HCBookaluminumworking/HCBooktitaniumworking/HCBooklithiumworking/HCBookrubberworking/HCBookcandlemaking/HCBooksoapmaking/HCBookbasketry/HCBookmasonry/HCBookstoneworking/HCBookhunting/HCBookleatherworking/HCBooktailoring/HCBookhatter/HCBookcobbling/HCBookarmorcrafting/HCBookherbalism/HCBooksericulture/HCBookfungiguide/HCBookpharmacology/HCBookwelding/HCBookwire/HCBookmagnets/HCBookindustrial/HCBookgunsmithing/HCBookrocketry/HCBookjunk/HCBookauto/HCBookbicycle/HCBookanarchist/HCBookanarchisthmtd/HCBookanarchistammonal/HCBookanarchistpn02/HCBooklocksmithing/HCBookmicrobiology/HCBookgardening/HCBooksculpting/HCBookorganicchemistry/HCBookexplosives/HCBookbiodiesel/HCBookdistillery/HCBookphotography/HCBookmycology/HCBooktaxidermy/HCBookpapermaking/HCBooktoys,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCBlueprintpoatocannon/HCBlueprintflamethrower/HCBlueprintrocketlauncher/HCBlueprintducttapefletching/HCBlueprintbonearrowhead/HCBlueprintfishingrod/HCBlueprintfishingnet/HCBlueprinttrapcrate/HCBlueprinttrapstick/HCBlueprinttrapsnare/HCBlueprinttrapbox/HCBlueprinttrapcage/HCBlueprintmousetrap/HCBlueprintnailtrap/HCBlueprinthazmatsuit/HCBlueprintantibiotics/HCBlueprintpainkillers/HCBlueprintantidepression/HCBlueprintproflab/HCBlueprintmeth/HCBlueprintbluemeth/HCBlueprintinjections/HCBlueprintskinanimal/HCBlueprintopium/HCBlueprintether/HCBlueprintsolarpark/HCBlueprinthmtd/HCBlueprintHerbalMed/HCBlueprintammonal/HCBlueprintjackalope/HCBlueprintsteampot/HCBlueprintcarbon/HCBlueprintbetablocker/HCBlueprintcomposter2/HCBlueprintcomputermouse/HCBlueprintcomputerkeyboard/HCBlueprintcomputermonitor/HCBlueprintextractworkingcpu/HCBlueprintmakecomputerpsu/HCBlueprintmakecomputerfan/HCBlueprintmakecomputertower/HCPlanIronMine/HCPlanCoalMine/HCAdvFitPlan/HCCookbookMethanol/HCknittingTextBook/HCSilkworkingTextbook,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCCookbookbbq/HCBookbaking/HCCookbookbutcher/HCBookcheesemaking/HCCookbookdried/HCCookbookegg/HCCookbookjerky/HCCookbookmexican/HCCookbookpasta/HCCookbookpickling/HCCookbookpizza/HCCookbooksalt/HCBooksausagemaking/HCCookbooksmoking/HCCookbookspices/HCBookwinemaking/HCCookbookyogurt/HCCookbookalcoholic,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCSuicidenote,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCMagazinemetalworking1/HCMagazinemetalworking2/HCMagazinemetalworking3/HCMagazinemetalworking4/HCMagazinemetalworking5/HCMagazinemetalworking6/HCMagazinemetalworking7/HCMagazinefarming1/HCMagazineelectronics01/HCMagazineelectronics02/HCMagazineelectronics03/HCMagazinespopularmachines01/HCMagazinexmas,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell Hydrocraft teachings
+	{
+		HCTabletskinanimal/HCTabletButcherCarcass/HCTabletberries/HCTabletshrooms/HCTabletbirchbarkbasket/HCTabletwickerbasket/HCTabletstrawbasket/HCTabletsticktrap/HCTabletBoneNeedles/HCTabletDryingFrame,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

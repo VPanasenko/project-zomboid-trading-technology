@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		SWeapons, 
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell ScrapWeapons teachings
+	{
+		WeaponMag1/WeaponMag2/WeaponMag3/WeaponMag4/WeaponMag5/WeaponMag6/WeaponMag7/WeaponMag8/WeaponMag9/WeaponMag10,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

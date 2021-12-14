@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		Autotsar,
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell ATA_Bus teachings
+	{
+		AtTuningMagBus/Bullbar2Blueprint/Bullbar3Blueprint,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

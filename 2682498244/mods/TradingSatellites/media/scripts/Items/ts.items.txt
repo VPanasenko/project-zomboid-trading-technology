@@ -1,0 +1,42 @@
+module TradingSatellites
+{
+	imports
+    { 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************ITEMS************************/
+
+	recipe Sell CDs
+	{
+		Disc/Disc_Retail,
+		keep HCTradingpost,
+		Result 		: HCDollar=5,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	/* 
+	recipe Sell named CDs
+	{
+		RM_d088ff63-6c0d-43b0-bcd6-b023967a1b1a/RM_4c48f74e-ee55-41b3-930a-2e05fd52c868/RM_4fc658ae-3063-4ba0-b571-d9c5a5e7e1cd/RM_9132763a-3fff-4fb0-bf1d-dd4b144f2165/RM_b068ad7f-0ba1-486b-87e0-ccc42ad30f13/RM_7452ab76-0608-40d4-88ba-7f4eba297b76/RM_d64a8423-df49-484b-828e-2c06e76b48b2/RM_38b844c0-9b7c-46a8-b81a-0df56bd107a0/RM_7c7de31d-a074-4c06-a53d-ebf4ff30e4bb/RM_1614e9ba-4b35-4e57-bc3b-cacddfe11feb/RM_6543e475-95cb-4c50-a530-1ca8410255a1/RM_ff839931-0617-4088-85d2-2a4e98209dc8/RM_84c6b585-63bf-4d89-8d1e-b6a28ae22360/RM_e4d02aae-dfe8-42d1-aaa5-8e814d8be32b/RM_5c37377e-13ee-4ca5-a8e5-ec545152d8c1/RM_ff967067-5af8-4689-baf1-d80d41f7bd66/RM_860656e4-11f9-47ca-9538-f6e5ab116cb5/RM_06c3e9f3-23c7-4b5f-8635-3d4f2021021f/RM_619059f5-d13a-4f9b-9aa4-18fe846928d5/RM_9d547f20-5bd4-4ec3-983f-b1bce3b99345/RM_35896838-a039-4788-89ba-7391caa327e1/RM_4b030747-c500-43f3-ae85-0b5b5bf44c70/RM_62d24526-859f-4609-ad41-95c723ce287f/RM_8d94bfa6-0cf1-454d-a348-1253de3824f5/RM_9ff782b0-1402-4e7e-8d08-ba20fc57acd6/RM_99ce7104-4234-4376-a09d-e3b80d75afe2/RM_176074c2-e080-4b8b-a367-351978c7fbed/RM_6a479f57-2273-4c87-bef6-c0e9123c75a1/RM_c0e97972-d06a-49ee-9ac0-4f2c570db0d3/RM_888d4f44-dfe9-4cd9-9abe-f204eee1fdac/RM_6c0ec758-7b90-4ae2-bc6f-aa908f82f33e/RM_ddc020f1-f3ed-43b6-9a2d-599305d2c0a1/RM_24d4c30e-3c96-4f9b-935f-f3be7fdd4628/RM_6f6e9136-d177-425f-bf23-d5eef9797493/RM_a908545b-e7e7-4ce1-8459-45147bc06fa7/RM_4afaa407-53fe-4db1-a2bb-ba6aed3cc369/RM_0e7a682a-f328-430e-8f24-49dfdd9b40ce/RM_6e4f763a-6aa1-42c1-adfe-cc7b0ff99cd3/RM_a739708d-23a2-4b52-bbad-7d0e8fd1154e/RM_f08e5a5d-e9cf-4c1e-bc57-a05e581f2efb/RM_23b5ef62-35e4-4369-957a-4a6f9e11ccc3/RM_14bd9852-2d4b-4b52-9abe-6161f4503185/RM_b6a79bcc-daf1-49ee-933b-79b4e3f8e2f3/RM_bcdb725f-80f7-4442-ba29-5fc896d21b08/RM_1bb94e7f-15a1-46cf-8200-a7d098e416b2/RM_831ad499-cb3d-47dc-b046-f29dc6fb7252/RM_72143ae1-8871-4180-b138-8dbc9867c3ba/RM_063a7be6-db4e-4ae7-8f2e-8720a6fa5f87/RM_d7ca5c7f-4fff-4be7-ab1e-57cdc630a4c7/RM_74d8e6da-4d36-4e07-968a-060a3f37bb75/RM_ca29a3bb-8ca9-4279-8cfc-24746306d43b/RM_5829d27a-cab3-41d9-a052-df2369ef094e/RM_d8392ba2-f11c-4885-96f2-f0d673d2e16d,
+		keep HCTradingpost,
+		Result 		: HCDollar=5,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+	*/
+
+	recipe Sell VHSs
+	{
+		VHS/VHS_Retail/VHS_Home,
+		keep HCTradingpost,
+		Result 		: HCDollar=5,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

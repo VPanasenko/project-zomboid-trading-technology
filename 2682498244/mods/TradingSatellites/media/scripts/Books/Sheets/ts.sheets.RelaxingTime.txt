@@ -1,0 +1,31 @@
+module TradingSatellites
+{
+	imports
+    {
+        filcher, 
+		Base, 
+		Hydrocraft
+    }
+
+    /************************SHEETS************************/
+
+	recipe Sell RelaxingTime sheets
+	{
+		GiftCard/SFLetterToYou/PostcardLocal/PostcardOthers/RippedPages,
+		keep HCTradingpost,
+		Result 		: HCDollar=2,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+	recipe Sell RelaxingTime sheets
+	{
+		Cube/CubeSolved/Newspaper/Notebook/SheetPaper2,
+		keep HCTradingpost,
+		Result 		: HCDollar=2,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

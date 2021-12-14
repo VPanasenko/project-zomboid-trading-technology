@@ -1,0 +1,5 @@
+name=Trading Satellites
+id=TradingSatellites
+poster=TradingSatellites.png
+require=Hydrocraft
+description=More useful recipes for HydroCraft

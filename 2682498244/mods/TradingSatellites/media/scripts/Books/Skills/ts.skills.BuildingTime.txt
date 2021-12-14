@@ -1,0 +1,60 @@
+module TradingSatellites
+{
+	imports
+    {
+        filcher, 
+		Hydrocraft
+    }
+
+    /************************SKILLS************************/
+
+	recipe Sell BuildingTime beginner skill book
+	{
+		BookMasonry1,
+		keep HCTradingpost,
+		Result 		: HCDollar=10,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BuildingTime intermediate skill book
+	{
+		BookMasonry2,
+		keep HCTradingpost,
+		Result 		: HCDollar=20,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+
+    recipe Sell BuildingTime advanced skill book
+	{
+		BookMasonry3,
+		keep HCTradingpost,
+		Result 		: HCDollar=30,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BuildingTime expert skill book
+	{
+		BookMasonry4,
+		keep HCTradingpost,
+		Result 		: HCDollar=40,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}	
+
+    recipe Sell BuildingTime mastery skill book
+	{
+		BookMasonry5,
+		keep HCTradingpost,
+		Result 		: HCDollar=50,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

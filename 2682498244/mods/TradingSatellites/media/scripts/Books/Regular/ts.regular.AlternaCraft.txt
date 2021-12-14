@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		Base, 
+		Hydrocraft
+    }
+
+    /************************REGULAR BOOKS************************/
+
+	recipe Sell AlternaCraft pornmags
+	{
+		PornoMag1/PornoMag1b/PornoMag2/PornoMag2b/PornoMag3/PornoMag3b/PornoMag4/PornoMag4b/PornoMag5/PornoMag5b/PornoMag6/PornoMag6b,
+		keep HCTradingpost,
+		Result 		: HCDollar=3,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

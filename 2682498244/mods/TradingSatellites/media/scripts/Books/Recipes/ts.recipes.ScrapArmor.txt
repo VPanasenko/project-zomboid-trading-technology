@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		SArmor, 
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell ScrapArmor teachings
+	{
+		ArmorMag1/ArmorMag2/ArmorMag3/ArmorMag4/ArmorMag5,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}

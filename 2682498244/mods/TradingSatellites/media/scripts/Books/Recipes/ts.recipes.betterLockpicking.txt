@@ -1,0 +1,20 @@
+module TradingSatellites
+{
+	imports
+    {
+		BetLock,
+		Hydrocraft
+    }
+
+    /************************RECIPES************************/
+
+	recipe Sell betterLockpicking teachings
+	{
+		LockpickingMag/AlarmMag,
+		keep HCTradingpost,
+		Result 		: HCDollar=15,
+		Time 		: 1,
+		Category 		: TradingSatellites-Sell,
+		CanBeDoneFromFloor 		: TRUE,
+	}
+}
