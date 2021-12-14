@@ -4,11 +4,26 @@ local zhuansu = {3,3}
 local curr_z = nil
 local bladeround = 1
 local vehicle2 = nil
+local wTransformFieldNum = nil
+
+local function getJavaFieldNum(object, fieldName)
+    for i = 0, getNumClassFields(object) - 1 do
+        local javaField = getClassField(object, i)
+        if luautils.stringEnds(tostring(javaField), '.' .. fieldName) then
+            return i
+        end
+    end
+end
+
 local function move_vehicle(vehicle, x_delta, y_delta, z_delta)
-    local tmpTransform = getClassFieldVal(vehicle, getClassField(vehicle, 45))
+    if wTransformFieldNum == nil then
+        wTransformFieldNum = getJavaFieldNum(vehicle, "tempTransform")
+    end
+
+    local tmpTransform = getClassFieldVal(vehicle, getClassField(vehicle, wTransformFieldNum))
     local wTranform = vehicle:getWorldTransform(tmpTransform)
-    local originField = getClassFieldVal(wTranform, getClassField(wTranform, 1))
-    originField:set(originField:x() + x_delta, originField:y() + y_delta, originField:z() + z_delta)
+    local origin = getClassFieldVal(wTranform, getClassField(wTranform, 1))
+    origin:set(origin:x() + x_delta, origin:y() + y_delta, origin:z() + z_delta)
     vehicle:setWorldTransform(wTranform)
 end
 
